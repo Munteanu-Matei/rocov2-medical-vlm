@@ -1,0 +1,11 @@
+{
+ "frozen_tau_test_f1": 0.4570820610188596,
+ "recal_global_tau": 0.9100000000000003,
+ "recal_global_test_f1": 0.41896309853301683,
+ "recal_perlabel_test_f1": 0.4718294109556725,
+ "recal_valid_f1_global": 0.41892609293808347,
+ "recal_valid_f1_perlabel": 0.4733623144894574,
+ "pred_per_img_frozen": 2.1192706759343207,
+ "pred_per_img_recal": 3.2705751989523524,
+ "gold_per_img": 5.012591921023471
+}

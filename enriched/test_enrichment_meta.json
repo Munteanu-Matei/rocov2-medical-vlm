@@ -1,0 +1,14 @@
+{
+  "mode": "test",
+  "n_images": 9927,
+  "n_enriched": 6949,
+  "n_labels_added": 16597,
+  "n_labels_original": 33874,
+  "n_labels_final": 50471,
+  "label_increase_pct": 48.99628033299876,
+  "avg_concepts_original": 3.4123098619925454,
+  "avg_concepts_final": 5.084214767804976,
+  "model_checkpoint": null,
+  "thresholds_file": null,
+  "elapsed_seconds": 35.10323762893677
+}

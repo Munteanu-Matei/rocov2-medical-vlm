@@ -1,0 +1,2002 @@
+[
+ {
+  "ref": "Computed tomography pulmonary angiography showing a round-shaped tumour (10\u2009mm \u00d7 8\u2009mm) in the right ventricular (black arrow) adherent to the interventricular septum and with regular borders, suspected to be benign.",
+  "pred": "Contrast-enhanced computed tomography scan of the chest at the level of the aortic root showing a large pericardial effusion (arrow)."
+ },
+ {
+  "ref": "CT scan axial view.CT showing osteolytic lesion in the left 12th rib with the remodeling of the adjacent bone and a lobulated periosteal pattern with mild compression of the adjacent muscles.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "Pelvic antero-posterior radiograph at 1\u2009year after the total right hip arthroplasty.",
+  "pred": "Preoperative radiograph of the right hip showing a total hip arthroplasty."
+ },
+ {
+  "ref": "MRI (SAG T2 sequence) showing peripherally enhancing abscess spanning the approximate upper/mid-L3 vertebral body level to the superior L4 vertebral body level, located within the left posterior epidural space of the spinal canal. SAG:\u00a0Sagittal.",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging scan of the lumbar spine."
+ },
+ {
+  "ref": "Female NMO patient, 25\u2009years old, bilateral optic neuritis.",
+  "pred": "Axial contrast-enhanced T1-weighted magnetic resonance imaging (MRI) scan of the orbit."
+ },
+ {
+  "ref": "CT image showing pancreatic injury",
+  "pred": "CT scan of the abdomen and pelvis with intravenous contrast showing a 2.5 \u00d7 3.0 cm mass in the head of the pancreas (red arrow)."
+ },
+ {
+  "ref": "Postoperative oblique radiograph of the right foot demonstrating hallux rigidus correction with OCA implantation on the metatarsal head.",
+  "pred": "Preoperative radiograph of the right foot showing a lytic lesion in the distal phalanx of the 4th and 5th metatarsals."
+ },
+ {
+  "ref": "Plain radiography, lateral projection. Lytic calcaneus lesion (arrow). Small central sclerotic focus (arrowhead)-\u201cCockade sign\u201d [14].",
+  "pred": "Lateral plain radiograph of the right foot. The radiograph shows an osteophyte (arrow) on the medial aspect of the calcaneal tuberosity."
+ },
+ {
+  "ref": " Chest computed tomography showing the bilateral lung frosted shadows and pleural effusions.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the bronchus intermedius in a patient with COVID-19 pneumonia showing ground-glass opacities (arrow)"
+ },
+ {
+  "ref": "Cross-sectional ultrasound image of the uterine horn (Aloka SSD-500).",
+  "pred": "Ultrasound image of the right testicle showing a hypoechoic mass measuring 3.5 \u00d7 2.8 \u00d7 4.0\u2009cm in size."
+ },
+ {
+  "ref": "Axial MRI images at age of 7 months showing abnormal symmetry signals of bilateral pallidus.",
+  "pred": "Brain magnetic resonance imaging (T2-weighted image) showing hyperintensity in the periventricular white matter."
+ },
+ {
+  "ref": "T2-weighted computed tomography scan of the pancreas demonstrates a large amount of peripancreatic (marked with yellow arrow) and left upper quadrant fluid that can be correlated clinically with acute pancreatitis.",
+  "pred": "Magnetic resonance cholangiopancreatography (MRCP)."
+ },
+ {
+  "ref": "Preoperative anteroposterior weight bearing X-ray of a 28-year-old female patient which suffered by hallux valgus and third-rocker metatarsalgia due to a long second metatarsal.In this patient a Chevron osteotomy on the first metatarsal and a triple Weil osteotomy on the second metatarsal, were planned. The choice of Maceira\u2019s technique was based on the amount of desired shortening (4.8 mm).",
+  "pred": "Preoperative radiograph of the right foot."
+ },
+ {
+  "ref": "Plain CT taken when the patient was transferred to our hospital for abdominal pain; the cystic lesion had increased in size (arrowhead) and showed intussusception.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast demonstrating a 4.5-cm, well-defined, low-attenuation mass (arrow) with"
+ },
+ {
+  "ref": "Final orthopantomography.",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Lateral view of digital subtraction left cervical common carotid angiographical findings in patient 9 indicating aplasia of the left internal carotid artery (white arrow).",
+  "pred": "Angiography of the right common carotid artery shows a pseudoaneurysm (arrow) in the distal portion of the left vertebral artery aneurysm."
+ },
+ {
+  "ref": "A 17-year-old girl with COVID-19 pneumonia based on positive RT-PCR test who presented with cough and rhinorrhea for 2\u00a0days. Frontal chest radiograph shows no radiographic abnormality. The patient\u2019s serum biochemical parameters show a mildly elevated LDH level of 151 U/L",
+  "pred": "Preoperative chest X-ray showing no abnormal findings."
+ },
+ {
+  "ref": "Abdominal CT scan illustrating the cystic mass with several posterior loculations",
+  "pred": "Computed tomography scan of the abdomen and pelvis showing a large retroperitoneal hematoma (arrow)."
+ },
+ {
+  "ref": "Postoperative chest X-ray of Patient 1 indicating the position of the outflow joint (inferiorly in the costodiaphragmatic recess) and the contact of the pump housing with the lateral chest wall.",
+  "pred": "Preoperative chest X-ray showing cardiomegaly and pericardial effusion."
+ },
+ {
+  "ref": "Chest CT scan of the chest of the patient showing a near-complete expansion of right lung (90\u201395%) with mild right-sided residual effusion and no obvious parenchymal lesion seen.",
+  "pred": "CT scan of the chest showing multiple cavitary lesions in the right lower lobe."
+ },
+ {
+  "ref": "A 24\u2010year\u2010old woman with intermittent episodes of abdominal pain and vomiting. Axial fat suppressed contrast\u2010enhanced T1\u2010volumetric interpolated breath\u2010hold examination (VIBE) arterial phase which shows the duodenum (curved arrow) is partially encircled by the head of pancreas (arrow), a crocodile jaw appearance",
+  "pred": "Axial T1-weighted magnetic resonance imaging (MRI) scan of the abdomen and pelvis showing a 2.5-cm mass in the head of the pancreas (arrow)."
+ },
+ {
+  "ref": "Bilateral incomplete hippocampal inversion on a coronal T2 weighted image.",
+  "pred": "Coronal T2-weighted MRI scan showing a hyperintense lesion in the left cerebellar hemisphere."
+ },
+ {
+  "ref": "CT scan of abdomen showing a distended gastric pouch (yellow asterisk) secondary to gastric outlet obstruction.",
+  "pred": "Coronal computed tomography scan of the abdomen and pelvis with intravenous contrast demonstrating a large pericardial effusion (asterisk) and a small amount of ascites (arrow)."
+ },
+ {
+  "ref": " T 2\u2010weighted MRI, sagittal view of leptomeningeal metastasis in the meninges over the cerebellum",
+  "pred": "Sagittal T2-weighted MRI scan of the pelvis showing a 1.5 \u00d7 2.0 cm hypointense lesion in the left iliac fossa (arrow)."
+ },
+ {
+  "ref": "Distribution scan by SPECT/CT 30\u00a0min after intraarticular injection of 74\u00a0MBq [186Re]rhenium sulfide in an ankle joint of a patient with rheumatoid arthritis",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography-computed tomography (FDG-PET/CT) scan of the right foot."
+ },
+ {
+  "ref": "Apical 4 chamber view showing asymmetric left ventricular hypertrophy with abnormal appearance of myocardium",
+  "pred": "Transthoracic echocardiography showing apical ballooning."
+ },
+ {
+  "ref": "CT of abdomen and pelvis: multiple pulmonary emboli (arrows). CT: computed tomography.",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pulmonary embolism (arrows)."
+ },
+ {
+  "ref": "Preoperative planning of the Chevron osteotomy: The black line indicates the level and length of the osteotomy. The blue line has the same length as the black. The overlap of both lines (black&blue) simulates the amount of the lateral shift in relation to the width of the metatarsal shaft at the level of the osteotomy (in this case ~\u200960\u201370%). The white lines simulate the orientation and length of both screws. The black circles demonstrate the cortical fixation points of the screws. The proximal screw exists through the lateral cortex, the distal screw through the osteotomy",
+  "pred": "Measurement of the metatarsal length ratio (MLR). The MLR was defined as the ratio of the length of the distal phalanx of the 5th metatarsus to the"
+ },
+ {
+  "ref": "Mean electron ED values measured using circular region of interest on ED image: 108.4 (%EDW, percentage relative to the ED of water) in the high-density area and 104.1 in other areas of the pulmonary artery. ED, electron density.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the aortic arch."
+ },
+ {
+  "ref": "Cephalometric characteristics of a patient affected by acromegaly. Note the significant enlargement of sella turcica.",
+  "pred": "Lateral cephalometric radiograph."
+ },
+ {
+  "ref": "Panoramic radiograph after ramus graft showing no signs of relapse.",
+  "pred": "Panoramic radiograph showing a well-defined radiolucent lesion in the left mandibular angle region."
+ },
+ {
+  "ref": "Contrast venography demonstrating a tortuous posterolateral coronary sinus vessel",
+  "pred": "Coronary angiography in the left anterior oblique caudal view."
+ },
+ {
+  "ref": "Abdominal CT scan of the patient at admission. There is a 12 \u00d7 11 \u00d7 8 cm lesion in the retroperitoneal space. The shape and irregularity of the lesion, and its density are coherent with hematoma.",
+  "pred": "Computed tomography scan of the abdomen and pelvis showing a large retroperitoneal hematoma."
+ },
+ {
+  "ref": "A 59-year-old lady with a 20-year history of systemic mastocytosis. Axial contrast-enhanced CT demonstrates hepatomegaly and a large heterogeneous mass with areas of arterial enhancement and heterogeneous hypoattenuating apperance on portal venous phase (circled), increased retraction of the hepatic capsule related to volume loss (arrowhead), and an abnormal heterogenous appearance of the spleen with surronding ring of hypoattenuating soft tissue (white arrows).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of iodinated contrast material. A 2.5-cm hypodense lesion (arrow) in the"
+ },
+ {
+  "ref": "MRCP\u2014choledocholithiasis; no signs of common bile duct dilation and normal intrahepatic bile ducts.",
+  "pred": "Magnetic resonance cholangiopancreatography (MRCP) showing common bile duct dilatation."
+ },
+ {
+  "ref": "Slightly high-density, patchy, blurry shadows in bilateral bronchi, indicating inhalation injury",
+  "pred": "Computed tomography scan of the chest at the level of the bronchus intermedius."
+ },
+ {
+  "ref": "MRI image of my pleomorphic xanthoastrocytoma, showing an enhancing lesion with a small cystic component.",
+  "pred": "Magnetic resonance imaging (MRI) scan of the brain showing a 2.5 \u00d7 3.0 \u00d7 4.0 cm mass in the right parietal lobe."
+ },
+ {
+  "ref": "MRI identifying splenic lesions (red arrows) in a 2-year-old with right upper extremity lymphedema",
+  "pred": "Coronal T2-weighted MRI scan of the abdomen and pelvis showing a large retroperitoneal mass (red arrows)MRI: magnetic resonance imaging"
+ },
+ {
+  "ref": "Ultrasound image of the patient\u2019s left knee after ossicle removal. The area is inspected again by ultrasound to confirm the absence of remnant ossicles, The white arrows indicate where the ossicle is located. (DIB, deep infrapatellar bursa; PT, patellar tendon.)",
+  "pred": "Longitudinal view of the suprascapular nerve (SSN) and the subscapularis muscle (SS) at the level of the glenohumeral joint. The"
+ },
+ {
+  "ref": "MRI imaging showing hypointense signal on the T1WIT1WI: T1-weighted",
+  "pred": "Axial T1-weighted magnetic resonance imaging (MRI) scan of the brain showing a hyperintense lesion in the left thalamus (arrow)."
+ },
+ {
+  "ref": "Computed tomography of the head which demonstrates a nondisplaced left nasal bone fracture (white arrow).",
+  "pred": "Axial computed tomography scan of the paranasal sinuses showing a soft tissue density mass in the left maxillary sinus (arrow)"
+ },
+ {
+  "ref": "On presentation (2 hours post ingestion). Arrow: the endodontic file can be seen in the duodenum at the level of L2/3",
+  "pred": "Plain radiograph of the abdomen showing a 2.5-cm radiopaque foreign body (arrow) in the distal ileum."
+ },
+ {
+  "ref": " Pre-operative computed tomography-scan. The lesion occupying the right posterior segments of the liver (black arrow) and two other confluent lesions in the left lobe with intrabiliary growth pattern (orange arrow).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast showing a 7.5 cm heterogeneous mass in the right lobe of the liver (blue arrow) with"
+ },
+ {
+  "ref": "Abdominal-pelvic computed tomography (CT) scan showing intra- and peri-bladder gas bubbles (arrows).",
+  "pred": "CT scan of the abdomen and pelvis with contrast showing pneumomediastinum (red arrow) and pneumoperitoneum (blue arrow)."
+ },
+ {
+  "ref": "ERCP showed no evidence of lesion recurrence after 8 months.ERCP, endoscopic retrograde cholangiopancreatography.",
+  "pred": "Endoscopic retrograde cholangiopancreatography."
+ },
+ {
+  "ref": "Brain MRI revealing inflammatory lesions in sphenoid bone after the first infection.",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the patient\u2019s orbit."
+ },
+ {
+  "ref": "Hand-wrist radiograph",
+  "pred": "Plain radiograph of the left hand showing osteophytes in the distal phalanx of the 4th and 5th metacarpals."
+ },
+ {
+  "ref": "Chest CTA showing scattered areas of mass-like consolidation and areas of early cavitation (arrow).",
+  "pred": "Computed tomography (CT) scan of the chest showing multiple nodules in the left upper lobe."
+ },
+ {
+  "ref": "CEMRI axial cut of the brain showing multiple predominantly rim enhancing thick walled lesions with surrounding edema in left frontal, right thalamus, and right ganglio-capsular regions.",
+  "pred": "Magnetic resonance imaging (MRI) scan of the brain showing multiple ring-enhancing lesions in the right parietal lobe and left occipital lobe."
+ },
+ {
+  "ref": "Chest X-ray demonstrating bilateral pulmonary edema and cardiomegaly supportive of CHF.CHF: Congestive heart failure.",
+  "pred": "Chest X-ray showing no evidence of pneumomediastinum or pneumothorax."
+ },
+ {
+  "ref": "68Ga-DOTATATE PET/CT coronal fusion image showing high uptake in the left thyroid nodule and mild and diffuse physiological uptake in the right lobe",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography-computed tomography (FDG-PET/CT) scan of the patient."
+ },
+ {
+  "ref": "Transverse unenhanced CT image of the head of a 4.5-month-old intact female Ragdoll cat following traumatic brain injury. A brain-windowed image at the level of the tentorium shows a caudotentorial hyperattenuating lesion (white arrows) surrounded by mild hypoattenuating focal area (arrowhead) consistent with acute haemorrhage surrounded by mild oedema. On the Koret CT score, 3 points are granted for caudotentorial oedema and 1 point for parenchymal haemorrhage",
+  "pred": "Computed tomography (CT) scan of the head and neck showing a 2.5-cm soft tissue density mass in the left cavernous sinus (arrow)."
+ },
+ {
+  "ref": "Chest X-ray at the time of admission",
+  "pred": "Chest X-ray showing diffuse alveolar infiltrates."
+ },
+ {
+  "ref": "SPECT/CT example of lymphatic outflow from the left distal ureter cranially and laterally to the left outer iliac vein region.",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan of the pelvis."
+ },
+ {
+  "ref": "Magnetic resonance imaging head\u2014T1 flair sagittal view shows there is a small intra-parenchyma subacute haemorrhage (red arrow) in the medial part of the left frontal lobe adjacent to the inferior margin of anterior horn of the left lateral ventricle with a haemorrhage measuring 17\u2009mm.",
+  "pred": "Sagittal T1-weighted MRI scan of the brain showing a pituitary macroadenoma."
+ },
+ {
+  "ref": "Male patient, aged 62\u00a0years four days from onset of symptoms. Wide patches of ground glass infiltration and dense large vessels",
+  "pred": "High-resolution computed tomography (HRCT) of the chest showing bilateral patchy ground-glass opacities."
+ },
+ {
+  "ref": "Erect chest X ray showing air under right hemi-diaphragm (red arrow) in a 23-year-old man with the history of jumping from the door of Indian jumbo truck.",
+  "pred": "Chest X-ray showing free air under the diaphragm (red arrow)."
+ },
+ {
+  "ref": "Vertebral column and pelvis (x-ray findings)",
+  "pred": "Figure 1: X-ray of the thorax and pelvis showing scoliosis."
+ },
+ {
+  "ref": "B) An 87-year-old patient with DM+HT+CAD history had the complaints of fever, shortness of breath, and cough for around 7\u20138 days. The patient applied to hospital due to increase in shortness of breath. Infiltration areas (black arrows) of peripheral ground glass density in all lobes of both lungs and small amount of effusion in both pleurae was found in the tomography picture of the patient.",
+  "pred": "Computed tomography (CT) scan of the chest with contrast."
+ },
+ {
+  "ref": "Large circumferential pericardial effusion surrounding the heart, as seen in the parasternal long axis.",
+  "pred": "Transthoracic echocardiogram showing a large pericardial effusion."
+ },
+ {
+  "ref": "Transthoracic echocardiogram. Modified four-chamber view showing the gigantic RAAA ten years later.",
+  "pred": "Transthoracic echocardiography showing a large pericardial effusion. LA: left atrium, LV: left ventricle, RA: right atrium and RV: right"
+ },
+ {
+  "ref": "The left sciatic nerve (inferior margin of gluteus maximus) of normal people shows\u201d honeycomb\u201d on the transverse axis.",
+  "pred": "Longitudinal view of the brachial plexus at the level of the subclavian artery."
+ },
+ {
+  "ref": "Axial sequence of a lung window chest computed tomography revealing a left pneumothorax with bilateral hemothorax.",
+  "pred": "Computed tomography scan of the chest showing pneumomediastinum and pneumothorax."
+ },
+ {
+  "ref": "Post-intubation CXR showing severe bilateral airspace opacities with no evidence of pneumothorax or other pathology.",
+  "pred": "Chest X-ray showing bilateral pleural effusion and pneumomediastinum."
+ },
+ {
+  "ref": "Transvaginal ultrasound image of the ovarian tumor. Transvaginal ultrasound showing a 10-cm-large monoblastic ovarian tumor. Yellow arrows: ovarian tumor; yellow circle: cystic component; red arrows: cyst",
+  "pred": "Transvaginal ultrasonography of a 36-year-old woman with a cystic mass in the left adnexa."
+ },
+ {
+  "ref": "Follow-up MR imaging demonstrates a postresection cavity without tumour residue or recurrence in the right maxilla (5 years after surgical treatment). Coronal imaging in T1 weighting after contrast agent administration.",
+  "pred": "Coronal T1-weighted magnetic resonance imaging scan of the orbit."
+ },
+ {
+  "ref": " Chest radiography shows marked on elevation of the right hemidiaphragm with atelectasis sub-phrenic lucency (red arrows).",
+  "pred": "Chest X-ray showing pneumomediastinum (red arrows) and subcutaneous emphysema (blue arrows)."
+ },
+ {
+  "ref": "CT chest coronal MIP (maximum intensity projection) rightward mediastinal shift and partial right lung collapse secondary to left hemithoracic mass effect.",
+  "pred": "Computed tomography (CT) scan of the chest showing a large mass in the left upper lobe."
+ },
+ {
+  "ref": "Post-intubation radiograph showing endotracheal tube placement and orogastric tube just superior to the level of the diaphragm, as shown by arrow.",
+  "pred": "Chest X-ray showing the tip of the central venous catheter in the superior vena cava (arrow)."
+ },
+ {
+  "ref": "Ultrasonogram of the second patient.",
+  "pred": "Longitudinal view of the right subclavian artery at the level of the carotid bifurcation."
+ },
+ {
+  "ref": "Chest plain radiography (portable) showing bilateral diffuse pulmonary opacities and cardiomegaly suggestive of ARDS.ARDS:\u00a0acute respiratory distress syndrome",
+  "pred": "Chest X-ray showing cardiomegaly and pleural effusion."
+ },
+ {
+  "ref": "Ground-glass opacities on chest CT in a patient with COVID-19-related pneumonia.",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral patchy ground-glass opacities."
+ },
+ {
+  "ref": "T1 (sagittal view) showing low-lying cerebellar tonsils (green arrow)",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the patient\u2019s brain. The red arrow indicates the pituitary adenoma."
+ },
+ {
+  "ref": "Coronary Artery Disease Reporting and Data System 2 in a 56-year-old man with chronic chest pain. Curved multiplanar reformatted computed tomography image of the RCA reveals a noncalcified plaque (white arrowhead) causing mild stenosis (25%\u201349%). No further imaging was recommended.AM1: first acute marginal, AM2: second acute marginal, RCA: right coronary artery.",
+  "pred": "Coronary angiography in the right anterior oblique (RAO) 30\u00b0 caudal view showing the origin of the right coronary artery (arrowheads) from the right sinus of V"
+ },
+ {
+  "ref": "Same patient (case #9) after removal of the spanning plate\u00a02.5\u2009months later showing adequate union",
+  "pred": "Anteroposterior radiograph of the right elbow at 12 months postoperatively."
+ },
+ {
+  "ref": "Sagittal T1-weighted magnetic resonance images of the brain showing low-intensity bone marrow signaling, consistent with bone marrow replacement or bone marrow proliferation disorder.",
+  "pred": "Sagittal T1-weighted MRI scan of the brain."
+ },
+ {
+  "ref": "T2 MRI STIR.",
+  "pred": "Coronal T2-weighted MRI scan of the thoracic spine."
+ },
+ {
+  "ref": "Chest computed tomography angiography showing left superior vena cava draining abnormally into the left atrium",
+  "pred": "Computed tomography (CT) angiogram of the chest with contrast showing a large pseudoaneurysm in the ascending aorta (red arrow)."
+ },
+ {
+  "ref": "Chest x-ray suggestive of bilateral pleural effusion (white arrow).",
+  "pred": "Plain radiograph of the chest and abdomen showing the presence of air under the diaphragm (arrows)."
+ },
+ {
+  "ref": "Axial section CT non-enhanced (lung window), section 60, obtained in the emergency department demonstrating ground glass infiltration. L = Left side, A = anterior, P = posterior, scale = 1cm. Figure 1",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pleural effusion, pneumomediastinum, pneumothorax, and subcutaneous emphysema."
+ },
+ {
+  "ref": "Lipiodol being aspirated through the previously allocated percutaneous drain (black arrows)",
+  "pred": "Antegrade pyelogram demonstrating the presence of contrast in the bladder (solid arrow) and in the distal ureter (dashed arrow)."
+ },
+ {
+  "ref": "Distribution of micronodules in sarcoidosis. The axial HRCT scan in a patient with pulmonary sarcoidosis shows the typical perilymphatic distribution of micronodules along the subpleural interstitial space (yellow arrows), along the fissure (yellow arrowheads), and interlobular septa (pink arrows). The blue arrow shows the peribronchovascular distribution.",
+  "pred": "High-resolution computed tomography (HRCT) of the chest of a 70-year-old man with COVID-19 pneumonia. The HRCT shows ground-glass opacities (arrows"
+ },
+ {
+  "ref": "Echocardiogram 2 months post-discharge showing resolution of left ventricular thrombus.",
+  "pred": "Transthoracic echocardiogram (TTE) showing a large pericardial effusion."
+ },
+ {
+  "ref": "CT scan with contrast at time of presentation to the emergency department. Gas fluid collection was noted to measure up to 13\u2009cm in length, 6\u2009cm in width, and 5\u2009cm in height. Findings concerning for abscess/pyometra.",
+  "pred": "CT scan of the abdomen and pelvis (coronal view) showing bilateral hydronephrosis."
+ },
+ {
+  "ref": "Axial, gadolinium\u2010enhanced, T1\u2010weighted MRI image showing abscessual evolution of a brain lesion in the pons 9\u00a0days after the onset of neurological symptoms",
+  "pred": "T1-weighted magnetic resonance imaging (MRI) scan of the brain showing a hyperintense lesion in the left cerebellar hemisphere."
+ },
+ {
+  "ref": "An example of a radiograph categorized as a major discrepancy. A chest radiograph was performed on a 50-year-old man with underlying bronchial asthma who presented with shortness of breath. The trainee missed the pneumothorax in the left hemithorax in about 20% of them (black arrows).",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates (arrows)."
+ },
+ {
+  "ref": "Computed Tomography Scan Computed tomography coronal view showed multiple loops of the small intestine with wall thickening, edema, and hyperenhancement.",
+  "pred": "Coronal CT scan of the abdomen and pelvis showing small bowel obstruction."
+ },
+ {
+  "ref": "OPG showing disto-proximal caries with 36OPG - Orthopantomogram",
+  "pred": "Panoramic radiograph showing a multilocular radiolucent lesion in the right maxillary sinus."
+ },
+ {
+  "ref": "Ct brain follow-up showed regression of the right parieto-occipital hypo dense lesion.",
+  "pred": "Computed tomography (CT) scan of the head without contrast showing no evidence of intracranial hemorrhage."
+ },
+ {
+  "ref": "An AP radiograph showing the healed osteotomy",
+  "pred": "Anteroposterior radiograph of the right knee at 12 months postoperatively."
+ },
+ {
+  "ref": "Computed tomography scan of the patient's chest without contrast. There was diffuse but mild nonspecific peribronchial thickening, with one such area of peribronchial thickening highlighted (arrow). There was no evidence of interstitial lung disease.",
+  "pred": "Computed tomography (CT) scan of the chest. Coronal view."
+ },
+ {
+  "ref": "AP view: Fluoroscopic guided left T9-T10 zygapophysial joint steroid injection.",
+  "pred": "Fluoroscopic image of the peripherally inserted central venous catheter (PICC) in the superior vena cava (red arrow)."
+ },
+ {
+  "ref": "Anterior-posterior semi-erect chest X-ray showing multifocal pulmonary opacities (arrows).",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates (arrows)."
+ },
+ {
+  "ref": "Orbital magnetic resonance image. Posterior scleral thickening and proptosis of the LE",
+  "pred": "T2-weighted magnetic resonance imaging (MRI) scan of the brain showing hyperintense signal in the left temporal lobe."
+ },
+ {
+  "ref": "B-scan ultrasonography of the patient\u2019s left eye at presentation, revealing a small, flat, peripherical choroidal detachment (arrow)",
+  "pred": "B-scan ultrasonography of the left eye showing a cystic lesion in the posterior pole of the lens (arrow)."
+ },
+ {
+  "ref": "Repeat CTAP s/p JT removal revealed persistent J\u2013J intussusception (yellow arrow).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast medium. The arrow indicates the presence of a small amount of free fluid in the peritoneal cavity"
+ },
+ {
+  "ref": "One-month post-operative anterior-posterior tibia-fibula radiographs of flexible nailing of the tibia.",
+  "pred": "Plain radiograph of the right tibia and fibula at the time of initial presentation."
+ },
+ {
+  "ref": "Non-contrast CT head axial view showing subarachnoid haemorrhage (arrow) in the right frontal, superior parietal regions",
+  "pred": "CT scan of the brain with contrast showing a hyperdense lesion in the right frontal lobe (arrow)."
+ },
+ {
+  "ref": "A preoperative chest computed tomography showing a tracheal bronchus originating 1.9 cm above the tracheal carina. The diameter of the orifice of the tracheal bronchus was measured as 1.4 cm.",
+  "pred": "Coronal computed tomography (CT) scan of the chest. A: trachea, B: bronchus intermedius, C: aortic arch, D: superior vena cava"
+ },
+ {
+  "ref": "\u201cCharacteristic luminescence\u201d of the interventricular septum (bold arrows) and left ventricle hypertrophy.",
+  "pred": "Transthoracic echocardiogram showing a large pericardial effusion (arrow)."
+ },
+ {
+  "ref": "Sagittal view of non-enhancing T1 hyperintensity within right putamen",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the brain."
+ },
+ {
+  "ref": "Chest x-ray of the patient. The image shows a chest x-ray of the patient taken upon admission to the ICU. The arrows illustrate patchy infiltrates of the left lower lung fields. A diagnosis of a lower respiratory tract infection was made, secondary to bacterial pneumonia.",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates (arrows)."
+ },
+ {
+  "ref": "Computed tomography of the chest showing huge mediastinal swelling.",
+  "pred": "Computed tomography (CT) scan of the chest showing mediastinal lymphadenopathy (red arrow)."
+ },
+ {
+  "ref": "A preoperative chest X\u2010ray. The stomach was dilated with gas (white arrow), and the right lung had decreased X\u2010ray permeability because of the atelectasis (yellow arrow).",
+  "pred": "Chest X-ray of the neonate at 24 hours of age showing diffuse alveolar infiltrates (black arrows) and cardiomegaly (white arrows)."
+ },
+ {
+  "ref": "One year later CT showed chronic fibrotic changes involving large portions of the middle, lateral, and basilar portions of the right lung.Abbreviation: CT, computed tomography.",
+  "pred": "Chest X-ray showing right-sided pleural effusion."
+ },
+ {
+  "ref": "ORIF of left femur six weeks post-operatively.ORIF - open reduction internal fixation",
+  "pred": "Immediate postoperative radiograph showing fracture reduction and internal fixation with plate and screws."
+ },
+ {
+  "ref": "Chest x-ray showing massive right-sided pleural effusion.",
+  "pred": "Chest X-ray showing pleural effusion on the right side."
+ },
+ {
+  "ref": "Small shadowing foci within the bowel wall consistent with pneumatosis (long arrow). Additional intraluminal air (short arrow) is seen in the adjacent segment of bowel, differentiated clearly from the bowel serosa (curved arrow).",
+  "pred": "Ultrasonography of the thyroid gland in a 14-year-old boy with primary hypothyroidism. The thyroid gland is hyperechoic (arrows)."
+ },
+ {
+  "ref": "Contrast-enhanced axial multidetector CT angiography image reveals chronic-contained aneurysm rupture of the aorta within left ilio-psoas muscle (white arrow).",
+  "pred": "Abdominal aortic aneurysm."
+ },
+ {
+  "ref": "MRI brain spine (sagittal view T2) showing (a) brainstem and (b) cervical cord hyperintense signals.",
+  "pred": "Sagittal T2-weighted MRI of the cervical spine at the level of the foramen magnum showing the presence of a hyperintense signal (arrow) in the spinal cord."
+ },
+ {
+  "ref": "Sagittal view of the proximal Achilles tendon. Point-of-care ultrasound image obtained with a high-frequency linear probe with the probe marker directed cephalad. A large anechoic fluid collection is present between two distinct ends of the ruptured tendon.",
+  "pred": "Ultrasound-guided needle puncture of the peritoneal cavity."
+ },
+ {
+  "ref": "The \u201cyin-yang\u201d sign. Doppler ultrasound demonstrates the \u201cyin-yang\u201d sign, which indicates bidirectional flow due to blood swirling within the aneurysmal sac.",
+  "pred": "Color Doppler ultrasonography of the left axillary artery and vein. The color Doppler ultrasound image shows the absence of blood flow signal in the aneurysm sac."
+ },
+ {
+  "ref": "A 31-year-old male patient with influenza B pneumonia was also diagnosed with known end-stage renal disease. The score was evaluated as 2 according to CORADS classification and in the atypical group according to the RSNA guidelines. Soft tissue density centrilobular nodules (black arrow) forming tree in bud pattern and peribronchovascular consolidation.",
+  "pred": "Computed tomography (CT) scan of the chest showing multiple pulmonary nodules."
+ },
+ {
+  "ref": "Clinical control at 6\u2009months showing yellow discoloration and local destruction of the Biodentine\u2122 coronal restoration.",
+  "pred": "Preoperative intraoral periapical radiograph."
+ },
+ {
+  "ref": "Postoperative computed tomography. The petrous apex is aerated and patent with the sphenoidal sinus.",
+  "pred": "Axial computed tomography scan of the paranasal sinuses showing an expansile lytic lesion in the left maxillary sinus."
+ },
+ {
+  "ref": "Post-ovulatory follicle highlighted in a female boa (32 days after ovulation). An onion ring appearance and an anechoic central area have been observed in 96.2% and 100%, respectively, of females who have given birth to living and viable offspring.",
+  "pred": "Ultrasound-guided needle insertion into the subcutaneous tissue."
+ },
+ {
+  "ref": "Measurements on CBCT after maximum of non-surgical expansion at the anterior and posterior palate. The nasopalatine foramen (white bracket) and the greater palatine foramina on both sides (white line) were references for measurements",
+  "pred": "Measurement of the width of the maxillary alveolar ridge on the coronal CBCT image."
+ },
+ {
+  "ref": "CAG showing CALM.",
+  "pred": "Coronary angiography in the right anterior oblique caudal view showing a 100% occlusion of the right coronary artery."
+ },
+ {
+  "ref": " CT abdomen and pelvis (axial section, bone window) showing intra-medullary gas with irregularly irregular sizes, consistent with emphysematous osteomyelitis.",
+  "pred": "Computed tomography scan of the pelvis."
+ },
+ {
+  "ref": "Disappeared submuscular pneumothorax (16 March 2022).",
+  "pred": "Preoperative chest X-ray showing no abnormal findings."
+ },
+ {
+  "ref": " Chest radiography of pericardial primitive neuroectodermal tumor in a 3-year-old boy. Anteroposterior chest radiography revealed an enlarged, flask-shaped heart shadow, and a small amount of effusion in the right pleural cavity.",
+  "pred": "Chest X-ray showing cardiomegaly and pleural effusion."
+ },
+ {
+  "ref": " Abdominal plane computed tomography scans obtained 14 d before the onset of ischemic gastritis in case 1. Computed tomography revealed wall thickening, mural emphysema, and fluid retention in the stomach. The arrow shows the wall thickening. The arrowhead indicates the mural emphysema.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of iodinated contrast material. The arrow indicates the tumor."
+ },
+ {
+  "ref": "US abdomen showing hepatomegaly measuring 22.8 cm in longitudinal dimension.",
+  "pred": "Abdominal ultrasonography showing a large cystic lesion in the right lobe of the liver."
+ },
+ {
+  "ref": "Post-alteplase hypodensities involving the left basal ganglia and left Sylvian fissure (left MCA territory).MCA: middle cerebral artery",
+  "pred": "Non-contrast CT scan of the head showing left temporal lobe infarction. CT:\u00a0computed tomography"
+ },
+ {
+  "ref": "MRI of the brain (sagittal view) showing a contrast-enhancing lesion of the optic chiasm",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the brain."
+ },
+ {
+  "ref": " A huge cystic solid mix. A. Ced mass. Computed tomography contrast enhancement of the breast.",
+  "pred": "Computed tomography scan of the left breast mass."
+ },
+ {
+  "ref": "Fat-suppressed T1 coronal image on MRI revealed no contrast enhancement of the optic nerve in both eyes.",
+  "pred": "Coronal T2-weighted MRI scan of the orbit."
+ },
+ {
+  "ref": "Differences in DC between responders and non-responders. (Two sample t-test, voxel- level p < 0.001, peak p < 0.05 corrected by FDR).",
+  "pred": "A voxel in the left inferior frontal gyrus (IFG) that showed a significant negative correlation with the magnitude of the difference between the two groups."
+ },
+ {
+  "ref": "MRI control 3 months after the aspiration: persistence of filler in unquantifiable centimetric vacuoles.",
+  "pred": "Coronal T1-weighted magnetic resonance imaging (MRI) scan of the pelvis."
+ },
+ {
+  "ref": "Data were measured at 6 months after surgery (d3).",
+  "pred": "Periapical radiograph showing periapical radiolucency."
+ },
+ {
+  "ref": "A contrast-enhanced T1 axial MRI showed a cranial epidural abscess. on the left side of the epidural space.",
+  "pred": "Axial post-contrast T1-weighted magnetic resonance imaging (MRI) scan of the brain showing a 4.5 \u00d7 3.0 \u00d7 2.5 cm enhancing mass in the"
+ },
+ {
+  "ref": "EkoSonic endovascular system (EKOS) catheter",
+  "pred": "Digital subtraction angiography of the right common femoral artery showing a pseudoaneurysm."
+ },
+ {
+  "ref": "Shows pulmonary venography. No specific finding is observed",
+  "pred": "Fluoroscopic image of the right coronary angiogram showing the position of the transseptal sheath in the right ventricle."
+ },
+ {
+  "ref": "Thickening of the posterior wall of the cervix with a mass-like signal shadow suggested by MRI. MRI = magnetic resonance imaging.",
+  "pred": "Sagittal T2-weighted MRI of the pelvis."
+ },
+ {
+  "ref": "Measuring displacement of the affected CST.Displacement of affected CST was determined using the distance (m) between the symmetrical positions of the healthy and actual positions. The vertical distance between the healthy CST and its symmetrical position to the centerline is the same (a). A = anterior",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the brain showing a large right frontal lobe meningioma."
+ },
+ {
+  "ref": "CT of the abdomen/pelvis with contrast showing low-attenuation masses present in both adrenal glands measuring 6.9 x 5.3 cm on the right (dark gray arrow) and 4.5 x 3.9 cm on the left (light gray arrow)",
+  "pred": "Computed tomography of the abdomen and pelvis showing a 2.5 \u00d7 3.0 cm mass in the upper pole of the right kidney."
+ },
+ {
+  "ref": "Axial orbital CT scan of the patient.",
+  "pred": "Computed tomography scan of the orbit showing a soft tissue density mass in the medial rectus muscle."
+ },
+ {
+  "ref": "MRI of the lumber and sacral spine showing the metastatic deposit and the extent of the disease. MRI: magnetic resonance imaging.",
+  "pred": "Sagittal T2-weighted MRI of the lumbar spine."
+ },
+ {
+  "ref": "Digital panoramic radiograph of the patient",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Axillary view of the left shoulder postreduction demonstrating a reduced humeral head within the glenoid fossa.HH: humeral head. GF: glenoid fossa",
+  "pred": "Lateral radiograph of the left shoulder demonstrating a subluxation of the glenohumeral joint (GHJ) with anterior dislocation of the acromioclavicular joint (AC"
+ },
+ {
+  "ref": "Abdominal MRI showed a low-signal nodule on T1-weighted image (encircled).",
+  "pred": "Axial T2-weighted magnetic resonance image of the abdomen."
+ },
+ {
+  "ref": "Skin. Multiple adjacent cystic formations varying in size, with a maximum diameter of 8.60\u00a0mm, are present involving different parts of dog's body. Ultrasonography.",
+  "pred": "Ultrasonography of the right breast showing a well-defined hypoechoic mass in the upper outer quadrant of the breast."
+ },
+ {
+  "ref": "CT scan with contrast: sagittal view showing significant oral tumor. CT:\u00a0computed tomography",
+  "pred": "Computed tomography scan of the head and neck showing a large soft tissue mass in the retropharyngeal space extending into the oropharynx."
+ },
+ {
+  "ref": "A CT scan with lung window settings revealing diffuse interlobular septal thickening, forming polygonal arcades.",
+  "pred": "Computed tomography (CT) scan of the thorax at the level of the vertebral bodies."
+ },
+ {
+  "ref": "A 4.0 \u00d7 23 mm Xience Sierra\u2122 stent was placed with simultaneous live intravascular ultrasound-guidance achieved by passing the intravascular ultrasound catheter over the circumflex artery guidewire.",
+  "pred": "Fluoroscopic image of the right coronary angiogram."
+ },
+ {
+  "ref": "Ultrasonographic image of the lumbar spine of a dog in the longitudinal paramedian plane on the dorsal side: AP\u2014articular process; FJ\u2014facet joint.",
+  "pred": "Longitudinal view of the sternum at the level of the 4th intercostal space. A: Aorta, B: Brachiocephalic vein, C: Carotid"
+ },
+ {
+  "ref": "Coronal section of Cerebral MRI in FLAIR sequence showing: Hyper signal of the mammary bodies",
+  "pred": "Coronal T2-weighted magnetic resonance imaging (MRI) scan of the brain showing hyperintense signal in the pons and medulla oblongata (arrow)."
+ },
+ {
+  "ref": "Typical radiological findings seen on a chest radiograph of the patient following endotracheal intubation for acute respiratory distress syndrome.",
+  "pred": "Chest X-ray showing bilateral infiltrates."
+ },
+ {
+  "ref": "Group 4 (moderate myelopathy and severe deformity) patient example.",
+  "pred": "Lateral plain radiograph of the cervical spine."
+ },
+ {
+  "ref": "A lateral radiograph of case 4 showing a total elbow implant in place.",
+  "pred": "Lateral radiograph of the elbow at 12 months postoperatively."
+ },
+ {
+  "ref": "Measurement example of VHS. Right lateral thoracic radiograph displaying the Vertebral Heart Size (VHS) measurement in a dog of the control group. The long axis was drawn from the ventral margin of the carina tracheae to the most distal margin of the cardiac apex, and perpendicular to the short axis was drawn at the level of the ventral intersection of the caudal vena cava and the cardiac silhouette (red lines on cardiac silhouette). These lines were repositioned onto the vertebral column (red lines on vertebral column) beginning at the cranial margin of the fourth thoracic vertebrae. The VHS was 10.5 vertebral units.",
+  "pred": "Lateral thoracic radiograph of a 2-year-old male Labrador Retriever showing the measurement of the diaphragm height."
+ },
+ {
+  "ref": "MRI right tibia\u2010fibula, coronal image, showing infiltrative enhancing lesion involving the distal tibia with satellite lesions suggested throughout the remainder of the tibia and central portion of the talus",
+  "pred": "MRI scan of the right lower extremity. The red arrow shows the fracture of the tibia and fibula. The blue arrow shows soft tissue swelling."
+ },
+ {
+  "ref": "Topographic mandibular occlusal radiograph. Topographic mandibular occlusal radiograph\u00a0showing an unusually large sialolith (white arrow) on the right side of the floor of the mouth.",
+  "pred": "Occlusal radiograph of the mandible."
+ },
+ {
+  "ref": "Right portal vein thrombosis: extensive right portal vein hypodensity subsequent to an intraluminal thrombus formation (black arrows) with hepatic hyperemia (white arrows).",
+  "pred": "Axial contrast-enhanced computed tomography scan of the abdomen at the level of the right lobe of the liver shows a 3.5-cm hypervascular mass (arrows) with"
+ },
+ {
+  "ref": "X-ray of the hip (AP view) shows a fracture of the femoral neck. AP view: anteroposterior.",
+  "pred": "Anteroposterior radiograph of the pelvis showing a subtrochanteric fracture of the left femur (arrow)."
+ },
+ {
+  "ref": "T1 flair sagittal section showing L3-L4 facet joint septic arthritis with epidural abscess (arrow) and posterior para-vertebral cellulitis/myositis",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the lumbar spine."
+ },
+ {
+  "ref": "Zoster myelitis. Sagittal T2-weighted MRI sequence showing marked spinal atrophy together with a diffuse bilateral hyperintense signal (arrows).",
+  "pred": "Sagittal T2-weighted magnetic resonance image of the thoracic spine at the level of T10\u2013T11 shows hyperintense signal in the spinal cord (arrows)."
+ },
+ {
+  "ref": "Axial Fluoro-deoxyglucose-Positron Emission Tomography shows a moderate uptake in the splenic lesion. Extra-splenic lesions were absent.",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan showing no FDG uptake in the tumor."
+ },
+ {
+  "ref": "Severe mediastinitis in a patient with esophageal perforation. Esophagus (arrowhead); air dissection (arrow); sternal notch (asterisk)",
+  "pred": "Contrast-enhanced computed tomography scan of the chest at the level of the trachea. The tracheal wall is thickened (asterisk) and there is a small amount of fluid in"
+ },
+ {
+  "ref": "Follow-up MRIMRI of the brain obtained after initial thiamine replacement showing relative improvement in bilateral thalami hyperintensities (arrow).",
+  "pred": "T2-weighted magnetic resonance imaging (MRI) scan of the brain showing hyperintense signal in the periventricular white matter (arrow)."
+ },
+ {
+  "ref": "A positron emission tomography (PET) scan demonstrating metabolic uptake with focality localizing to the enhancing solid component of the left adrenal mass seen on the multiphase CT study.",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan showing FDG uptake in the tumor (arrow)."
+ },
+ {
+  "ref": "T1-weighted MRI sequence showing a supraclavicular cyst.",
+  "pred": "Coronal T2-weighted magnetic resonance imaging (MRI) scan of the right shoulder."
+ },
+ {
+  "ref": "Magnetic resonance imaging showed a tumor in the posterior mediastinum.",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the thoracic spine."
+ },
+ {
+  "ref": "Cardiac magnetic resonance with gadolinium enhancement demonstrated subendocardial fibrotic areas (yellow circles).",
+  "pred": "Cardiac magnetic resonance (CMR) short-axis view of the left ventricle in a patient with left ventricular apical ballooning."
+ },
+ {
+  "ref": "MRI orbits MRI orbits reveal mild inflammatory changes of the left conjunctiva, anterior chamber, anterolateral sclera, left lacrimal gland, and paranasal sinuses.",
+  "pred": "Axial T1-weighted post-contrast magnetic resonance imaging (MRI) scan of the orbit."
+ },
+ {
+  "ref": "Lateral talonavicular subluxation in the transverse plane of MRI (arrow).",
+  "pred": "Coronal T2-weighted MRI image of the right ankle. The white arrow indicates the bone marrow edema of the medial malleolus."
+ },
+ {
+  "ref": "Gallbladder ultrasound: normal",
+  "pred": "Abdominal ultrasonography showing free fluid in the peritoneal cavity."
+ },
+ {
+  "ref": "Ultrasound image of the corpus luteum of a sheep in B-Mode on day 19 of pregnancy. Arrow \u2013 corpus luteum",
+  "pred": "Ultrasound image of the thyroid gland in a patient with Graves\u2019 disease. The thyroid gland is enlarged and has a heterogeneous echogenicity (arrows)."
+ },
+ {
+  "ref": "Posterior-anterior chest x-ray on admission",
+  "pred": "Chest X-ray showing bilateral interstitial infiltrates."
+ },
+ {
+  "ref": "Transvaginal ultrasound showing possible foreign body",
+  "pred": "Transvaginal ultrasonography of the uterine cavity"
+ },
+ {
+  "ref": "On postoperative radiographic ML) view, the tibial axis was drawn (yellow line), and the posterior tilt angle (red line) was measured. Abbreviation: ML, Mediolateral.",
+  "pred": "Lateral radiograph of the right knee at the time of revision total knee arthroplasty."
+ },
+ {
+  "ref": "Initial angiogram of RCA shows the patent stent in the mid-segment of RCA and severe disease in ostioproximal segment of the right posterior descending artery (arrow).RCA: right coronary artery",
+  "pred": "Coronary angiogram showing the anomalous origin of the right coronary artery from the right sinus of Valsalva aneurysm (arrow)."
+ },
+ {
+  "ref": "Image showing CT guided FNAC from right upper lobe lesion",
+  "pred": "CT-guided biopsy of the right upper lobe mass."
+ },
+ {
+  "ref": "Initial plain radiograph of fracture; Garden type \u2161 of intracapsular fracture of the right femoral neck.",
+  "pred": "Anteroposterior radiograph of the pelvis."
+ },
+ {
+  "ref": "Repeat computed tomography showed increased erosions of the left SC joint",
+  "pred": "Computed tomography (CT) scan of the chest."
+ },
+ {
+  "ref": "MRI showing the lower lesion (white arrow).",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the temporal bone showing a hyperintense lesion in the left cerebellar hemisphere (arrow)."
+ },
+ {
+  "ref": "Radiographic control after new placement of transvenous pacemaker through the left subclavian access. The black arrow shows the end of the vascular access located in the right ventricle. The white arrow shows the right atrium.",
+  "pred": "Chest X-ray showing pneumomediastinum (black arrow) and pneumothorax (white arrow)."
+ },
+ {
+  "ref": "No pneumatosis or pneumoperitoneum is present.",
+  "pred": "Computed tomography scan of the abdomen and pelvis."
+ },
+ {
+  "ref": "Nodule formation. Two nodules measuring 41\u00a0\u00d7\u00a044\u00a0mm and 53\u00a0\u00d7\u00a047\u00a0mm formed a continuous mass from the base of the tongue to the left buccal region",
+  "pred": "Sagittal T2-weighted MRI image of the uterine fibroid."
+ },
+ {
+  "ref": "A protrusion of the meninges (arrow) through a defect point in the spine on a CT scan in a prone position.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous administration of contrast medium showing a large cystic lesion in the left iliac fossa (arrow)."
+ },
+ {
+  "ref": "Liver ultrasound shows tubular hyperechoic shadow between the right hepatic vein and the right branch of the portal vein without blood flow signal in it",
+  "pred": "Color Doppler ultrasonography of the gallbladder showing no evidence of thrombosis."
+ },
+ {
+  "ref": "Axial section cone-beam computed tomography revealed bilateral tooth-like radiopacities with a central root canal",
+  "pred": "Axial CBCT image of the mandible at the level of the inferior alveolar canal."
+ },
+ {
+  "ref": "Orthopantomogram (OPG) radiograph",
+  "pred": "Panoramic radiograph showing a radiolucent lesion in the left mandibular canal (red circle)."
+ },
+ {
+  "ref": "Case 5: Figure 5. Cine balanced steady state free precession (bSSFP) four chamber. Hypointense regions within the subendocardium (arrows) corresponding to scattered areas of fat deposition",
+  "pred": "Cardiac magnetic resonance imaging (CMR) showing pericardial effusion (arrows)."
+ },
+ {
+  "ref": "Initial MRI: sagittal FLAIR-weighted image with mild but inconclusive hyperintensities seen in the meninges.",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the patient's brain showing a hyperintense lesion in the suprasellar region."
+ },
+ {
+  "ref": "Showing cannulated screw fixation of a femoral neck fracture.",
+  "pred": "Anteroposterior radiograph of the pelvis."
+ },
+ {
+  "ref": "Low density anterior mediastinal mass (white arrow) identified on contrast enhanced CT",
+  "pred": "Contrast-enhanced computed tomography scan of the chest showing a large mediastinal mass (arrow) with compression of the superior vena cava."
+ },
+ {
+  "ref": "Case 1: Echocardiogram revealed cardiac tamponade. Echocardiography from subxiphoid view showed mild to moderate (8-14\u2009mm) pericardial effusion with RV collapse (white arrow), pericardial clot at RV free wall (asterisk, *).Abbreviations: LA, left atrium; LV, left ventricle; PE, pericardial effusion; RA, right atrium; RV, right ventricle.",
+  "pred": "Transthoracic echocardiography in the parasternal long-axis view showing a small pericardial effusion (asterisk) and a small amount of pleural fluid (arrow)."
+ },
+ {
+  "ref": "MRI of patient 1 revealing a fluid collection in the right lower abdomen.",
+  "pred": "Coronal T2-weighted MRI image showing a cystic lesion in the right adnexa (arrow)."
+ },
+ {
+  "ref": "Chest radiograph showing diffuse ground-glass opacities in both lung fields.",
+  "pred": "Chest X-ray on admission showing patchy infiltrates in both lower lung fields."
+ },
+ {
+  "ref": "Long axis scan of the Extensor digitorum longus (EDL) over the lateral malleolus (LM). Partial tears of few fibers of the EDL (arrows) superior and inferior to facial tear and hernia level and near MTJ. Small hematomas are noted at the site of tears",
+  "pred": "Longitudinal view of the Achilles tendon (AT) and the plantar fascia (PF) at the level of the gastrocnemius muscle (GM)"
+ },
+ {
+  "ref": "Computed tomography scan of the thorax showed the presence of a large pericardial effusion measuring up to 2.5 cm (blue arrow) in thickness along the left ventricle and left lower lobe atelectasis.",
+  "pred": "Computed tomography (CT) scan of the chest showing pericardial effusion (arrow)."
+ },
+ {
+  "ref": "Computed tomographic examination of a male pug dog with urohydropropulsion failure. Sagittal reformatted computed tomography images (soft tissue algorithm with convolution filter B30s) of the caudal abdomen of a male dog show a prostatic urethral calculus and a membranous urethral calculus with the urinary catheter (yellow arrow) passing next to them.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast, sagittal view."
+ },
+ {
+  "ref": "A postoperative lateral radiograph of the torso (red arrows) demonstrates a properly aligned stent inside the abdominal aorta. Yellow arrows indicate strong pedicle crew fixation from L1-S1.",
+  "pred": "Lateral plain radiograph of the lumbar spine at 12 months postoperatively."
+ },
+ {
+  "ref": "The thoracic X-ray (a.p.) shows the dislocation of the pectoral neurostimulator with twisted extensions (arrow)",
+  "pred": "Chest X-ray showing the tip of the pacemaker lead in the right ventricle (red circle)."
+ },
+ {
+  "ref": "Computed tomography angiogram before discharge.",
+  "pred": "Preoperative computed tomography angiography (CTA) showing aortic dissection."
+ },
+ {
+  "ref": "X-ray image of a rat, intravesical implant (2 \u00d7 2) mm, Elastollan + barium sulphate + a-C:H/Cu-mulitilayer coating. The selected concentration of 25% barium sulphate in the base material shows sufficient X-ray contrast. X-ray C-arm, Ziehm Vista, Zoom 2, 11 cm, Ziehm Imaging GmbH, Berlin, Germany.",
+  "pred": "Intraoperative fluoroscopic image showing the tip of the catheter in the distal esophagus."
+ },
+ {
+  "ref": "MRI of the cervical spine. C. 2-C3: Small central disc protrusion and bilateral facet arthrosis causing mild central canal stenosis without neuroforaminal narrowing (yellow arrow).C3-C4: Bilateral facet arthrosis and uncovertebral joint osteophytes causing mild to moderate bilateral neuroforaminal narrowing without central canal stenosis. Bilateral foraminal nerve root encroachment (green arrows).C4-C5: Central disc protrusion causing moderate central canal stenosis. There were bilateral uncovertebral joint osteophytes and facet arthritis causing severe right and moderate left neuroforaminal narrowing with right foraminal C5 nerve root impingement and left foraminal C5 nerve root encroachment (blue arrows).C5-C6: Posterior disc osteophyte complex causing moderate to severe central canal stenosis. There are bilateral uncovertebral joint osteophytes and facet arthrosis resulting in severe bilateral neuroforaminal narrowing with bilateral foraminal nerve root impingement (red arrows).C6-C7: No central canal stenosis or neuroforaminal narrowing (orange arrow).",
+  "pred": "Sagittal T2-weighted MRI of the cervical spine at the level of the C5\u2013C6 intervertebral disc. The red arrows indicate the vertebral bodies, the blue arrow indicates the"
+ },
+ {
+  "ref": "Chest x-ray showing with the black arrows showing vascular congestion/pulmonary edema",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates (arrows)."
+ },
+ {
+  "ref": "52 years-old patient, male, the lesion located in right middle lung. The area inside the red line represents the ROI for the tumor.",
+  "pred": "Computed tomography (CT) scan of the chest with intravenous contrast demonstrating a 1.5-cm nodule in the right upper lobe (arrow)."
+ },
+ {
+  "ref": "Abdominal contrast\u2010enhanced computed tomography of a 75\u2010year\u2010old man demonstrates residual duodenal bezoar (arrow) and dilated common bile duct.",
+  "pred": "CT scan of the abdomen and pelvis with IV contrast. Coronal view. The arrow indicates the presence of a large amount of free fluid in the peritoneal cavity."
+ },
+ {
+  "ref": "CT scan (coronal view) showing the tissue mass occupying the sinonasal cavity with the erosion of the sphenoid and clivus (yellow arrow)",
+  "pred": "Coronal computed tomography angiography (CTA) scan of the head and neck. Coronal view of the CTA scan showing a 1.5-cm enhancing soft tissue mass in the"
+ },
+ {
+  "ref": "FLAIR of head MRI showing normal posterior fossa.",
+  "pred": "T2-weighted magnetic resonance imaging (MRI) of the brain showing hyperintense signal in the left cerebellar hemisphere."
+ },
+ {
+  "ref": "Chest x-ray showing dislocated tip of the catheter and bilateral pleural effusion.",
+  "pred": "Chest X-ray showing cardiomegaly and pleural effusion."
+ },
+ {
+  "ref": "Anteroposterior radiograph of the pelvis and both hips showing bilateral fracture neck of femur (left side marked with red arrow).",
+  "pred": "X-ray of the pelvis (anteroposterior view) showing a lytic lesion in the left iliac bone (arrow)."
+ },
+ {
+  "ref": "Still frame image from Supplementary material online, Video S3. Transoesophageal echocardiography with colour Doppler using a mid-oesophageal bicaval view that shows how the Chiari network guides the direction of the tricuspid regurgitant jet through the patent foramen ovale.",
+  "pred": "Transesophageal echocardiogram showing severe mitral regurgitation (red arrow)."
+ },
+ {
+  "ref": "Multiple weak echo masses can be seen in the tendon sheath, with a maximum of about 0.7\u200a\u00d7\u200a0.4\u200acm, oval shape, clear boundary, no obvious blood flow signal in it.",
+  "pred": "Longitudinal ultrasonography of the right lower extremity showing a hypoechoic mass in the popliteal fossa."
+ },
+ {
+  "ref": "Enhance computed tomography (coronal view). The lesion size in the anterior portion of the nasal septum is 31 mm\u00d727 mm\u00d7 39 mm.",
+  "pred": "Computed tomography scan of the paranasal sinuses."
+ },
+ {
+  "ref": "CT scan obtained at presentation, coronal view demonstrating a mass spanning from the pelvis to left upper quadrant.",
+  "pred": "CT scan of the abdomen and pelvis showing a large retroperitoneal mass."
+ },
+ {
+  "ref": "Embryo located eccentrically in the right side of the uterine fundus.",
+  "pred": "Transvaginal ultrasonography showing a gestational sac in the uterine isthmus."
+ },
+ {
+  "ref": "Computed Tomography (CT) soft tissue of neck. Enhancing mass lesion in the tongue, slightly lateralized to the left side measuring about the 4.4 x 3.7 x 4.3 in transverse, AP and CC directions. The lesion involves both vallecula with probable involvement of ventral surface of epiglottis. There is extensive necrotic lymphadenopathy on left side of the neck involving left level 2 through level 4 regions. Most of these lymph nodes measure about 3 to 4 cm in size.",
+  "pred": "Computed tomography scan of the neck."
+ },
+ {
+  "ref": "CT scan showing bowel dilatation (air-fluid levels are marked with arrows).",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast showing small bowel intussusception (arrows)."
+ },
+ {
+  "ref": "CT scan in the axial plane showing the megarectum after the first surgery.",
+  "pred": "Computed tomography scan of the abdomen and pelvis."
+ },
+ {
+  "ref": "A 76-year-old woman with peroneal tendinopathy and split tear of the peroneus brevis.Short-axis view of the peroneal tendons at the retromalleolar level shows enlarged peroneal tendons with a longitudinal split tear gap (arrow) at the peroneus brevis tendon, which is pushed anteriorly by the peroneus longus tendon toward the lateral malleolus. PB, peroneus brevis tendon; PL, peroneus longus tendon.",
+  "pred": "Ultrasound image of the right hip joint. The femoral head (FH) and acetabulum (AC) are delineated by the dotted lines. The quadratus lumborum (QL)"
+ },
+ {
+  "ref": "CT scan soft tissue neck (sagittal view) showing soft palate thickening.",
+  "pred": "Computed tomography scan of the neck at the level of the laryngopharynx."
+ },
+ {
+  "ref": "Ultrasonographic image of the distended gallbladder with anaechoic content. The gallbladder wall appears thickened and irregular",
+  "pred": "Ultrasonography of the right shoulder at the level of the glenohumeral ligament showing a hypoechoic mass in the subscapularis muscle."
+ },
+ {
+  "ref": "Magnetic Resonance Imaging (MRI) of the hip revealed bony overgrowth of the lesser trochanter with early cystic formation and a fluid-fluid level, extensive bone marrow edema, extensive adjacent soft tissue edema and hip joint effusion with evidence of synovial thickening and enhancement post contrast administration.",
+  "pred": "Coronal T1-weighted magnetic resonance image of the right hip showing a subchondral cystic lesion in the femoral head."
+ },
+ {
+  "ref": "Acute interstitial edematous pancreatitis with acute peripancreatic fluid collections (APFC) in the left anterior pararenal space.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous administration of contrast medium."
+ },
+ {
+  "ref": "RD measurement.There is excessive intimal hyperplasia in the outflow vein causing the stenosis. By diameter reduction, this stenosis would be significant if compared with the left or right part of the vein. Nevertheless, the RD is 2.35 mm, so this stenosis was considered borderline, and soon, reevaluation (within 6\u20138 weeks) was indicated.",
+  "pred": "Longitudinal ultrasonography of the left femoral artery showing a thrombotic occlusion."
+ },
+ {
+  "ref": "Pantomographic radiograph of an 8-year-old girl.",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Axial view of CTPA revealing filling defects in the left lower lobe.CTPA: computed tomography pulmonary angiogram",
+  "pred": "Computed tomography angiography of the chest showing bilateral pulmonary embolism (arrows)."
+ },
+ {
+  "ref": "Computed tomography image (coronal view) showing a small lung abscess with air\u2013fluid level (arrow) in the upper lobe of the right lung. Also, note the periarticular abscess around the right shoulder joint (arrowhead) that resulted from septic arthritis.",
+  "pred": "Computed tomography scan of the chest with contrast showing a 1.2 cm soft tissue density mass in the right superior mediastinum (arrow)."
+ },
+ {
+  "ref": "Abdominal computed tomography indicated traumatic splenic injury and intra-abdominal hemorrhage. Contrast extravasation from the lower pole of the spleen was observed",
+  "pred": "Computed tomography of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "Case 2: A 55-year-old woman with MMBC presented with a hypoechoic mass (1.9 \u00d7 1.6 \u00d7 1.5cm) in the right breast. The mass presented with a non-circumscribed margin (white arrow).",
+  "pred": "Color Doppler ultrasound of the right breast showing a hypoechoic mass (arrow) with peripheral vascularity."
+ },
+ {
+  "ref": "Computed tomography axial view at the level of lumber spine, showed marked abdominopelvic ascites.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast demonstrating a large right-sided retroperitoneal hematoma."
+ },
+ {
+  "ref": "Oral contrast CT scan of the abdomen on postoperative day 8.Blue arrows point toward\u00a0the pancreatic cyst, which is markedly reduced in size.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "2D echocardiogram showing dilated right atrium (RA) with bowing of the interatrial septum to the left suggestive of increased RA pressure, severely dilated right ventricle with severely reduced systolic function.",
+  "pred": "Transthoracic echocardiography showing a large pericardial effusion."
+ },
+ {
+  "ref": "CT pelvis at admission demonstrating bilateral inguinal lymphadenopathy and subcutaneous fat stranding of lower abdominal wall.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast showing a 3.5-cm mass in the left inguinal region (arrow)."
+ },
+ {
+  "ref": "CT obtained on ED presentation, showing evidence of SBO with dilated loops of bowel (yellow arrows)SBO: small bowel obstruction",
+  "pred": "CT scan of the abdomen and pelvis (coronal view) showing small bowel intussusception (arrows)."
+ },
+ {
+  "ref": "Coronal T2-weighted MRI at the level of the optic chiasm as an imaging parameter of the anterior perforated substance. The imaginary line (the Optic Chiasm \u2013 Insular Recess line) is drawn, from the optic chiasm medially to the insular recess laterally, to identify the anterior perforated substance (yellow line). The Porto Alegre line (Red Line) is as ascendent line from the lateral end of the OC-IR line and represents the lateral limit of the lateral LSTa inside the central core. In cases which the medial border of insular tumor crosses this line medially there is a great probability of involvement of the LSTa by the tumor.",
+  "pred": "Coronal T2-weighted magnetic resonance imaging (MRI) scan of the patient\u2019s brain. The red arrow indicates the pituitary gland."
+ },
+ {
+  "ref": "Hanging chin sign: mandibular bone (A) projected over the first rib (B)",
+  "pred": "Preoperative chest X-ray showing the presence of a right-sided pneumothorax (A) and a left-sided pneumomediastinum (B)."
+ },
+ {
+  "ref": "CT-image showing the splenic metastasis to be removed (white arrow).",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast showing a 2.5-cm, well-defined, low-attenuation lesion in the tail of the pancreas"
+ },
+ {
+  "ref": "Thyroid ultrasound demonstrating heterogenous echotexture with diminished blood flow on color doppler",
+  "pred": "Color Doppler ultrasonography of the left thyroid lobe."
+ },
+ {
+  "ref": "T2 weighted sagittal MRI image showed involvement of retrocervical region as a site of DIE with some adhesions in the posterior cul-de-sac",
+  "pred": "Sagittal T2-weighted MRI scan of the pelvis showing a 3.5 \u00d7 2.5 cm mass in the left adnexa (circle)."
+ },
+ {
+  "ref": "Two years after the initial infection there is a significant remodelling of the femoral head.The yellow arrow the remodeling of the femoral head after two years. The patient has no symptoms and is able to bear weight.",
+  "pred": "Voiding cystourethrogram (VCUG) showing no evidence of bladder outlet obstruction."
+ },
+ {
+  "ref": "Intraoral periapical radiograph revealing a donut-like radiopacity (indicated by white arrow mark) in the periapical root region of the broken right maxillary central incisor tooth",
+  "pred": "Intraoral periapical radiograph"
+ },
+ {
+  "ref": "Initial CT chest without contrast findings.",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral patchy areas of ground-glass opacities."
+ },
+ {
+  "ref": "CT scan obtained after closed reduction and percutaneous pinning of a medial subtalar dislocation, which was unstable after reduction. Note the posterior process fracture extending into the subtalar joint. Large fragments such as these need to be fixed.",
+  "pred": "Postoperative computed tomography scan of the ankle."
+ },
+ {
+  "ref": "Intraoperative X-ray fluoroscopy.X-ray fluoroscopy revealed extravasation of intravenous contrast from the left common iliac to the ureter.",
+  "pred": "Angiography of the left common femoral artery showing a pseudoaneurysm (red arrow)."
+ },
+ {
+  "ref": "Patient 1: CT with contrast shows a large 11 \u00d7 7 cm left renal tumor with retroperitoneal infiltration, regional metastatic retroperitoneal adenopathy, and extension to renal vein and inferior vena cava. The patient also had innumerable solid circumscribed masses throughout the lung parenchyma bilaterally (not shown).",
+  "pred": "Computed tomography scan of the abdomen and pelvis showing a large retroperitoneal mass."
+ },
+ {
+  "ref": "Ultrasound scan of the kidneys, ureters, and bladder showed thickening and irregularity of the bladder wall.",
+  "pred": "Ultrasonography of the pelvis showing a large cystic lesion in the right adnexa."
+ },
+ {
+  "ref": "A plain chest radiograph of the study subject in anterioposterior view showing a near total re-expansion of the lung after chest tube drainage.",
+  "pred": "Preoperative chest X-ray showing no evidence of pneumomediastinum or pneumothorax."
+ },
+ {
+  "ref": "Contrast CT scan on the 17th day. The CT revealed gastric wall thickening.CT, computed tomography",
+  "pred": "Computed tomography (CT) scan of the chest showing pneumomediastinum and pneumoperitoneum."
+ },
+ {
+  "ref": "Sagittal T1-weighted post contrast MRI of penile nodules. Sagittal T1-weighted post contrast MRI of penile nodules displaying low signal intensity (arrows)",
+  "pred": "Sagittal T2-weighted MRI of the pelvis showing a 2.5 \u00d7 1.8 \u00d7 3.0 cm mass (arrows) in the left gluteal region"
+ },
+ {
+  "ref": "Chest radiography shows, on the right fields in the apical and basal areas, a non-specific area of reduced transparency. It also shows signs of interstitial engagement in the para-hilar position bilaterally.",
+  "pred": "Preoperative chest X-ray showing diffuse interstitial infiltrates in both lung fields."
+ },
+ {
+  "ref": "Avulsion fracture of the achilles tendon from the calcaneal tuberosity in a 63-year-old female.Uneventful healing of the fracture after internal fixation\u00a0with two lag screws (arrow).",
+  "pred": "Lateral radiograph of the ankle at 12 months postoperatively."
+ },
+ {
+  "ref": "Input image (malignant).",
+  "pred": "Mammography of the right breast."
+ },
+ {
+  "ref": "Petrous bone CT scan, coronal view.",
+  "pred": "Preoperative computed tomography scan of the temporal bone."
+ },
+ {
+  "ref": "Ocular ultrasound demonstrating optic nerve sheath diameter measurement (ONSD). The sheath appears as a less bright (hypoechoic) structure compared to the surrounding tissue.",
+  "pred": "B-scan of the left eye showing a 1.5\u2009\u00d7\u20091.0\u2009cm hypoechoic lesion in the posterior pole of the lens (arrow)."
+ },
+ {
+  "ref": "Well-aligned left reverse total shoulder arthroplasty with no evidence of implant failure or migration two years post-operatively.",
+  "pred": "Anteroposterior radiograph of the right shoulder at the time of revision total shoulder arthroplasty."
+ },
+ {
+  "ref": "Chest PET-CT findings of a 56-year-old female patient: axial PET-CT section through lung base1 cm diameter right middle lobe hypermetabolic nodule",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan of the chest."
+ },
+ {
+  "ref": "CT scan depicting divarication of recti",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast material."
+ },
+ {
+  "ref": "Chest radiography revealed increased soft tissue opacity over the mediastinum.",
+  "pred": "Preoperative chest X-ray showing a large pericardial effusion."
+ },
+ {
+  "ref": "Contrast-enhanced computer tomography (CECT) with coronal reformat shows a bulky anterior mediastinal mass (black asterisk) encasing and compressing the superior vena cava (white arrow), resulting in superior vena cava syndrome. The mass also deviates from the aortic arch (black arrow), and a moderate pleural effusion is also present (white asterisk).",
+  "pred": "Computed tomography (CT) scan of the chest with contrast. Coronal view. The arrow shows the mass in the superior mediastinum, and the asterisk shows the mediastinal"
+ },
+ {
+  "ref": "Transthoracic echocardiography showing a jet of mitral regurgitation (large arrow) which immediately collides with the annuloplasty ring (arrowhead), redirecting the jet at a right angle into the central LA (small arrows). LA, left atrium; LV, left ventricle",
+  "pred": "Transthoracic echocardiogram showing severe mitral regurgitation (arrow). LA, left atrium; LV, left ventricle."
+ },
+ {
+  "ref": "High\u2010resolution computed tomography image showing a typical example of pre\u2010existing interstitial lung disease (probable usual interstitial pneumonia pattern)",
+  "pred": "High-resolution computed tomography (HRCT) scan of the chest at the level of the bronchus intermedius in a patient with COVID-19 pneumonia showing ground-glass opacities and"
+ },
+ {
+  "ref": "Chest CT in a lung window. An axial section at the level of the lower lobes. Subpleural ground-glass opacities (arrows).",
+  "pred": "High-resolution computed tomography (HRCT) of the chest in a patient with COVID-19 pneumonia showing ground-glass opacities (arrows)."
+ },
+ {
+  "ref": "The UT (uterine) cavity was separated, and a small amount of fluid was seen in the uterine cavity at approximately 4\u2009mL.",
+  "pred": "Transvaginal ultrasonographic image of the uterine fibroid."
+ },
+ {
+  "ref": "T2 weighted image of the large ill-defined mass in situ as outlined by the yellow arrows, with the bladder displaced anteriorly noted by the red arrow. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)",
+  "pred": "Sagittal T2-weighted MRI scan of the pelvis."
+ },
+ {
+  "ref": "Preoperative magnetic resonance imaging: soft tissue seen in the nasal cavity on T1 weighted coronal section",
+  "pred": "Coronal T1-weighted MRI scan of the orbit."
+ },
+ {
+  "ref": "Chest CT. The arrows indicate areas of ground-glass opacities, summing up to 40% pulmonary damage. Day 23 of admission.",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral patchy ground-glass opacities (arrows)."
+ },
+ {
+  "ref": "Axial CT scan showing closure of fistula (black arrow).",
+  "pred": "Computed tomography (CT) scan of the chest showing pneumomediastinum (black arrow) and pneumothorax (white arrow)."
+ },
+ {
+  "ref": "Axial slice of CT Head following Cs-131 GammaTile\u00ae placement showing the dose distribution of 60Gy prescribed to a 5mm depth. Cs-131: Cesium-131",
+  "pred": "Axial view of the computed tomography (CT) scan of the brain."
+ },
+ {
+  "ref": "Contrast enhanced computed tomography showed hemothorax with bleeding from the right fourth posterior intercostal artery (arrow)",
+  "pred": "Computed tomography (CT) scan of the chest showing a large right-sided pleural effusion (white arrow) and a right-sided pneumothorax (black arrow)."
+ },
+ {
+  "ref": "Chest CT scan in the axial plane and lung window revealing extensive bilateral pleural effusions (red arrows) with adjacent areas of pulmonary compression atelectasis (blue arrows)",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pleural effusion (red arrows) and right pleural thickening (blue arrow)."
+ },
+ {
+  "ref": " Venogram showing complete occlusion of the left subclavian vein.",
+  "pred": "Fluoroscopic image of the right internal mammary artery anastomosis."
+ },
+ {
+  "ref": "CT of the abdomen and pelvis with contrast (coronal view).Showing multiple diverticula (yellow triangle) involving the jejunum.",
+  "pred": "CT scan of the abdomen and pelvis (coronal view) showing small bowel intussusception (arrows)."
+ },
+ {
+  "ref": "Color Doppler ultrasonography showed the parasternal well-delineated, circulating mass measuring 27 mm\u00d731 mm\u00d726 mm with a swirling flow within, and the track connecting the right internal thoracic artery with the false aneurysm.",
+  "pred": "Color Doppler ultrasonography showing the absence of blood flow in the aneurysm sac."
+ },
+ {
+  "ref": "Initial chest radiograph showing bilateral pulmonary infiltrates",
+  "pred": "Chest X-ray showing bilateral interstitial infiltrates."
+ },
+ {
+  "ref": "Preoperative anteroposterior X-rays of the patient showing the total hip replacement and the infected total knee replacement of her right leg",
+  "pred": "Anteroposterior radiograph of the right femur at 12 months postoperatively."
+ },
+ {
+  "ref": "CT of the abdomen and pelvis without contrast. Abdominal CT demonstrating gas in the renal collecting system, with the black arrow demonstrating gas in the ureter with hydroureter and the white arrow showing thickened bladder wall with perivesicular edema.",
+  "pred": "Coronal computed tomography scan of the abdomen and pelvis showing a 1.5 cm soft tissue mass (arrow) in the left lower pole of the kidney."
+ },
+ {
+  "ref": "CT scan axial view showing conforming military tuberculosis with numerous 1\u20133\u2009mm punctuate nodules.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the trachea."
+ },
+ {
+  "ref": "CT angiogram of right coronary artery with dense calcification of its mid portion.",
+  "pred": "Coronary CT angiography of the right coronary artery (RCA) at the level of the origin of the left anterior descending artery (LAD) and the left circumflex artery (LCX)."
+ },
+ {
+  "ref": "Ultrasound image of soleus in transversal section. In red: cross-sectional area (CSA).",
+  "pred": "Ultrasonography of the right breast showing a hypoechoic mass in the upper outer quadrant of the breast."
+ },
+ {
+  "ref": "Chest radiography indicates increased opacities in the right lower lung field with an air-fluid level.",
+  "pred": "Chest X-ray showing right pleural effusion."
+ },
+ {
+  "ref": "Preoperative computed tomography image demonstrates a mass-like lesion in the right heart.",
+  "pred": "Computed tomography scan of the chest showing a large mass in the right ventricle."
+ },
+ {
+  "ref": "CT scan showed wall thickness and stenosis of the distal CBD (arrow).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast material. The arrow indicates the gallbladder, and the arrowhead indicates the common bile duct."
+ },
+ {
+  "ref": "Color Doppler of the patent ductus arteriosus.Color Doppler of the patent ductus arteriosus showing predominantly flowing left to right shunt (only red flow), as seen in the parasternal short axis view marked by a deep blue arrow.",
+  "pred": "Transthoracic echocardiogram showing severe mitral regurgitation."
+ },
+ {
+  "ref": "CT scan of the abdomen and pelvis. Peripancreatic fat is infiltrated (arrows)\u00a0and there is a fluid surrounding the pancreas and along with the lesser sac consistent with acute pancreatitis.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "Follow-up radiograph at 12\u00a0months showing femoral head osteonecrosis",
+  "pred": "Anteroposterior radiograph of the pelvis at 12 months postoperatively."
+ },
+ {
+  "ref": "Acetabular frontal inclination and femoral stem position. Pelvic anteroposterior radiograph. The acetabular inclination corresponds to the orange angle between the acetabular piece contour (orange circle) and the transichiatic line (dotted yellow line). Additionally, note that the acetabular piece is aligned (green line) with the bottom of teardrop shadow (dotted black curve). The femoral stem should be placed in a neutral position (blue line). A slight valgus (red line) can be tolerated, but varus (yellow line) should not occur.",
+  "pred": "The acetabular index was measured as the ratio of the anteroposterior diameter of the acetabulum to the transverse diameter."
+ },
+ {
+  "ref": "Abdominal computed tomography shows acute hepatitis with mild hepatosplenomegaly.",
+  "pred": "Computed tomography scan of the abdomen and pelvis showing no evidence of metastatic disease."
+ },
+ {
+  "ref": "Normal axial T1-weighted MRI of the cerebellum.",
+  "pred": "Axial T1-weighted magnetic resonance imaging (MRI) scan of the patient."
+ },
+ {
+  "ref": "CECT of the neck. CECT of the neck shows a well-defined lobulated mass with irregular margins and cystic areas measuring 3.5*3.5*5cm in the right submandibular region extending up to the midline (shown in pink arrow). Also non-visualized thyroid parenchyma suggestive of congenital hypoplastic thyroid (shown in red arrow).CECT - contrast-enhanced computed tomography",
+  "pred": "Computed tomography (CT) scan of the neck. The red arrow indicates the presence of air in the subglottic region, and the blue arrow indicates a small amount of fluid in the"
+ },
+ {
+  "ref": "Regional CT values of the lumbar spine were measured by the nine-zone method.",
+  "pred": "Axial CT scan of the lumbar spine at the level of the L3 vertebral body."
+ },
+ {
+  "ref": "Transvaginal ultrasonography examination at 7+1 GW. *\u2014intrauterine gestational sac; \u2020\u2014RGT; CSP\u2014cesarean scar pregnancy; GW\u2014gestational weeks; RGT\u2014remnant gestational tissue.",
+  "pred": "Transvaginal color Doppler ultrasound image of a 36-year-old woman with a uterine fibroid (asterisk)."
+ },
+ {
+  "ref": "Sagittal CT scan demonstrating paravertebral spread of LA-dye mixture at T4-T5 (Right exit foramen)",
+  "pred": "Computed tomography (CT) scan of the thoracic spine."
+ },
+ {
+  "ref": "Axial plane CT showing infiltration around the mesh.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous administration of contrast medium."
+ },
+ {
+  "ref": "Proximal LAD stenosis involving bifurcation with first diagonal branch (Medina-1, 1, 0) with FFR of 0.64. Given the patient\u2019s young age and suitable target lesion characteristics, it was felt an Absorb BVS was preferred over a permanent metallic implant",
+  "pred": "Coronary angiography in the right anterior oblique caudal view showing a thrombotic occlusion of the left main coronary artery."
+ },
+ {
+  "ref": "The CT angiography confirmed a significant occlusion in the right internal carotid artery and progressive sharpening of the lumen with an intimal flap due to a carotid dissection",
+  "pred": "Post embolization angiogram showing complete occlusion of the pseudoaneurysm."
+ },
+ {
+  "ref": "Alternate axial view of CT chest with compression of left atrium by a giant hiatal hernia.LA: left atrium; HH: hiatal hernia",
+  "pred": "Computed tomography scan of the chest at the level of the aortic arch."
+ },
+ {
+  "ref": "TOE showing the ostium secundum ASD.",
+  "pred": "Preoperative transesophageal echocardiography (TEE) showing a large vegetation on the anterior leaflet of the mitral valve."
+ },
+ {
+  "ref": "X-ray of the head of the patient at admission.",
+  "pred": "Lateral skull radiograph of the patient."
+ },
+ {
+  "ref": "Coronal T1 postcontrast MRI demonstrates an enlarged and rounded appearance of the cavernous sinus with heterogeneous enhancement, consistent with cavernous sinus thrombosis.",
+  "pred": "Gadolinium-enhanced T1-weighted magnetic resonance imaging (MRI) scan of the pituitary tumor."
+ },
+ {
+  "ref": "CT of the chest revealing mediastinal lymphadenopathy.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the aortic arch showing a 2.5\u2009cm soft tissue mass in the left atrium (arrows)."
+ },
+ {
+  "ref": "CT representation of the prelacrimal recess shown bounded by the anterior and medial walls of the maxillary sinus, nasolacrimal duct, and infraorbital nerve. The medial boundary defined as the bone between the pyriform aperture and nasolacrimal duct can be instrumented to provide surgical access to the anterior and inferior walls of the maxillary sinus.",
+  "pred": "Axial computed tomography scan of the paranasal sinuses showing an expansile opacification of the left maxillary sinus (arrow)."
+ },
+ {
+  "ref": " Echocardiography parasternal short-axis view at the aortic valve level with color flow doppler showing turbulent flow of PDA (yellow mosaic signals) with left to right shunting.AO: aorta; MPA:main pulmonary artery; PDA: patent ductus arteriosus\u00a0",
+  "pred": "Transesophageal echocardiogram with color Doppler showing severe mitral regurgitation."
+ },
+ {
+  "ref": "Plain film radiograph of the patient. Anteroposterior plain-film radiograph of the patient performed prior to his initial presentation. Significant sacroiliitis is seen with sclerosis and partial ankylosis of the sacroiliac joints demonstrated bilaterally.",
+  "pred": "Preoperative X-ray of the lumbar spine."
+ },
+ {
+  "ref": "Echocardiogram showing globally enlarged ventricles with an apical thrombus in the left ventricle (blue arrowhead)",
+  "pred": "Transthoracic echocardiogram (TTE) showing pericardial effusion (arrow)."
+ },
+ {
+  "ref": "T1 coronal MRI left knee.Red arrow points toward the evidence of ligament damage.MRI: magnetic resonance imaging",
+  "pred": "Coronal T2-weighted MRI scan of the right knee demonstrating a subchondral cyst in the medial femoral condyle (arrow)."
+ },
+ {
+  "ref": "Axial CT of C2 vertebra. Yellow arrows show the cortical borders which have been thinned out.",
+  "pred": "Computed tomography (CT) scan of the cervical spine at the level of the C5 vertebral body showing an expansile lytic lesion (arrows)."
+ },
+ {
+  "ref": "CT scan showing bone loss at the left implant site one month prior to extrusion on November 23, 2013",
+  "pred": "Computed tomography (CT) scan of the temporal bone showing a lytic lesion in the left temporal bone (red arrow)."
+ },
+ {
+  "ref": "T2-weighted MRI of the brain without contrast taken on day of life 14, showing bilateral outpouchings of the posterior contours of the globes consistent with posterior colobomas",
+  "pred": "Axial T2-weighted MRI scan of the patient\u2019s brain showing a hyperintense lesion in the left cerebellar hemisphere."
+ },
+ {
+  "ref": "Digital imaging of lung nodules.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the right upper lobe."
+ },
+ {
+  "ref": "Post-TAVI aorta-gram showing mild aortic regurgitation (AR).",
+  "pred": "Fluoroscopic image of the aortic arch demonstrating the position of the stent in the descending aorta."
+ },
+ {
+  "ref": "Choline PET/TC after 9 months of MA treatment (January 2020) reveals an important uptake reduction in bone metastases and a metabolic CR in mediastinal nodal metastases.",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan of the thorax showing increased FDG uptake in"
+ },
+ {
+  "ref": "An erect X-ray chest showing no gas under right dome of diaphragm.",
+  "pred": "Chest X-ray showing no evidence of pneumomediastinum or pneumothorax."
+ },
+ {
+  "ref": "Sonar-guided image showing median nerve (red arrow)",
+  "pred": "Ultrasonography of the right breast showing a hypoechoic mass (red arrow) in the upper outer quadrant of the breast."
+ },
+ {
+  "ref": "Computed tomography scan of the abdomen in the axial plane showing a gallbladder fossa collection (green marks), retroperitoneal, perihepatic, and perisplenic haematomas (yellow stars).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast showing diffuse hepatomegaly (red arrows) and ascites (blue arrows)."
+ },
+ {
+  "ref": "Follow-up MRI after minimal invasive PAO with anteversion of the acetabulum showing normal anatomy of the right psoas tendon (yellow arrow) and intraarticular position of the left iliopsoas tendon (red arrow).",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the pelvis. The red arrow indicates the right gluteus maximus muscle, the yellow arrow shows the right sciatic nerve"
+ },
+ {
+  "ref": "Antero-posterior chest radiography showing a diffuse interstitial and alveolar infiltrate.",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates."
+ },
+ {
+  "ref": "(i). Post-endoscopy single contrast esophagram. Frontal view using thin barium, demonstrating extraluminal contrast with esophageal deviation to the right",
+  "pred": "Barium esophagogram showing a 1.5-cm filling defect in the distal esophagus."
+ },
+ {
+  "ref": "Chest x-ray showing bilateral infiltrates",
+  "pred": "Chest X-ray on admission to the intensive care unit."
+ },
+ {
+  "ref": "Contrast-enhanced CT images at 18 months after second surgery: lump in lower lobe of the right lung.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the bronchus intermedius in a 10-year-old boy with cystic fibrosis. The CT scan shows a"
+ },
+ {
+  "ref": "Contrast-enhanced computed tomography scan images revealed a tumor that had spread bilaterally from the sphenoid sinus to the ethmoid sinus and showed multiple honeycomb-like low-density areas and suggested skull base infiltration",
+  "pred": "Computed tomography (CT) scan of the head with contrast showing a large enhancing soft tissue mass in the right cavernous sinus extending into the superior sagittal sinus."
+ },
+ {
+  "ref": "Three-phasic CT scan in the arterial phase of a 45-year-old male, who was a known case of PSC, presented with jaundice.The heterogeneous mass lesion in the medial segment of LT lobe of the liver was associated with capsule retraction and delayed enhancement, indicating\u00a0cholangiocarcinoma.PSC:\u00a0primary sclerosing cholangitis; LT: left",
+  "pred": "Contrast-enhanced computed tomography scan of the abdomen and pelvis showing a 4.5 \u00d7 3.5 cm mass in the right lobe of the liver (arrow)."
+ },
+ {
+  "ref": "(A) Mild left cerebellar atrophy. (B) Left cerebellar curvilinear densities suggesting left cerebellar pial calcifications.",
+  "pred": "Computed tomography (CT) scan of the head with contrast showing left temporal lobe hypodensities (arrows)."
+ },
+ {
+  "ref": "CT showing a mass in the left spermatic cord (arrow)",
+  "pred": "Coronal computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast demonstrating a 1.5-cm soft tissue mass in the left inguinal region (arrow)."
+ },
+ {
+  "ref": "Preoperative computed tomography. All organs, including the cardiovascular system, are mirrored compared to their normal localization",
+  "pred": "Coronal computed tomography scan of the chest."
+ },
+ {
+  "ref": "Abdominal CT scan showing intramural gas in the small intestine and portal gas",
+  "pred": "Coronal computed tomography scan of the abdomen and pelvis with intravenous contrast showing small bowel intussusception."
+ },
+ {
+  "ref": "Parasternal long-axis view showing asymmetrical septal hypertrophy with maximum thickness of 22 mm at basal anterior septum. Ao: aorta, LA: left atrium, LV: left ventricle.",
+  "pred": "Transthoracic echocardiography showing a large pericardial effusion. LA: left atrium, LV: left ventricle, Ao: aorta."
+ },
+ {
+  "ref": "MRI of thigh T1 sequence, red arrows demonstrating diffuse subcutaneous and myofascial edema without focal abscess or necrosis.",
+  "pred": "Axial T2-weighted MRI scan of the left thigh. The arrows indicate areas of high signal intensity in the subcutaneous tissue."
+ },
+ {
+  "ref": "- Computed temography scan of the abdomen shows bilateral renal atrophy and splenomegaly (blue arrows).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast material."
+ },
+ {
+  "ref": "giant bladder stone in plain radiography",
+  "pred": "Abdominal X-ray showing no evidence of bowel obstruction."
+ },
+ {
+  "ref": "A 28-year-old male patient with a hydatid cyst resulting from contact with an animal. Contrast-enhanced CT of the chest, showing a lobulated lesion consistent with a hydatid cyst (arrow) in the anterior part of the esophagus.",
+  "pred": "Contrast-enhanced computed tomography scan of the chest at the level of the aortic arch showing a 2.5-cm cystic lesion in the left atrium (arrow)."
+ },
+ {
+  "ref": "Initial periapical radiograph",
+  "pred": "Intraoral periapical radiograph"
+ },
+ {
+  "ref": "CT scan showing evidence of pneumopericardium consequent to the traumatic rupture of the right bronchial anastomotic line during attempted mechanical dilatation",
+  "pred": "Computed tomography (CT) scan of the chest showing pneumomediastinum, pneumothorax, and subcutaneous emphysema."
+ },
+ {
+  "ref": "Neck computed tomography image. A diffuse wall thickening and intraluminal irregularity are noted in the proximal trachea (arrowhead).",
+  "pred": "Computed tomography (CT) scan of the neck at the level of the carotid bifurcation showing a 1.5 cm soft tissue mass (arrow) in the right carot"
+ },
+ {
+  "ref": "Chest computed tomography. Nuanced peripheral ground-glass opacities (arrow) compatible with very mild COVID-19 pneumonia.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the upper lobes showing a 1.5-cm nodule in the right upper lobe (arrow)."
+ },
+ {
+  "ref": "Radiographic method of WL determination",
+  "pred": "Intraoral periapical radiograph."
+ },
+ {
+  "ref": "Cardiac CT examination from a year prior demonstrating a normal non-contrast appearance of the kidneys and retroperitoneum.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "CT Showing Pulmonary Haemorrhage",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the right main bronchus showing patchy areas of consolidation and ground-glass opacities in the right lower lobe"
+ },
+ {
+  "ref": "Marked overdistension of loops with contralateral dislocation of heart and middle-inferior mediastinum.",
+  "pred": "Computed tomography (CT) scan of the chest showing a large pericardial effusion (red arrow)."
+ },
+ {
+  "ref": "Angiogram using a guide catheter showing the filling defect at the left main coronary artery and the left anterior descending coronary artery.",
+  "pred": "Coronary angiogram showing severe stenosis in the proximal left anterior descending artery."
+ },
+ {
+  "ref": "TVS evaluation of low-lying placenta. cervical length of 2.17 cm (1); IOD of 1.28 cm (2); placental edge thickness of 0.681 cm (3) shown by the red arrow; the angle between the basal and chorionic plates is identified by the yellow dotted lines. IOD, internal os distance; TVS, transvaginal sonography.",
+  "pred": "Transvaginal ultrasonography of the uterine cavity at 12\u00a0weeks of gestation."
+ },
+ {
+  "ref": "A shoulder dislocation with a concomitant greater tuberosity fracture.",
+  "pred": "Anteroposterior radiograph of the left shoulder demonstrating a fracture of the greater tuberosity of the humerus."
+ },
+ {
+  "ref": "Left pterygopalatine fossa puncture mid-diameter design: puncture depth was 7.39\u00a0cm, and puncture angle (angle between puncture direction and sagittal plane) wss 48.82\u00b0",
+  "pred": "Axial computed tomography scan of the maxillary sinus showing a 1.5 \u00d7 2.0 \u00d7 3.0 cm multilocular radiolucency in the right maxillary"
+ },
+ {
+  "ref": "Computerized tomography scan of the thorax with contrast.Showing bilateral retro-areolar fatty lesions consistent with gynecomastia.",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pleural effusion (arrows)."
+ },
+ {
+  "ref": "Sagittal CTPA slice demonstrating pneumomediastinum. CTPA:\u00a0computed tomography pulmonary angiogram",
+  "pred": "Computed tomography scan of the chest showing pneumomediastinum and subcutaneous emphysema."
+ },
+ {
+  "ref": "Computed tomography pulmonary angiogram (CTPA) with gastric varices (blue arrows).",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast material. The CT scan showed diffuse enlargement of the pancreas (arrows)."
+ },
+ {
+  "ref": "Chest X-ray of third patient showing resolution of pneumomediastinum.",
+  "pred": "Preoperative chest X-ray showing bilateral pleural effusion."
+ },
+ {
+  "ref": " The needle inside the left axillary vein.",
+  "pred": "Ultrasound image of the thyroid gland showing a hypoechoic nodule in the right lobe."
+ },
+ {
+  "ref": "Trans-esophageal echocardiogram showing spontaneous echo contrast in left atrial and LAA clot Type IA.",
+  "pred": "Transesophageal echocardiogram (TEE) showing vegetation attached to the anterior leaflet of the mitral valve."
+ },
+ {
+  "ref": "MRI brain showing microangiopathic changes",
+  "pred": "T2-weighted brain magnetic resonance imaging (MRI) scan showing no evidence of intracranial hemorrhage or infarction."
+ },
+ {
+  "ref": "Ultrasound of left testicle: heterogeneous, dysmorphic left testicle with multiple large areas of internal hypoechogenicity, and a disruption of the capsule. Hypervascularity and edema within the epididymis.",
+  "pred": "Ultrasonography of the right testicle showing a hypoechoic mass with a diameter of 2.5 cm."
+ },
+ {
+  "ref": "T2-WI imaging, coronal view. The arrow shows the identified lesion",
+  "pred": "Coronal T2-weighted MR image showing a hyperintense lesion in the left frontal lobe."
+ },
+ {
+  "ref": "Muscle thickness measurements diagrams of Group A at point 2 external oblique muscle (EO), internal oblique muscle (IO), and transverse abdominis (TrA).",
+  "pred": "Longitudinal ultrasonography of the right breast showing a hypoechoic mass in the upper outer quadrant of the breast."
+ },
+ {
+  "ref": "Axial CBCT image shows the reconstruction planes for the different reformatting projections: (a) Cochlear view reformat parallel to the basal turn of the cochlea, (b) Mid-modiolar view reformat perpendicular to the cochlear view plane",
+  "pred": "Axial CT scan of the temporal bone showing the measurement of the length of the external auditory canal (EAC) (A) and the width of the EAC (B)."
+ },
+ {
+  "ref": "Changes found in the knee joint on T1-weighted sequence in a 43-year-old woman: geographical demarcation of bone infarction in the femur and tibia (orange arrows).",
+  "pred": "Coronal T2-weighted magnetic resonance image of the right knee. The arrows point to areas of bone marrow edema in the distal femur and proximal tibia."
+ },
+ {
+  "ref": " Microcystic serous cystadenoma of the body of the pancreas.",
+  "pred": "Transvaginal ultrasonography showing a hypoechoic mass in the left adnexal region."
+ },
+ {
+  "ref": "Day five postoperative CXR with resolved pneumoperitoneum.CXR, chest X-ray",
+  "pred": "Chest X-ray showing pneumomediastinum and subcutaneous emphysema."
+ },
+ {
+  "ref": "Contrast-enhanced CT scan findings after two courses of FOLFOXIRI. Enhanced CT shows an entero-cutaneous fistula due to tumor penetration of the abdominal wall",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis showing a large retroperitoneal mass."
+ },
+ {
+  "ref": " Endoscopic ultrasound view of a malignant peritumor lymph node. It is hypoechoic, round, and greater than 1 cm in size and has distinct borders.",
+  "pred": "Endoscopic ultrasonography showing a hypoechoic mass in the gastric antrum."
+ },
+ {
+  "ref": "Cardiac magnetic resonance imaging of the patient was conducted on hospital day 4. Focal nodular late gadolinium enhancements in the mid-base septum (left arrow) and apex lateral wall (right arrow) are shown.",
+  "pred": "Cardiac magnetic resonance imaging (T2-weighted image) showing pericardial effusion (red arrows)."
+ },
+ {
+  "ref": "Follow up axial T1-weighted fat-saturated gadolinium-enhanced MR image showing regression of the mural and perivascular thickening previously seen in the celiac artery and its branches with the restoration of the lumen suggesting improvement of the underlying inflammatory process.",
+  "pred": "Abdominal computed tomography (CT) scan showing a 2.5-cm mass in the tail of the pancreas."
+ },
+ {
+  "ref": "Transesophageal echocardiogram with a mid-position view showing severe mitral regurgitation (red arrow) going through the necrotic core of the vegetation",
+  "pred": "Transesophageal echocardiogram showing severe mitral regurgitation."
+ },
+ {
+  "ref": "Cross-sectional CT showing pericardial mass measuring 110.5 x 70.6 mm. Pleural plaques are present on the inferior aspect of the left lung.",
+  "pred": "Computed tomography (CT) scan of the chest showing a large pericardial effusion."
+ },
+ {
+  "ref": "Axial CT without contrast. Three cm cystic lesion in the posterior fossa, centered in the left medial cerebellar hemisphere with mass effect on the fourth ventricle and surrounding edema (blue arrow)",
+  "pred": "Computed tomography (CT) scan of the head showing left cerebellar subarachnoid hemorrhage (arrow)."
+ },
+ {
+  "ref": "HRCT thorax suggestive of consolidation with air bronchogram and a cavity showing air crescent sign in the left upper lobe. Multiple areas of ground glass opacities were present in bilateral lung fields with a CT-severity score of 10/25 and CORADS 6.",
+  "pred": "Computed tomography (CT) scan of the chest showing consolidation and ground-glass opacities in the left upper lobe."
+ },
+ {
+  "ref": "Measurement of sonographic depth of invasion (yellow line).",
+  "pred": "Ultrasonographic measurement of the thickness of the subcutaneous tissue (SCT) at the level of the umbilicus."
+ },
+ {
+  "ref": "Measurement of peri-implant bone loss: (A) after implant placement, (B) after 1 month, and (C) after 4 months.",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Computed tomography angiography (axial view) more clearly demonstrated that part of the coil was extruded into the junction of the main and right pulmonary arteries. A anterior; AsAo ascending aorta; C coil; DsAo descending aorta; L left; LPA left pulmonary artery; MPA main pulmonary artery; P posterior; R right; RPA right pulmonary artery; RV right ventricle; SVC superior vena cava; V vertebra",
+  "pred": "Axial view of the right atrium (RA), right ventricle (RV), pulmonary artery (PA), and aorta (Ao)."
+ },
+ {
+  "ref": "1-month post-operative anteroposterior image demonstrating maturation of arthrodesis.",
+  "pred": "Plain radiograph of the right wrist showing multiple lytic lesions in the metaphyseal region of the radius and ulna."
+ },
+ {
+  "ref": "Brain MRI showing periventricular and subcortical hyperintense FLAIR lesions (arrows)MRI: magnetic resonance imaging;\u00a0FLAIR:\u00a0fluid-attenuated inversion recovery",
+  "pred": "Brain magnetic resonance imaging (T2-weighted image) showing hyperintensity in the periventricular white matter (arrows)."
+ },
+ {
+  "ref": "Non-contrasted paranasal sinuses CT scan, coronal view for case 3.It shows bilateral inferior turbinate pneumatization of the bulbous type with communication to the inferior meatus.",
+  "pred": "Preoperative computed tomography (CT) scan of the paranasal sinuses."
+ },
+ {
+  "ref": "Female patient, 45 years old, 1-week case history of a thyroid nodule, pathology confirmed as a hyperplastic nodule with HT. TG-Ab = 115 kU/L, TPO-Ab< 28 kU/L, UGSR = 22.96/73.95 = 0.3105 (medical center B).",
+  "pred": "Ultrasound image of the thyroid gland showing a hypoechoic nodule in the left lobe."
+ },
+ {
+  "ref": "CT with contrast (transverse image) with right-sided iliopsoas bursitis.CT:\u00a0computed tomography.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast showing a 3.5-cm soft tissue mass in the right iliac fossa (arrow)."
+ },
+ {
+  "ref": "CT of the chest identifying scattered patchy ground-glass opacities in the posterior portion of the right middle lobe",
+  "pred": "Computed tomography angiography of the chest showing bilateral pulmonary embolism."
+ },
+ {
+  "ref": "Abdominal CT showing an adenoma of the left adrenal gland (* marking the adenoma) - axial plan.",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous administration of contrast medium."
+ },
+ {
+  "ref": "Venogram of the Coiling of the Venous Collateral",
+  "pred": "Coronary angiogram showing a pseudoaneurysm (red arrow) arising from the right coronary artery (blue arrow)."
+ },
+ {
+  "ref": "Ultrasound appearance of gallbladder volvulus",
+  "pred": "Abdominal ultrasonography shows a large cystic lesion in the right lobe of the liver."
+ },
+ {
+  "ref": "CT scan showing a polycystic retroanal mass containing calcifications.",
+  "pred": "Computed tomography scan of the abdomen and pelvis showing no evidence of metastatic disease."
+ },
+ {
+  "ref": "Chest X-ray day 10 of admission revealing extensive bilateral infiltrates with pneumomediastinum and subcutaneous emphysema.",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates and ground-glass opacities."
+ },
+ {
+  "ref": "Preoperative contrast enhanced CT study image. Displacement of superior mesenteric artery (SMA) and superior mesenteric vein (SMV) anteriorly to stomach.",
+  "pred": "Abdominal computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "Preoperative mediolateral radiographs of a canine stifle with CCLR to illustrate AMA-based CCWO planning. AA, anatomic axis; MA, mechanical axis; AMA angle, angle between the AA and the MA. The angle EBF and the angle of rotation angulation between the AA and the MA corresponded to the planned cranial wedge osteotomy (CWO) angle (ABC angle) for reducing the tibial plateau angle (TPA). The distal osteotomy line of the CWO (CD) was perpendicular to the AA, and the proximal line (AB) was perpendicular to the BF. B is located at the caudal insertion of the medial collateral ligament. AC defines the cranial cortical length of the wedge",
+  "pred": "Anteroposterior radiograph of the right femur at the level of the proximal femoral diaphysis. The femoral neck angle (FNA) is measured as the angle between"
+ },
+ {
+  "ref": "Upright chest X-ray indicates no evidence of pneumoperitoneum but the distended stomach is obvious along with an elevation of the left hemi-diaphragm.",
+  "pred": "Chest X-ray showing no evidence of pneumomediastinum or pneumothorax."
+ },
+ {
+  "ref": "After the second admission, the preoperative chest radiograph showed nodular space in the right lung",
+  "pred": "Chest X-ray showing a mass in the right upper lobe"
+ },
+ {
+  "ref": "A 54-year-old man with chronic systolic heart failure. Transthoracic echocardiography showed a thrombus in the left ventricle (arrow).",
+  "pred": "Transthoracic echocardiogram showing a large pericardial effusion (red arrow).RA, right atrium; RV, right ventricle."
+ },
+ {
+  "ref": "RCA (LAO projection)RCA: right coronary artery",
+  "pred": "Coronary angiography of the right coronary artery in the right anterior oblique caudal view."
+ },
+ {
+  "ref": "X-ray on day 3 post-fracture.",
+  "pred": "Anteroposterior radiograph of the right foot."
+ },
+ {
+  "ref": " Endoscopic ultrasound-guided fine needle aspiration is performed with a 19-gauge needle.",
+  "pred": "Endoscopic ultrasound-guided fine needle aspiration of the mass."
+ },
+ {
+  "ref": "Computed tomography of the lesion in an axial cut, evidencing the mushroom-like shape attached to the alveolar process of the mandible and the radiographic characteristics of a normal bone, with central areal similar to medullary bone, surrounded by thin cortical bone",
+  "pred": "Computed tomography scan of the mandible showing an expansile lytic lesion in the body and ramus of mandible."
+ },
+ {
+  "ref": "Example of MRI Sugaya type V of a non-enrolled patient",
+  "pred": "Coronal T2-weighted MRI scan of the right shoulder. The red arrow indicates the tear of the supraspinatus tendon."
+ },
+ {
+  "ref": "Computed tomography angiography of the abdomen.Note the reduced enhancement of the lower pole of the left kidney and a filling defect of the left renal artery (thin arrow). Also seen are perinephric fat stranding (thick arrow), patent left superior renal artery, and normal left upper renal pole enhancement.",
+  "pred": "Coronal CT scan of the abdomen and pelvis with IV contrast demonstrating a large retroperitoneal hematoma."
+ },
+ {
+  "ref": "Retroperitoneal lymphocele.",
+  "pred": "Computed tomography scan of the abdomen and pelvis."
+ },
+ {
+  "ref": "Axial CT scan view showing scattered ground glass in both lung fields, with 50% lung involvement (red arrows)",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral patchy ground-glass opacities (arrows)"
+ },
+ {
+  "ref": "Late gadolinium enhancement during cardiac magnetic resonance in March 2021. Late gadolinium enhancement imaging two-chamber view (acquired 10 min after intravenous injection of 0.2 mmol/kg gadolinium-based contrast agent using a phase-sensitive inversion-recovery gradient-echo sequence) showed faint mid-wall type of hyperenhancement in the basal inferior wall segment. Cardiac magnetic resonance T2 mapping (T2-prepared steady-state free precession) basal short-axis view (A) showed significantly increased T2 values in the basal segments (up to 65\u2005ms in the basal inferolateral segments and 59\u2005ms in the basal anteroseptum) compared with the mid-segments (which were normal, having all T2 values <45\u2005ms). Corresponding native T1 mapping (MOdified Look-Locker Inversion Recovery) basal short-axis view (B) showed T1 values significantly increased in the basal segments (up to 1470\u2005ms in the basal inferior) compared with the mid-segments (which were normal, having all native T1 values <1300\u2005ms). All cardiac magnetic resonance scans performed for this case used a 3\u2005T scanner (MAGNETOM Skyra, Siemens Healthcare) and images were analysed with reference to expert consensus reported in the Journal of Cardiovascular Magnetic Resonance.11",
+  "pred": "Cardiac magnetic resonance (CMR) T1-weighted image of the left ventricle at the end of diastole showing a large pericardial effusion."
+ },
+ {
+  "ref": "Preoperative axial cross-sectional T2 magnetic resonance imaging of the L4-L5 level. The facet cyst is visible on the left facet joint.",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the lumbar spine."
+ },
+ {
+  "ref": "76-year-old female with erosive arthritis. Severe osteoarthritis of most of the distal and proximal interphalangeal joints with central erosions and seagull appearance.",
+  "pred": "Plain radiograph of the left hand showing osteophytes in the distal phalanx of the 4th and 5th metacarpals."
+ },
+ {
+  "ref": "Upright abdominal X-ray showing mildly dilated small bowel loops",
+  "pred": "Intravenous urography (IVU) at the age of 10\u00a0years showing bilateral hydronephrosis."
+ },
+ {
+  "ref": "Chest radiograph shows a new left mid-lung consolidation (white arrow), right-sided pleural effusion (arrow), and left lower lobe pulmonary artery CardioMEMS device (arrowhead).",
+  "pred": "Chest X-ray showing right-sided pleural effusion (black arrow) and pneumomediastinum (white arrow)."
+ },
+ {
+  "ref": "CTA of extravasation of blood and LVFWR with pericardial effusion",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pleural effusion."
+ },
+ {
+  "ref": "Initial chest CT on admission demonstrating multifocal pneumonia, healing fractures of the left fifth and sixth ribs, and a large fluid collection covering approximately half of the left hemithorax with concern for empyema.",
+  "pred": "Computed tomography (CT) scan of the chest showing a large pleural effusion on the left side."
+ },
+ {
+  "ref": "Coronal contrasted enhanced CT scan with enteric contrast demonstrating a radio-opaque gastric band (denoted by the yellow arrow) illustrating the en face the \u201cO\u201d sign with the gastric band in a round or oval shape on coronal view.",
+  "pred": "Coronal view of CT abdomen and pelvis with IV contrast."
+ },
+ {
+  "ref": "Coronal T1W TSE MR image of the wrist; m. flexor carpi radialis tendon (arrowhead), m. flexor carpi radialis brevis tendon (arrow), radius (RAD), os metacarpale (MC).",
+  "pred": "Coronal T2-weighted magnetic resonance imaging scan of the right wrist. The white arrow indicates the distal fragment of the ulnar styloid fracture. The black arrows indicate the proximal fragment of"
+ },
+ {
+  "ref": "Gastric antrum filled with fluid; A: anteroposterior dimension; Ao: aorta; B: craniocaudal dimension.",
+  "pred": "Transabdominal ultrasonography of the right upper quadrant of the abdomen in a 25-year-old woman with acute cholecystitis. The arrow indicates the gallbladder wall thickening"
+ },
+ {
+  "ref": "Fluoroscopic image of guidewire crossing the obstructing tumor.",
+  "pred": "Lateral view of the chest showing the tip of the catheter in the superior vena cava."
+ },
+ {
+  "ref": "re-operative radiograph",
+  "pred": "Intraoral periapical radiograph"
+ },
+ {
+  "ref": "Ultrasound-guided fine-needle aspiration of the left supraclavicular lymph node.",
+  "pred": "Ultrasound-guided needle puncture of the right gluteus maximus muscle using a 22-gauge needle."
+ },
+ {
+  "ref": "Six weeks surveillance CT scan, post two cycles of VCAP chemotherapy, showing marked interval improvement in size of left upper lobe mass. VCAP, velcade, cyclophosphamide, doxorubicin and prednisolone.",
+  "pred": "Computed tomography (CT) scan of the chest at the level of the diaphragm."
+ },
+ {
+  "ref": "Basal choline PET/TC at the beginning of MA treatment reveals appearance of new bone metastases.",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography/computed tomography (FDG-PET/CT) scan of the thorax showing increased FDG uptake in"
+ },
+ {
+  "ref": "Ventrodorsal radiograph of the dog 2 years after cemented total hip replacement (left hip); radiopaque cement mantle surrounding the femoral and acetabular component is visible.",
+  "pred": "Plain radiograph of the pelvis showing a fracture of the right acetabulum."
+ },
+ {
+  "ref": "CT scan in horizontal view showing the synostosis of the left side.",
+  "pred": "Preoperative computed tomography scan of the right knee."
+ },
+ {
+  "ref": "Coronal view showing the absent olfactory tract.",
+  "pred": "Coronal T2-weighted MRI scan."
+ },
+ {
+  "ref": "Preoperative MRI (T2 sequence) showing the osteoarthritis of the proximal tibiofibular joint",
+  "pred": "Coronal T2-weighted MRI scan of the right knee demonstrating a large soft tissue mass (arrow) arising from the medial femoral condyle and extending into the intercondylar notch."
+ },
+ {
+  "ref": "Test diagram.",
+  "pred": "Abdominal ultrasonography showing a well-defined hypoechoic mass in the left upper quadrant of the abdomen."
+ },
+ {
+  "ref": "Coronal cut of the T2-weighted magnetic resonance imaging showed a well-defined hyperintense mass at the suprasellar area compressing the adjacent brain structure (red arrow).",
+  "pred": "Coronal T2-weighted magnetic resonance imaging (MRI) scan of the brain showing a cystic lesion in the left frontal lobe (red arrow)."
+ },
+ {
+  "ref": "\u202f",
+  "pred": "Abdominal X-ray showing no evidence of bowel obstruction."
+ },
+ {
+  "ref": "Right parasternal view showing the anomalous venous drainage of the right upper pulmonary vein (RUPV) into the right superior vena cava (SVC). RA, right atrium.",
+  "pred": "Color Doppler ultrasound image of the right atrium (RA), right ventricle (RV) and pulmonary artery (PA)."
+ },
+ {
+  "ref": "CT scan of abdomen and pelvis revealed focal dilation of mid-jejunal small bowel with inflammatory changes in the mesenteric fat and a jejunal diverticulum.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast demonstrating a 3.5 cm mass in the ascending colon (red arrow)."
+ },
+ {
+  "ref": "ADC map brain showing bilateral thalamic infarcts, right thalamus is more involved left",
+  "pred": "Diffusion-weighted magnetic resonance imaging (DWI) scan of the brain at the level of the thalamus."
+ },
+ {
+  "ref": "Echocardiogram: thickening and calcification of the left ventricle endocardium.",
+  "pred": "Transthoracic echocardiogram showing severe mitral regurgitation."
+ },
+ {
+  "ref": " Endoscopic ultrasound of pancreatic neuroendocrine tumor appearing well-defined and hypoechoic.",
+  "pred": "Endoscopic ultrasonography showing a hypoechoic mass in the head of the pancreas (arrow)."
+ },
+ {
+  "ref": "Coronal MRI STIR image that shows a chronic hematoma adjacent to the iliotibial tract, Morel-Lavallee lesion",
+  "pred": "Coronal T2-weighted MRI scan of the pelvis."
+ },
+ {
+  "ref": "Computed tomography angiography demonstrating no overt contrast flow around a well-sealed ASD Amplatzer occlusion device within the ascending aortic anterior pseudoaneurysm one month following the procedure.",
+  "pred": "Computed tomography (CT) scan of the chest showing aortic dissection (arrows)."
+ },
+ {
+  "ref": "Example images in the coronal plane taken with HR CBCT demonstrate the capabilities and limitations of off-focus images for imaging the fine ossicle structures of the incus and the stapes",
+  "pred": "Coronal CT scan of the temporal bone in a 10-year-old boy with otomastoiditis shows an expansile, well-defined lesion in the mastoid air cells (arrow)."
+ },
+ {
+  "ref": "AP/lateral radiography finding.",
+  "pred": "Preoperative radiograph of the right foot showing osteoarthritis of the first metatarsophalangeal joint and hallux valgus deformity."
+ },
+ {
+  "ref": " Immediate postoperative chest roentgenogram showed no abnormalities.",
+  "pred": "Chest X-ray showing no evidence of pneumomediastinum or pneumothorax."
+ },
+ {
+  "ref": "Initial thoracic CT.Red circle showing numerous nodules in the lung",
+  "pred": "Computed tomography (CT) scan of the chest showing bilateral pleural effusions (red circles)."
+ },
+ {
+  "ref": "MRI revealed tumor formations of the 6th thoracic and first lumbar vertebrae.",
+  "pred": "Sagittal T2-weighted magnetic resonance imaging (MRI) scan of the thoracic spine."
+ },
+ {
+  "ref": "Panoramic radiograph of the patient. Pathological fractures associated with mandibular osteomyelitis",
+  "pred": "Panoramic radiograph showing a multilocular radiolucent lesion in the right maxillary sinus."
+ },
+ {
+  "ref": "CT scan of the abdomen and pelvis (plain) showing a 3.2 mm calculus in the distal part of the right ureter (red arrow).",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast demonstrating a 2.5 cm soft tissue mass in the right inguinal region (red arrow)."
+ },
+ {
+  "ref": "Panoramic radiographic image",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Posteroanterior chest Xray showing cavitary lesions with multiple air fluid levels silhouetting the right heart border and right hemidiaphragm accompanied by a mild right-sided pleural effusion.",
+  "pred": "Chest X-ray showing right-sided pleural effusion."
+ },
+ {
+  "ref": "Angio-CT - sagittal view - showing juxta renal aortic thrombosis",
+  "pred": "Computed tomography angiography of the abdomen and pelvis."
+ },
+ {
+  "ref": "Venous Doppler sonography of the right lower limb; the right popliteal vein is distended with echo poor thrombus",
+  "pred": "Ultrasound of the right lower extremity demonstrating a 2.5 \u00d7 1.5 cm hypoechoic mass in the popliteal fossa."
+ },
+ {
+  "ref": "Abdomen CT scan showing bilateral enlargement of adrenal glands with a typical macro-nodular aspect of left adrenal (maximum diameters were 45 and 16\u00a0mm at left and right side with low Hunsfield Unit density (HU \u221220/+12), respectively).",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast demonstrating a 1.5 cm soft tissue mass in the upper pole of the left kidney (arrow)."
+ },
+ {
+  "ref": "The lingual nerve is unclear, with haziness on the affected side (thick arrow), and is clearly shown on the unaffected side (arrow).",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the head and neck region showing a 4.5 \u00d7 3.0 \u00d7 2.5-cm mass in the"
+ },
+ {
+  "ref": "T2 axial MRI image of the soft tissue lesion over the lateral foot in Patient 2 showing a lesion which is heterogeneous and slightly hyperintense to the muscle.",
+  "pred": "Coronal T1-weighted magnetic resonance image of the right foot showing a high signal intensity lesion in the distal phalanx of the 5th toe (arrow)."
+ },
+ {
+  "ref": "Computerised Tomography identifying a 28\u00a0mm lesion at the apex of the left ventricle and another 40\u00a0mm lesion in the proximal interventricular wall (indicated by arrows)",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous administration of contrast material."
+ },
+ {
+  "ref": "Schematic drawing illustrating the landmarks used for periapical radiographs measurement. IS: implant shoulder; fBIC: first bone-implant contact; a the vertical distance the first bone-implant contact to implant shoulder measured from radiograph. b Implant length. x (fBIC-IS): the real vertical distance the first bone-implant contact to implant shoulder",
+  "pred": "Peri-implant bone loss measurements."
+ },
+ {
+  "ref": "Radiographic image of an unwound and detached implant.",
+  "pred": "Anteroposterior radiograph of the right knee at 12 months postoperatively."
+ },
+ {
+  "ref": "The axial section of an MRI before the second intervention shows a tumor. It demonstrates an expansive lesion (white arrow) in the postsurgical cavity, infiltrating the temporal bone and exerting a mass effect over the left cerebellar hemisphere. Compared to the previous findings, it is a more aggressive tumor. MRI, magnetic resonance imaging.",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the patient\u2019s brain showing a hyperintense lesion in the left cerebellar hemisphere (arrow)."
+ },
+ {
+  "ref": "Chest X-ray. Increased concentration is observed in the right fourth rib (arrow).",
+  "pred": "Preoperative chest X-ray showing a 1.5\u2009cm soft tissue density mass in the right upper lobe (arrow)."
+ },
+ {
+  "ref": "Ultrasonographic findings. Transverse plane B mode ultrasound image of the midbody of the pancreas (arrows). Note the hypoechoic pancreatic parenchyma with hyperechoic surrounding mesentery",
+  "pred": "Ultrasonography of the right breast showing multiple hypoechoic nodules (arrows)."
+ },
+ {
+  "ref": "X-ray of the cholangiography during the second operation.",
+  "pred": "Percutaneous transhepatic cholangiography."
+ },
+ {
+  "ref": "Axial T2-weighted head MR image on the day following initial onset. This MR image reveals acute sphenoid sinusitis, including fluid (arrowheads).",
+  "pred": "Coronal T2-weighted MR image of the brain at the level of the cerebellar peduncles shows a hyperintense signal in the right cerebellum (arrowheads)."
+ },
+ {
+  "ref": "CT scan showing C6 spinous process fracture seen on CT.",
+  "pred": "Sagittal computed tomography (CT) scan of the cervical spine."
+ },
+ {
+  "ref": "Coronal section of the previous unenhanced CT colonoscopy which demonstrated large and small calcified gallstones in the gallbladder (thin arrow) and a large right inguinoscrotal hernia containing small bowel loops (arrow heads delineating the neck).",
+  "pred": "Coronal computed tomography scan of the abdomen and pelvis with IV contrast demonstrating a 3.5 \u00d7 2.0 \u00d7 1.5 cm lobulated mass in the right lower quadrant"
+ },
+ {
+  "ref": " Sonoanatomy of the sciatic nerve block (parasacral approach). PM: Piriformis muscle; GMM: Gluteus maximus muscle. Sciatic nerve (white arrow); Sacral bone (white arrowheads).",
+  "pred": "Abdominal ultrasonography shows a small amount of free fluid in the peritoneal cavity (arrow) and a large amount of ascites (arrowhead)."
+ },
+ {
+  "ref": "A track and field athlete with a sacral stress reaction. The increased intensity was detected at the right lateral mass of the sacrum on the axial STIR image (arrow)",
+  "pred": "Axial T2-weighted magnetic resonance imaging scan of the pelvis. The arrow indicates the right iliopsoas muscle and the arrowhead indicates the left iliac bone"
+ },
+ {
+  "ref": "2D image during endodontic treatment.",
+  "pred": "Intraoral periapical radiograph."
+ },
+ {
+  "ref": "Abdominal x-ray demonstrating gastric distension.",
+  "pred": "Abdominal X-ray showing free air under the diaphragm."
+ },
+ {
+  "ref": "An Anterior-Posterior portable film demonstrating extensive soft-tissue subcutaneous emphysema with underlying patchy bilateral opacities within the lung in an intubated patient with COVID-19",
+  "pred": "Chest X-ray showing bilateral patchy infiltrates and ground-glass opacities."
+ },
+ {
+  "ref": "Coronal contrast-enhanced computed tomography scan of the abdomen showing a large pseudoaneurysm in area of the gastroduodenal artery, measuring up to 3\u2009cm (arrow).",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous administration of iodinated contrast material. The arrow indicates the pseudoaneurysm of the superior mesenteric artery."
+ },
+ {
+  "ref": "Transjugular intrahepatic portosysetmic shunt procedure performed with fluoroscopy",
+  "pred": "Angiography of the superior mesenteric artery after embolization of the pseudoaneurysm."
+ },
+ {
+  "ref": "Illustration of the deviation of the mechanical from the anatomical axis.",
+  "pred": "Anteroposterior radiograph of the right knee."
+ },
+ {
+  "ref": "Retrograde urethrocystography: right inguinal hernia containing a portion of the urinary bladder.",
+  "pred": "Voiding cystourethrogram showing a diverticulum in the distal urethra (arrow)."
+ },
+ {
+  "ref": "Grayscale ultrasound of the scrotum showed right testicular enlargement secondary to the mass.",
+  "pred": "Ultrasound image of the right testicle."
+ },
+ {
+  "ref": "Ultrasound findings of the liver. Ultrasound showed an oval lesion with heterogenous internal echoes and no attenuated posterior echoes (arrowheads). These findings highly suggested a liver abscess.",
+  "pred": "Abdominal ultrasonography shows a well-defined hypoechoic mass (arrowheads) in the left lobe of the liver."
+ },
+ {
+  "ref": "Ultrasound of the abdomen showing (white arrows) oval-shaped hyperechogenic area within the abdominal wall, non-vascular on color Doppler, suggesting fat necrosis or lipoma.",
+  "pred": "Longitudinal ultrasound image of the right lower quadrant of the abdomen. The arrow indicates the presence of a hypoechoic fluid collection between the rectus abdominis muscle and the diaphragm."
+ },
+ {
+  "ref": "Hyperintense areas are seen in the pons and both middle cerebellar peduncles (RT >LT) on axial T2W images. RT - right, LT - left",
+  "pred": "Axial T2-weighted magnetic resonance imaging (MRI) scan of the patient's brain showing a hyperintense lesion in the left cerebellar hemisphere (arrows)."
+ },
+ {
+  "ref": "CT chest and abdomen showing right apical pneumatocele (yellow arrow), bilateral pulmonary contusions (curved black arrows), and large stomach (straight black arrow).",
+  "pred": "Coronal computed tomography scan of the chest showing pneumomediastinum (blue arrow), subcutaneous emphysema (red arrow), and pneumothorax (green arrow)."
+ },
+ {
+  "ref": "Patient's CT pulmonary angiogram. Red arrow: clot in the left pulmonary artery.\u00a0",
+  "pred": "Computed tomography pulmonary angiogram showing bilateral pulmonary embolism (red arrows)."
+ },
+ {
+  "ref": "Orthopantomogram showing oblique radiolucent line extending from the extraction socket of the right third molar fracturing the right angle of the mandible (arrow).",
+  "pred": "Panoramic radiograph of the patient."
+ },
+ {
+  "ref": "Sagittal contrast MRI in T1 weighting: A medullar bone oedema is seen on either side of the L5-S1 disk. Small collections surround L5-S1 with the largest being 20mm in diameter located on the left psoas muscle with a wall that was intensified by the contrast. This abscess extends posteriorly to the anterior peridural space, the lumbar vertebral bodies, and the last thoracic vertebra.",
+  "pred": "Sagittal T1-weighted magnetic resonance imaging (MRI) scan of the lumbar spine at the level of the L3 vertebral body showing a 1.5-cm mass (arrow)"
+ },
+ {
+  "ref": "CT scan showing giant hepatic abscess with occult bile leak. The outlined arch indicates the liver nestled within the ribs, preventing natural wound contractile forces.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis showing pneumomediastinum (red circle) and pneumobilia (red arrow)."
+ },
+ {
+  "ref": "Axial CT abdomen with contrast showing subcapsular perisplenic hematoma (red arrow).",
+  "pred": "Computed tomography scan of the abdomen showing splenic infarction."
+ },
+ {
+  "ref": "Right coronary artery angiography showing a plaque in proximal of right coronary artery.",
+  "pred": "Coronary angiogram showing a 100% occlusion of the right coronary artery."
+ },
+ {
+  "ref": "Antegrade pyelogram post drainage and insertion of nephrostomy tube.",
+  "pred": "Intravenous urography (IVU) showing bilateral hydronephrosis."
+ },
+ {
+  "ref": "Computed tomography revealing external inguinal hernia",
+  "pred": "Computed tomography scan of the abdomen and pelvis with intravenous contrast."
+ },
+ {
+  "ref": "Coronal enhanced CT image of the head and neck showing opacification of the left lateral inferior to the mastoid area with rim enhancement, medial to the sternocleidomastoid muscle, a typical picture commonly seen with Bezold\u2019s abscess.",
+  "pred": "Computed tomography angiography (CTA) of the head and neck. Coronal view of the CTA of the neck showing a thrombotic occlusion of the right internal carotid"
+ },
+ {
+  "ref": "Sagittal contrast CT: Contrast CT-scan showing spondylodiscitis of L5-S1, with infiltration into the soft tissue surrounding S1. Additionally, a 9.7cm fistula can be seen, starting at the intervertebral disk of L5-S1 (yellow arrow) to the vagina.",
+  "pred": "CT scan of the abdomen and pelvis (sagittal view)."
+ },
+ {
+  "ref": "Points of interest and coordinate axis of VFSS image with Y-axis defined as the line connecting anterior\u2013inferior corner of C3 and C5 vertebral bodies.",
+  "pred": "Lateral view of the nasopharyngeal airway at the level of the epiglottis."
+ },
+ {
+  "ref": "Ear high\u2010resolution CT scan with no evidence of dehiscence of the tympanic and mastoid tract of the right facial nerve.",
+  "pred": "Axial computed tomography scan of the temporal bone at the level of the mastoid air cells."
+ },
+ {
+  "ref": "CT scan of the abscess at the level of the sternoclavicular joint.",
+  "pred": "Computed tomography (CT) scan of the chest showing a soft tissue mass in the anterior mediastinum."
+ },
+ {
+  "ref": "Lateral tibia-fibula intra-operative radiographs of irrigation and debridement with concomitant flexible nailing of the tibial shaft.",
+  "pred": "Anteroposterior radiograph of the right ankle at the level of the medial malleolus."
+ },
+ {
+  "ref": "TTE apical view reveals the presence of an organized mass of 3 cm \u00d7 2.7 cm (White star) attached to the left ventricular apex.TTE: transthoracic echocardiogram",
+  "pred": "Transthoracic echocardiography showing a large pericardial effusion. LA, left atrium; LV, left ventricle; RA, right atrium."
+ },
+ {
+  "ref": "Computed tomography of the myofibroblastic tumour of the lung",
+  "pred": "Computed tomography (CT) scan of the chest showing a large right atrial myxoma (arrow)."
+ },
+ {
+  "ref": "Preoperative THA template. Note the planned size of the bulk femoral head autograft wedge which is measured to have a width of 27\u00a0mm.",
+  "pred": "Anteroposterior radiograph of the pelvis."
+ },
+ {
+  "ref": "M-mode, mid-esophageal view of transesophageal echocardiogram showing flail mitral leaflet (white arrow) resulting in eccentric regurgitant flow (green arrow) from LV to LA.LA: Left atrium,\u00a0LV: Left ventricle",
+  "pred": "Transesophageal echocardiogram showing severe mitral regurgitation (arrow)."
+ },
+ {
+  "ref": "CT angiogram showing opacification of the left MCA post-administration of alteplase.MCA:\u00a0middle cerebral artery",
+  "pred": "Computed tomography angiography (CTA) scan of the head showing no evidence of intracranial aneurysm or arteriovenous malformation."
+ },
+ {
+  "ref": "Ultrasonographic image of the abdominal pregnancy.",
+  "pred": "Transabdominal ultrasonography of the fetus at 24 weeks of gestation."
+ },
+ {
+  "ref": "Coronal cut of a high resolution computed tomographic scan of the chest on inspiration using maximal intensity projection using bone windowing demonstrating the diffuse parenchymal calcifications throughout all lobes of the bilateral lungs.",
+  "pred": "Computed tomography (CT) scan of the chest. Coronal view."
+ },
+ {
+  "ref": "Representative example of an ultrasound image in which the vagus nerve (dotted circle) is positioned ventrolateral to the common carotid artery. The scale bar equals 0.5\u202fcm.",
+  "pred": "Transverse view of the right brachial plexus at the level of the subclavian artery (arrow)."
+ },
+ {
+  "ref": "Coronal CT image of right shoulder.",
+  "pred": "Fluoroscopic image of the right eye at 12 months postoperatively."
+ },
+ {
+  "ref": "Distance measurements. Yellow: McRae line (distance between the anterior and posterior margins of the foramen magnum); red: extent of tonsillar descent; green: maximum median diameter of the fourth ventricle.",
+  "pred": "Sagittal T1-weighted MRI scan of the patient\u2019s brain. The red arrow indicates the pituitary gland."
+ },
+ {
+  "ref": " Central approach for endosonography-guided celiac plexus neurolysis. SMA: Superior mesenteric artery; CT: Celiac trunk.",
+  "pred": "Transesophageal echocardiogram (TEE) of the left ventricle at the level of the mitral valve. The left ventricular outflow tract (LVOT) is visualized"
+ },
+ {
+  "ref": "PET-CT image showing the pancreatic tumor (white arrow)",
+  "pred": "18F-fluorodeoxyglucose-positron emission tomography-computed tomography (FDG-PET-CT) scan showing FDG uptake in the tumor (white arrow"
+ },
+ {
+  "ref": "Portable chest X-ray revealing bilateral consolidation with left-sided effusion.",
+  "pred": "Chest X-ray showing pneumothorax on the left side and pneumomediastinum on the right side."
+ },
+ {
+  "ref": "First recurrence in April 2018Gadolinium-enhanced fat-saturated T1-weighted image. Yellow arrow:\u00a0local recurrence within the radiation field",
+  "pred": "T1-weighted magnetic resonance imaging (MRI) scan of the head and neck showing an enhancing mass in the left parapharyngeal space (arrow)."
+ },
+ {
+  "ref": "Fundamental B-mode EUS for staging of gallbladder carcinoma. T4 gallbladder carcinoma: heterogeneous hypoechoic tumor (arrow) in the gallbladder without a disrupted hyperechoic layer (arrowhead).",
+  "pred": "Transvaginal ultrasonography shows a hypoechoic mass (arrowheads) in the left adnexa."
+ },
+ {
+  "ref": "CT images of a patient with a periampullary tumor and a dilated biliary tree. The dilated left (LHD) and right hepatic ducts (RHD) are seen at the liver hilum. Corresponding to this, the proper hepatic artery has divided normally into a left hepatic artery (LHA) and right hepatic artery (RHA) at the hilum. This patient also has an accessory right hepatic artery (A-RHA) as a type 6 variant.",
+  "pred": "Abdominal computed tomography (CT) scan of a 50-year-old male patient with a 1.5-cm mass in the right lobe of the liver. The mass was"
+ },
+ {
+  "ref": "Chest computerized tomography (coronal). This is a coronal chest CT showing bilateral peripheral consolidations with diffuse pneumomediastinum and subcutaneous emphysema.",
+  "pred": "Computed tomography (CT) scan of the chest showing pneumomediastinum, pneumothorax, and subcutaneous emphysema."
+ },
+ {
+  "ref": "Typical blush in lung contusion. Arrows indicate extravasation of contrast media in the lung contusion, which is defined as blush.",
+  "pred": "Computed tomography (CT) scan of the chest with intravenous contrast showing bilateral pleural effusions (arrows)."
+ },
+ {
+  "ref": "Transvaginal sonography (TVS imaging). Longitudinal section. Endometrial cancer, stage IA, G1, infiltration with homogeneous echogenicity.",
+  "pred": "Transvaginal ultrasonography showing a 3.5 \u00d7 2.5 cm sized cystic mass in the left adnexal region."
+ },
+ {
+  "ref": "Axial computed tomography image displaying the wire bristle with evidence of esophageal perforation",
+  "pred": "Computed tomography (CT) scan of the neck at the level of the trachea."
+ },
+ {
+  "ref": "Angio-CT of the thorax showing multiple pulmonary emboli at different sites of the right lung.",
+  "pred": "Computed tomography pulmonary angiography (CTPA) showing bilateral pleural effusion."
+ },
+ {
+  "ref": "Normal hepatic vein flow pattern detected by Doppler. The hepatic vein has a triphasic waveform, which consists of an A wave above the baseline (representing atrial systole), and two waveforms below the baseline (S and D, representing venous return during ventricular systole and diastole, respectively).",
+  "pred": "Color Doppler ultrasonography of the hepatic vein and portal vein in a patient with portal vein thrombosis."
+ },
+ {
+  "ref": "Computed tomography angiogram of the lower limbs showing opacification of the left common femoral vein at the level of the femoral head.Red arrow indicates opacified left common femoral vein at the level of the femoral head.",
+  "pred": "Computed tomography (CT) scan of the abdomen and pelvis with intravenous contrast. The red arrow indicates the presence of gas in the soft tissue of the left gluteal region."
+ },
+ {
+  "ref": "Anteroposterior plain film demonstrating a radio\u2010opaque foreign body with a \u201cdouble ring\u201d superimposing the esophagus",
+  "pred": "Figure 1: Barium enema showing contrast leakage from the distal oesophagus into the tracheobronchial tree."
+ },
+ {
+  "ref": "CT CAP showing SVC and right external iliac vein thromboses (blue arrows) and collaterals in axilla (yellow arrow)CT CAP: computed tomography chest abdomen pelvis, SVC:\u00a0superior vena cava",
+  "pred": "Coronal computed tomography scan of the abdomen and pelvis with IV contrast demonstrating a 3.5 cm soft tissue mass in the right iliac fossa (red arrow)."
+ },
+ {
+  "ref": "Patient after an upper jaw osteosarcoma resection and reconstruction with FFF. (19 December 2018).",
+  "pred": "Panoramic radiograph showing a well-defined radiolucent lesion on the left side of the mandible."
+ },
+ {
+  "ref": "Lateral intraoperative imaging",
+  "pred": "Lateral radiograph of the right wrist showing a fracture of the ulnar styloid."
+ },
+ {
+  "ref": "HRCT chest image. High-resolution computed tomography (HRCT) chest showing cavitating nodules in bilateral lung fields, the largest measuring 3.9 x 2.5 cm\u00a0in the antero-basal segment of the right lobe (shown in blue arrow). \u00a0Multiple small solid nodules were noted in bilateral lung fields, the largest measuring 7 mm in the superior segment of the left lower lobe (shown in orange arrow).\u00a0",
+  "pred": "Computed tomography (CT) scan of the chest showing multiple cavitary lesions in the right lung (red arrow)"
+ },
+ {
+  "ref": "Echolaryngography of the anesthetized cat demonstrating a laryngeal cyst, as outlined by the yellow arrows",
+  "pred": "Transabdominal ultrasonography of a 26-year-old woman with a history of uterine fibroid shows a hypoechoic mass in the left adnexa (arrows)."
+ },
+ {
+  "ref": "Symmetry evaluation of the malar eminence using an axial computed tomography view. The difference of bilateral distances from the malar eminence to the coronal plane passing through the anterior edge of the foramen magnum was defined as the anteroposterior distance, Dx.",
+  "pred": "Axial computed tomography scan of the temporal bone at the level of the external auditory canal showing the measurement of the anteroposterior (AP) and transverse (TX) dimensions of the"
+ },
+ {
+  "ref": "Left latero\u2010lateral radiograph of the caudodorsal thorax; cranial is to the left, image from day 7. Arrows outline the caudodorsal margins of the left and right collapsed lung lobes consistent with bilateral pneumothorax. The triangular radiolucent area in the caudodorsal pleural cavity is smaller than in the radiograph shown in Figure\u00a02 ",
+  "pred": "Lateral radiograph of the cervical spine showing osteophytes (arrows)"
+ },
+ {
+  "ref": "Ultrasound of right kidney showing diffuse increased echogenicity of renal parenchyma consistent with chronic renal disease.",
+  "pred": "Renal ultrasonography showing a 4.5 \u00d7 3.5 cm hypoechoic mass in the upper pole of the right kidney."
+ },
+ {
+  "ref": "Downward elongation of the liver (arrows), ending at the level of the iliac crest.",
+  "pred": "Coronal CT scan of the abdomen and pelvis with IV contrast."
+ }
+]

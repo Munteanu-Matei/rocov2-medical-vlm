@@ -1,0 +1,14 @@
+{
+ "n": 9927,
+ "prompt": "V1_radiology_constrained",
+ "model": "/home/matei/qwen3-vl-4b-instruct (zero-shot, V1)",
+ "BLEU-1": 0.16033628017492627,
+ "BLEU-2": 0.07510230043836122,
+ "BLEU-3": 0.0366760840211984,
+ "BLEU-4": 0.01945079184101512,
+ "METEOR": 0.13360295882573553,
+ "ROUGE-L": 0.15816926940804596,
+ "CIDEr": 0.12445106593164172,
+ "BERTScore-F1": 0.6539239287376404,
+ "BERTScore-model": "microsoft/deberta-xlarge-mnli"
+}

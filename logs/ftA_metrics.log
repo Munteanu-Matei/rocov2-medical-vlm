@@ -1,0 +1,33 @@
+gold CUIs: loaded 9927 test images
+
+======================================================================
+roco_qwen3vl_ft_test_captions.json  (9927 captions)
+======================================================================
+  relevance ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{'testlen': 136422, 'reflen': 218823, 'guess': [136422, 126495, 116568, 106643], 'correct': [39167, 11444, 3250, 1180]}
+ratio: 0.6234353792791406
+Loading weights:   0%|          | 0/772 [00:00<?, ?it/s]Loading weights: 100%|██████████| 772/772 [00:00<00:00, 33043.88it/s]
+[transformers] [1mDebertaModel LOAD REPORT[0m from: microsoft/deberta-xlarge-mnli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+pooler.dense.bias   | UNEXPECTED |  | 
+classifier.bias     | UNEXPECTED |  | 
+pooler.dense.weight | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  UMLS concept extraction (generated + reference) ...
+Traceback (most recent call last):
+  File "/home/matei/roco_full_metrics.py", line 264, in <module>
+    main()
+  File "/home/matei/roco_full_metrics.py", line 249, in main
+    summary.append((name, score_file(name, path, gold)))
+  File "/home/matei/roco_full_metrics.py", line 217, in score_file
+    p_sets = extract_cuis([norm(p) for p in preds])
+  File "/home/matei/roco_full_metrics.py", line 144, in extract_cuis
+    nlp = get_linker()
+  File "/home/matei/roco_full_metrics.py", line 132, in get_linker
+    import spacy
+ModuleNotFoundError: No module named 'spacy'

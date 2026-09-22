@@ -1,0 +1,41 @@
+gold CUIs: loaded 9927 test images
+
+======================================================================
+roco_qwen3vl_ft_cui_v2_test_captions.json  (9927 captions)
+======================================================================
+  relevance ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{'testlen': 136291, 'reflen': 218823, 'guess': [136291, 126364, 116437, 106513], 'correct': [39198, 11487, 3258, 1187]}
+ratio: 0.6228367219167975
+Loading weights:   0%|          | 0/772 [00:00<?, ?it/s]Loading weights: 100%|██████████| 772/772 [00:00<00:00, 32947.05it/s]
+[transformers] [1mDebertaModel LOAD REPORT[0m from: microsoft/deberta-xlarge-mnli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+pooler.dense.bias   | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+classifier.bias     | UNEXPECTED |  | 
+pooler.dense.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  n                         : 9927
+  file                      : roco_qwen3vl_ft_cui_v2_test_captions.json
+  BLEU-1                    : 0.1570
+  BLEU-2                    : 0.0882
+  BLEU-3                    : 0.0492
+  BLEU-4                    : 0.0292
+  METEOR                    : 0.1550
+  ROUGE-L                   : 0.1921
+  CIDEr                     : 0.1970
+  BERTScore-F1              : 0.6766
+  saved -> roco_qwen3vl_ft_cui_v2_test_captions_fullmetrics.json
+
+====================================================================================================
+SUMMARY
+====================================================================================================
+Model                        BERTSc  ROUGE-L    CIDEr  UMLS-F1    Align  vs-gold
+--------------------------------------------------------------------------------
+roco_qwen3vl_ft_cui_v2_test_captions.json   0.6766   0.1921   0.1970   0.0000   0.0000   0.0000
+
+ImageCLEF 2025 reference (different extractor -- context only, not comparable):
+  best team UMLS-F1 0.1816 / AlignScore 0.1417 | zero-shot baseline 0.1302 / 0.0955

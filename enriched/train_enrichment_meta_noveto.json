@@ -1,0 +1,14 @@
+{
+  "mode": "train",
+  "n_images": 59958,
+  "n_enriched": 41383,
+  "n_labels_added": 97422,
+  "n_labels_original": 200734,
+  "n_labels_final": 298156,
+  "label_increase_pct": 48.53288431456554,
+  "avg_concepts_original": 3.347910203809333,
+  "avg_concepts_final": 4.972747589979653,
+  "model_checkpoint": null,
+  "thresholds_file": null,
+  "elapsed_seconds": 192.60140442848206
+}

@@ -1,0 +1,54 @@
+[
+ {
+  "epoch": 1,
+  "stage": "s2",
+  "train_loss": 2.3106124421193366,
+  "val_loss": 2.333162984609604,
+  "path": "/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch1.pt",
+  "BLEU-1": 0.157889755832008,
+  "BLEU-4": 0.02702297629605045,
+  "METEOR": 0.1490646384164471,
+  "ROUGE-L": 0.18394995106332646,
+  "CIDEr": 0.20978365368892873,
+  "BERTScore-F1": 0.6672065854072571
+ },
+ {
+  "epoch": 2,
+  "stage": "s2",
+  "train_loss": 2.115162898726005,
+  "val_loss": 2.343914773225784,
+  "path": "/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch2.pt",
+  "BLEU-1": 0.16451921211803658,
+  "BLEU-4": 0.029832857482081747,
+  "METEOR": 0.15316837605936878,
+  "ROUGE-L": 0.18215331368494556,
+  "CIDEr": 0.21892348847324372,
+  "BERTScore-F1": 0.6710643172264099
+ },
+ {
+  "epoch": 3,
+  "stage": "s2",
+  "train_loss": 1.9477672863902877,
+  "val_loss": 2.3972360513210296,
+  "path": "/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch3.pt",
+  "BLEU-1": 0.18317707813589915,
+  "BLEU-4": 0.029796990247694763,
+  "METEOR": 0.15827274276062803,
+  "ROUGE-L": 0.1839050870166055,
+  "CIDEr": 0.19377647493239175,
+  "BERTScore-F1": 0.6615182757377625
+ },
+ {
+  "epoch": 4,
+  "stage": "s2",
+  "train_loss": 1.8051969772354806,
+  "val_loss": 2.4597668237686157,
+  "path": "/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch4.pt",
+  "BLEU-1": 0.16716658979210064,
+  "BLEU-4": 0.03014223627899624,
+  "METEOR": 0.1541521711087357,
+  "ROUGE-L": 0.1841071201597533,
+  "CIDEr": 0.20067056485287518,
+  "BERTScore-F1": 0.6657618880271912
+ }
+]

@@ -1,0 +1,14 @@
+{
+ "n": 9927,
+ "prompt": "a photo of",
+ "model": "/home/matei/qwen3-vl-4b-instruct (zero-shot)",
+ "BLEU-1": 0.14790597344067438,
+ "BLEU-2": 0.06366447725102824,
+ "BLEU-3": 0.027054323009659025,
+ "BLEU-4": 0.012948733436153478,
+ "METEOR": 0.13419284373187945,
+ "ROUGE-L": 0.1406701779658447,
+ "CIDEr": 0.038122826274779587,
+ "BERTScore-F1": 0.5979827642440796,
+ "BERTScore-model": "microsoft/deberta-xlarge-mnli"
+}

@@ -1,0 +1,40 @@
+device=cuda
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 3919.96it/s]
+/home/matei/caption_roco_biomed.py:54: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(CKPT_PATH, map_location=device)
+loaded BioMedVQA weights (translator + GPT-2) from /home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt
+ROCOv2 test: 9927 image-caption pairs
+captioning 9927 images (prompt='a photo of') ...
+captioning:   0%|          | 0/621 [00:00<?, ?it/s]/home/matei/miniconda3/envs/vlm/lib/python3.10/site-packages/transformers/generation/utils.py:1127: UserWarning: Passing `no_repeat_ngram_size` with `inputs_embeds` and without `input_ids` to `generate` will apply n-gram constraints only to newly generated tokens, not to the prompt.
+  warnings.warn(
+captioning:   3%|▎         | 21/621 [00:15<07:15,  1.38it/s]captioning:   3%|▎         | 21/621 [00:28<07:15,  1.38it/s]captioning:   7%|▋         | 43/621 [00:30<06:49,  1.41it/s]captioning:  10%|█         | 65/621 [00:46<06:39,  1.39it/s]captioning:  10%|█         | 65/621 [00:58<06:39,  1.39it/s]captioning:  14%|█▍        | 86/621 [01:01<06:26,  1.39it/s]captioning:  17%|█▋        | 107/621 [01:17<06:10,  1.39it/s]captioning:  17%|█▋        | 107/621 [01:28<06:10,  1.39it/s]captioning:  21%|██        | 128/621 [01:32<05:55,  1.39it/s]captioning:  24%|██▍       | 149/621 [01:47<05:39,  1.39it/s]captioning:  24%|██▍       | 149/621 [01:58<05:39,  1.39it/s]captioning:  27%|██▋       | 170/621 [02:02<05:26,  1.38it/s]captioning:  31%|███       | 191/621 [02:18<05:13,  1.37it/s]captioning:  31%|███       | 191/621 [02:28<05:13,  1.37it/s]captioning:  34%|███▍      | 213/621 [02:33<04:54,  1.38it/s]captioning:  34%|███▍      | 213/621 [02:48<04:54,  1.38it/s]captioning:  38%|███▊      | 234/621 [02:48<04:39,  1.39it/s]captioning:  41%|████      | 255/621 [03:04<04:25,  1.38it/s]captioning:  41%|████      | 255/621 [03:18<04:25,  1.38it/s]captioning:  44%|████▍     | 276/621 [03:19<04:09,  1.38it/s]captioning:  48%|████▊     | 297/621 [03:34<03:54,  1.38it/s]captioning:  48%|████▊     | 297/621 [03:48<03:54,  1.38it/s]captioning:  51%|█████     | 318/621 [03:50<03:40,  1.37it/s]captioning:  55%|█████▍    | 340/621 [04:05<03:22,  1.38it/s]captioning:  55%|█████▍    | 340/621 [04:18<03:22,  1.38it/s]captioning:  58%|█████▊    | 361/621 [04:21<03:08,  1.38it/s]captioning:  62%|██████▏   | 382/621 [04:36<02:54,  1.37it/s]captioning:  62%|██████▏   | 382/621 [04:48<02:54,  1.37it/s]captioning:  65%|██████▍   | 403/621 [04:52<02:39,  1.37it/s]captioning:  65%|██████▍   | 403/621 [05:08<02:39,  1.37it/s]captioning:  67%|██████▋   | 418/621 [05:09<02:48,  1.20it/s]captioning:  71%|███████   | 439/621 [05:24<02:24,  1.26it/s]captioning:  71%|███████   | 439/621 [05:38<02:24,  1.26it/s]captioning:  74%|███████▍  | 459/621 [05:39<02:06,  1.28it/s]captioning:  77%|███████▋  | 480/621 [05:55<01:48,  1.30it/s]captioning:  77%|███████▋  | 480/621 [06:08<01:48,  1.30it/s]captioning:  81%|████████  | 501/621 [06:10<01:31,  1.31it/s]captioning:  84%|████████▍ | 522/621 [06:26<01:14,  1.33it/s]captioning:  84%|████████▍ | 522/621 [06:38<01:14,  1.33it/s]captioning:  88%|████████▊ | 544/621 [06:42<00:57,  1.35it/s]captioning:  91%|█████████ | 566/621 [06:57<00:40,  1.36it/s]captioning:  91%|█████████ | 566/621 [07:08<00:40,  1.36it/s]captioning:  95%|█████████▍| 588/621 [07:13<00:24,  1.37it/s]captioning:  95%|█████████▍| 588/621 [07:28<00:24,  1.37it/s]captioning:  98%|█████████▊| 610/621 [07:29<00:07,  1.38it/s]captioning: 100%|██████████| 621/621 [07:36<00:00,  1.36it/s]
+saved predictions -> /home/matei/roco_biomed_finetuned_a_photo_of.json
+scoring ...
+{'testlen': 95341, 'reflen': 218823, 'guess': [95341, 85414, 75487, 65607], 'correct': [25037, 7920, 1572, 407]}
+ratio: 0.43569917239046885
+Loading weights:   0%|          | 0/772 [00:00<?, ?it/s]Loading weights: 100%|██████████| 772/772 [00:00<00:00, 19048.20it/s]
+[transformers] [1mDebertaModel LOAD REPORT[0m from: microsoft/deberta-xlarge-mnli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+pooler.dense.weight | UNEXPECTED |  | 
+pooler.dense.bias   | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+classifier.bias     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+
+==== BioMedVQA ZERO-SHOT CAPTIONING (a photo of) -- ROCOv2 test ====
+  n             : 9927
+  prompt        : a photo of
+  model         : BioMedVQA (BioMedCLIP+GPT-2)
+  BLEU-1        : 0.0719
+  BLEU-2        : 0.0427
+  BLEU-3        : 0.0218
+  BLEU-4        : 0.0115
+  METEOR        : 0.1076
+  ROUGE-L       : 0.1484
+  CIDEr         : 0.0864
+  BERTScore-F1  : 0.6378
+  BERTScore-model: microsoft/deberta-xlarge-mnli
+saved metrics -> /home/matei/roco_biomed_finetuned_metrics.json

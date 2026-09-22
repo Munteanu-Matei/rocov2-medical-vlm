@@ -1,0 +1,59 @@
+device=cuda
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 4030.31it/s]
+/home/matei/train_roco_biomed.py:83: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(RESUME_FROM, map_location=device)
+resumed from /home/matei/biomed_vqa_checkpoints/biomed_vqa_final.pt
+trainable 42.9M params
+train 12000 | val-loss 1000 | val-gen 500
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+smoke OK | loss=5.6741
+epoch 1/3:   0%|          | 0/1500 [00:00<?, ?it/s]epoch 1/3:  19%|█▉        | 284/1500 [00:30<02:08,  9.46it/s]epoch 1/3:  19%|█▉        | 284/1500 [00:46<02:08,  9.46it/s]epoch 1/3:  38%|███▊      | 570/1500 [01:00<01:37,  9.49it/s]epoch 1/3:  38%|███▊      | 570/1500 [01:16<01:37,  9.49it/s]epoch 1/3:  57%|█████▋    | 855/1500 [01:30<01:07,  9.49it/s]epoch 1/3:  57%|█████▋    | 855/1500 [01:46<01:07,  9.49it/s]epoch 1/3:  76%|███████▌  | 1142/1500 [02:00<00:37,  9.52it/s]epoch 1/3:  76%|███████▌  | 1142/1500 [02:16<00:37,  9.52it/s]epoch 1/3:  95%|█████████▌| 1430/1500 [02:30<00:07,  9.54it/s]epoch 1/3: 100%|██████████| 1500/1500 [02:37<00:00,  9.52it/s]
+
+epoch 1 | 2.6 min | train 3.8398 | -> /home/matei/roco_biomed_checkpoints/roco_biomed_epoch1.pt
+val loss:   0%|          | 0/125 [00:00<?, ?it/s]                                                 val gen:   0%|          | 0/32 [00:00<?, ?it/s]/home/matei/miniconda3/envs/vlm/lib/python3.10/site-packages/transformers/generation/utils.py:1127: UserWarning: Passing `no_repeat_ngram_size` with `inputs_embeds` and without `input_ids` to `generate` will apply n-gram constraints only to newly generated tokens, not to the prompt.
+  warnings.warn(
+                                               {'testlen': 3794, 'reflen': 10725, 'guess': [3794, 3294, 2794, 2297], 'correct': [932, 298, 33, 7]}
+ratio: 0.35375291375288076
+Loading weights:   0%|          | 0/772 [00:00<?, ?it/s]Loading weights: 100%|██████████| 772/772 [00:00<00:00, 29314.86it/s]
+[transformers] [1mDebertaModel LOAD REPORT[0m from: microsoft/deberta-xlarge-mnli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+pooler.dense.bias   | UNEXPECTED |  | 
+classifier.bias     | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+pooler.dense.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  val 3.4194 | BERTScore 0.6167 | CIDEr 0.0492 | ROUGE-L 0.1254 | BLEU-1 0.0395
+  REF : Computed tomography pulmonary angiography showing a round-shaped tumour (10 mm × 8 mm) in 
+  PRED: Computed tomography (CT) scan of the abdomen.
+epoch 2/3:   0%|          | 0/1500 [00:00<?, ?it/s]epoch 2/3:  19%|█▉        | 284/1500 [00:30<02:08,  9.46it/s]epoch 2/3:  19%|█▉        | 284/1500 [00:43<02:08,  9.46it/s]epoch 2/3:  38%|███▊      | 571/1500 [01:00<01:37,  9.51it/s]epoch 2/3:  38%|███▊      | 571/1500 [01:13<01:37,  9.51it/s]epoch 2/3:  57%|█████▋    | 858/1500 [01:30<01:07,  9.53it/s]epoch 2/3:  57%|█████▋    | 858/1500 [01:43<01:07,  9.53it/s]epoch 2/3:  76%|███████▋  | 1145/1500 [02:00<00:37,  9.54it/s]epoch 2/3:  76%|███████▋  | 1145/1500 [02:13<00:37,  9.54it/s]epoch 2/3:  95%|█████████▌| 1431/1500 [02:30<00:07,  9.53it/s]epoch 2/3: 100%|██████████| 1500/1500 [02:37<00:00,  9.52it/s]
+
+epoch 2 | 2.6 min | train 3.4765 | -> /home/matei/roco_biomed_checkpoints/roco_biomed_epoch2.pt
+val loss:   0%|          | 0/125 [00:00<?, ?it/s]                                                 val gen:   0%|          | 0/32 [00:00<?, ?it/s]                                               {'testlen': 4462, 'reflen': 10725, 'guess': [4462, 3962, 3462, 2964], 'correct': [1119, 344, 60, 13]}
+ratio: 0.41603729603725725
+  val 3.2582 | BERTScore 0.6323 | CIDEr 0.0830 | ROUGE-L 0.1439 | BLEU-1 0.0616
+  REF : Computed tomography pulmonary angiography showing a round-shaped tumour (10 mm × 8 mm) in 
+  PRED: Computed tomography (CT) scan of the abdomen.
+epoch 3/3:   0%|          | 0/1500 [00:00<?, ?it/s]epoch 3/3:  19%|█▉        | 285/1500 [00:30<02:08,  9.49it/s]epoch 3/3:  19%|█▉        | 285/1500 [00:47<02:08,  9.49it/s]epoch 3/3:  38%|███▊      | 572/1500 [01:00<01:37,  9.53it/s]epoch 3/3:  38%|███▊      | 572/1500 [01:17<01:37,  9.53it/s]epoch 3/3:  57%|█████▋    | 859/1500 [01:30<01:07,  9.54it/s]epoch 3/3:  57%|█████▋    | 859/1500 [01:47<01:07,  9.54it/s]epoch 3/3:  76%|███████▋  | 1146/1500 [02:00<00:37,  9.55it/s]epoch 3/3:  76%|███████▋  | 1146/1500 [02:17<00:37,  9.55it/s]epoch 3/3:  96%|█████████▌| 1433/1500 [02:30<00:07,  9.55it/s]epoch 3/3: 100%|██████████| 1500/1500 [02:37<00:00,  9.54it/s]
+
+epoch 3 | 2.6 min | train 3.3119 | -> /home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt
+val loss:   0%|          | 0/125 [00:00<?, ?it/s]                                                 val gen:   0%|          | 0/32 [00:00<?, ?it/s]                                               {'testlen': 4755, 'reflen': 10725, 'guess': [4755, 4255, 3755, 3259], 'correct': [1211, 378, 78, 23]}
+ratio: 0.443356643356602
+  val 3.1701 | BERTScore 0.6405 | CIDEr 0.1140 | ROUGE-L 0.1503 | BLEU-1 0.0726
+  REF : Computed tomography pulmonary angiography showing a round-shaped tumour (10 mm × 8 mm) in 
+  PRED: Contrast-enhanced computed tomography (CT) scan of the chest showing a right-sided pleural
+
+==============================================================================
+VALIDATION SUMMARY (test has not been touched)
+  epoch 1 | val_loss 3.4194 | BERTScore 0.6167 | CIDEr 0.0492 | ROUGE-L 0.1254
+  epoch 2 | val_loss 3.2582 | BERTScore 0.6323 | CIDEr 0.0830 | ROUGE-L 0.1439
+  epoch 3 | val_loss 3.1701 | BERTScore 0.6405 | CIDEr 0.1140 | ROUGE-L 0.1503
+
+BEST epoch by validation BERTScore: 3  ->  /home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt
+
+FINAL STEP -- score it ONCE on test (same script/decoding as the zero-shot run):
+  CKPT_PATH=/home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt RUN_TAG=biomed_finetuned \
+    /home/matei/miniconda3/envs/vlm/bin/python /home/matei/caption_roco_biomed.py
+==============================================================================

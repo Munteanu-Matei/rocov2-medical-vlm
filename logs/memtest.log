@@ -1,0 +1,23 @@
+/home/matei/miniconda3/envs/roco_env/lib/python3.10/site-packages/torch/cuda/__init__.py:188: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 12040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /__w/pytorch/pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+CNN-1, frozen thresholds, n=4000 per split
+
+  train: 0/4000
+  train: 640/4000
+  train: 1280/4000
+  train: 1920/4000
+  train: 2560/4000
+  train: 3200/4000
+  train: 3840/4000
+
+  TRAIN (model was FITTED on these): samples-F1 = 0.5705 | 2.19 concepts/img
+  valid: 0/4000
+  valid: 640/4000
+  valid: 1280/4000
+  valid: 1920/4000
+  valid: 2560/4000
+  valid: 3200/4000
+  valid: 3840/4000
+  VALID (held out)                 : samples-F1 = 0.5600 | 2.12 concepts/img
+
+  generalisation gap = +0.0106

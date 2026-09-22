@@ -1,0 +1,28 @@
+[BLIP-2 zero-shot] scoring 9927 pairs with microsoft/deberta-xlarge-mnli ...
+Loading weights:   0%|          | 0/772 [00:00<?, ?it/s]Loading weights: 100%|██████████| 772/772 [00:00<00:00, 20313.57it/s]
+[transformers] [1mDebertaModel LOAD REPORT[0m from: microsoft/deberta-xlarge-mnli
+Key                 | Status     |  | 
+--------------------+------------+--+-
+classifier.bias     | UNEXPECTED |  | 
+classifier.weight   | UNEXPECTED |  | 
+pooler.dense.weight | UNEXPECTED |  | 
+pooler.dense.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[BLIP-2 zero-shot] ImageCLEF BERTScore-F1 = 0.5195  (n=9927)
+[BLIP-2 zero-shot] updated roco_zeroshot_metrics.json
+[BLIP-2 fine-tuned] scoring 9927 pairs with microsoft/deberta-xlarge-mnli ...
+[BLIP-2 fine-tuned] ImageCLEF BERTScore-F1 = 0.6441  (n=9927)
+[BLIP-2 fine-tuned] updated roco_finetuned_metrics.json
+[BioMedVQA zero-shot] scoring 40 pairs with microsoft/deberta-xlarge-mnli ...
+[BioMedVQA zero-shot] ImageCLEF BERTScore-F1 = 0.5030  (n=40)
+[BioMedVQA zero-shot] updated roco_biomed_zeroshot_metrics.json
+
+==================================================================
+  ImageCLEF-comparable BERTScore (microsoft/deberta-xlarge-mnli, F1)
+  ROCOv2 leaderboard: baseline 0.6264 | CSIRO (best) 0.6413
+==================================================================
+  BLIP-2 zero-shot       (n=9927) : 0.5195
+  BLIP-2 fine-tuned      (n=9927) : 0.6441
+  BioMedVQA zero-shot    (n=  40) : 0.5030

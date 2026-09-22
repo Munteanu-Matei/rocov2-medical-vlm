@@ -1,0 +1,14 @@
+{
+  "mode": "train",
+  "n_images": 59958,
+  "n_enriched": 2836,
+  "n_labels_added": 3026,
+  "n_labels_original": 200734,
+  "n_labels_final": 203760,
+  "label_increase_pct": 1.507467593930276,
+  "avg_concepts_original": 3.347910203809333,
+  "avg_concepts_final": 3.398378865205644,
+  "model_checkpoint": "./cui_clf_ckpt/best.pt",
+  "thresholds_file": "./cui_clf_ckpt/thresholds.json",
+  "elapsed_seconds": 2961.3625252246857
+}

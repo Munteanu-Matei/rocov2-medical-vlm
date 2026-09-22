@@ -1,0 +1,38 @@
+[
+ {
+  "epoch": 1,
+  "train_loss": 3.8398130617141724,
+  "val_loss": 3.419430082321167,
+  "path": "/home/matei/roco_biomed_checkpoints/roco_biomed_epoch1.pt",
+  "BLEU-1": 0.03953079954647813,
+  "BLEU-4": 0.00481255795061735,
+  "METEOR": 0.08168310250380102,
+  "ROUGE-L": 0.12544926893362357,
+  "CIDEr": 0.04924136993951879,
+  "BERTScore-F1": 0.6166865825653076
+ },
+ {
+  "epoch": 2,
+  "train_loss": 3.4765494176546734,
+  "val_loss": 3.2581826210021974,
+  "path": "/home/matei/roco_biomed_checkpoints/roco_biomed_epoch2.pt",
+  "BLEU-1": 0.06161854949676898,
+  "BLEU-4": 0.00881291148450758,
+  "METEOR": 0.09844619340807301,
+  "ROUGE-L": 0.14385090428842112,
+  "CIDEr": 0.08299714571796153,
+  "BERTScore-F1": 0.6322619915008545
+ },
+ {
+  "epoch": 3,
+  "train_loss": 3.3118617194493614,
+  "val_loss": 3.1700707302093507,
+  "path": "/home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt",
+  "BLEU-1": 0.07256513285946217,
+  "BLEU-4": 0.012159420327209165,
+  "METEOR": 0.10979084992137124,
+  "ROUGE-L": 0.15027888720650012,
+  "CIDEr": 0.11400367307867239,
+  "BERTScore-F1": 0.6405200958251953
+ }
+]

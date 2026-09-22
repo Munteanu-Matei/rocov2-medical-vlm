@@ -1,0 +1,13 @@
+{
+ "split": "test",
+ "n_images": 9927,
+ "n_concepts": 1571,
+ "checkpoint": "/home/matei/cnn1_on_enriched/best.pt",
+ "thresholds": "/home/matei/cnn1_on_enriched/thresholds.json",
+ "global_tau": 0.9400000000000002,
+ "f1_global_invocab": 0.41433103930577864,
+ "f1_global_fullgold": 0.4106943358211469,
+ "f1_perlabel_invocab": 0.4570820610188596,
+ "f1_perlabel_fullgold": 0.4531068836487451,
+ "val_f1_perlabel_reference": 0.5586005921715745
+}

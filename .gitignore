@@ -1,0 +1,22 @@
+# Python / Jupyter clutter
+__pycache__/
+.ipynb_checkpoints/
+
+# Model weights and large intermediates (share separately, never via git)
+*.pt
+*.pth
+*.safetensors
+*.npz
+*_ckpt/*/
+
+# Resume files: stale ones cause evaluations to silently reuse old predictions
+*_preds.jsonl
+
+# Local caches and datasets
+enriched/alias_cache.json
+rocov2/
+rocov2_enriched/
+VQA-RAD_dataset/
+
+# OS files
+.DS_Store
