@@ -1,20 +1,12 @@
 #!/usr/bin/env python
-# Zero-shot ROCOv2 captioning with Qwen3-VL -- V1: a RADIOLOGY-CONSTRAINED prompt adapted
-# to this instruction-tuned model (vs V0's bare "a photo of"). V1 shows Qwen at its best;
-# it is NOT the strict same-prompt comparison to BLIP-2/BioMedVQA (that is V0) -- report both.
-#
-# Prompt = a system turn (expert radiologist; describe only what is visible; terse clinical
-# register; no preamble) + a user turn (image + "Provide the caption for this image."). The
-# model answers the instruction normally; the decoded prediction is that whole reply (the
-# prompt is sliced off). Everything else -- greedy decoding, batch 1, 1024 vis-token cap,
-# resumable checkpoint, and the identical metric suite -- matches V0, so the ONLY V0->V1
-# difference is the prompt.
-#
+# Zero-shot ROCOv2 captioning with Qwen3-VL -- V1: radiology-constrained prompt.
+
 #   full  : conda activate vlm && python qwen3vl_roco_zeroshot_v1.py
 #   smoke : ROCO_N=8 python qwen3vl_roco_zeroshot_v1.py
 #   faster: MAX_VIS_TOKENS=768 python qwen3vl_roco_zeroshot_v1.py   (less detail, quicker)
 #   resume: re-run the same command (skips finished images)
 #   NOTE  : compare V0 and V1 at the SAME MAX_VIS_TOKENS, else prompt vs resolution confound.
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")  # reduce fragmentation

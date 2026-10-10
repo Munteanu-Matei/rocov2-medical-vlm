@@ -1,36 +1,11 @@
 #!/usr/bin/env python
 # LoRA fine-tuning of Qwen3-VL-4B-Instruct on ROCOv2 WITH UMLS CONCEPT GUIDANCE (Model B).
-#
-# Model B = Model A (qwen3vl_roco_finetune.py) + an auxiliary multi-label concept head on
-# the MERGER output. Everything else -- data subset, seed, resolution, LoRA config, LRs,
-# schedule, prompt, decoding -- is identical, so the ONLY difference is the CUI guidance.
-#
-# Precedent: AI Stat Lab (ImageCLEFmedical Caption 2025, 3rd place, CEUR Vol-4038 paper_196).
-# They mean-pool the Q-Former output and attach two linear classifiers (2,478 CUIs + 21
-# semantic types), training with L_total = L_caption + lambda * L_cls at lambda = 0.1.
-# Their Table 2 ablation (dual encoder, #1673 -> #1695) is the only clean isolation of this
-# variable in the literature: ROUGE-1 +0.0062, UMLS F1 +0.0048, AlignScore -0.0053.
-#
-# Two documented deviations from them:
-#   1. BCE-with-pos_weight instead of multi-label margin loss. BCE is what every top
-#      ImageCLEF-2025 concept-detection team used (AUEB, DeepLens, UIT-Oggy); pos_weight
-#      handles the 3-of-1571 imbalance explicitly, and we never need calibrated
-#      probabilities since the head is discarded at inference. Set CUI_LOSS=margin to
-#      reproduce their exact choice.
-#   2. Coarse head = ROCOv2's 18 MANUALLY CURATED concepts (modality / body region /
-#      directionality) instead of 21 UMLS semantic types, which ROCOv2 does not ship.
-#      Same role (small, dense, low-tail), hand-curated rather than auto-extracted.
-#
-# The head sits BEFORE the LLM and the ViT is frozen, so the auxiliary gradient reaches
-# ONLY the merger -- i.e. this tests connector *content*, orthogonal to the earlier
-# connector *bandwidth* result. Nothing is consumed at inference: the heads are dropped,
-# so evaluation uses qwen3vl_roco_zeroshot_v1.py unchanged (no CUI detector, hence none of
-# the error-propagation that sank the concept-injection methods at ImageCLEF).
-#
+
 #   probe : PROBE=1 python qwen3vl_roco_finetune_cui.py
 #   train : python qwen3vl_roco_finetune_cui.py 2>&1 | tee ft_cui_run.log
 #   ablate: LAMBDA_CUI=0 python qwen3vl_roco_finetune_cui.py   # == Model A, same code path
 #   resume: RESUME=1 python qwen3vl_roco_finetune_cui.py
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")

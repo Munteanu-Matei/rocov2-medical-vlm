@@ -1,21 +1,12 @@
 #!/usr/bin/env python
-# Zero-shot ROCOv2 captioning with Qwen3-VL (instruction-tuned VLM), used OFF THE
-# SHELF -- no fine-tuning. Uses the SAME "a photo of" prompt and the SAME metric suite as
-# the BLIP-2 (caption_roco.py) and BioMedVQA (caption_roco_biomed.py) zero-shot runs.
-# Decoding is GREEDY (beam=5 was ~8 days on this 12 GB Volta card); to keep the three
-# comparable, re-score BLIP-2 / BioMedVQA greedy too (num_beams=1, drop length_penalty).
-#
-# One necessary adaptation: Qwen3-VL is instruction-tuned, not a raw LM, so "a photo
-# of" cannot be a plain decoder prefix. We apply it as an ASSISTANT-turn prefix that
-# the model CONTINUES (the functional analog of priming BLIP-2/GPT-2's decoder with
-# "a photo of"). The decoded prediction is the continuation only -- the prefix is
-# stripped -- exactly as in the other two runs.
-#
+# Zero-shot ROCOv2 captioning with Qwen3-VL (off the shelf, no fine-tuning).
+
 #   full  : conda activate vlm && python qwen3vl_roco_zeroshot_v0.py
 #   smoke : ROCO_N=40 python qwen3vl_roco_zeroshot_v0.py
 #   8B 4-bit instead of 4B bf16:
 #           MODEL_ID=Qwen/Qwen3-VL-8B-Instruct LOAD_IN_4BIT=1 python qwen3vl_roco_zeroshot_v0.py
 #   if you OOM: CAPTION_BATCH=2 python ...   (lower batch, or MAX_VIS_TOKENS for resolution)
+
 import os
 os.chdir("/home/matei")
 # Model is downloaded locally (see MODEL_ID below) -- like blip2-opt-2.7b -- so the run

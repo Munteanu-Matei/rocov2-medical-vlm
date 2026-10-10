@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """Standalone BLIP-2 VQA-RAD fine-tuning — generated from blip-2_fine_tuned_VQA-RAD.ipynb.
-Run inside tmux on the server:  python /home/matei/train.py
-Saves checkpoints to /home/matei/vqa_checkpoints/ (every epoch + a final one)."""
+Run inside tmux on the server:  python /home/matei/train.py"""
 import os
 os.chdir("/home/matei")            # dataset paths in the notebook are relative to here
 

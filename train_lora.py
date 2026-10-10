@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 """Standalone BLIP-2 VQA-RAD fine-tuning WITH LoRA-tuned ViT.
-Generated from blip-2_fine_tuned_VQA-RAD_LoRA-ViT.ipynb.
-Run headless inside tmux:  python /home/matei/train_lora.py
-Checkpoints -> /home/matei/vqa_checkpoints_lora/ (every epoch + final)."""
+Run headless inside tmux:  python /home/matei/train_lora.py"""
 import os
 os.chdir("/home/matei")            # dataset paths are relative to here
 

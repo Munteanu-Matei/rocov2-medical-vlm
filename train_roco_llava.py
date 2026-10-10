@@ -1,13 +1,10 @@
 #!/usr/bin/env python
-# LLaVA-style medical captioner on ROCOv2:
-#   BioMedCLIP ViT-B/16 (frozen) -> 196 patch tokens -> 2-layer MLP -> Qwen2.5-1.5B (frozen + LoRA)
-# Two-stage LLaVA-Med recipe, BOTH stages on the ROCOv2 train split:
-#   Stage 1: train ONLY the MLP connector (align vision -> Qwen space)
-#   Stage 2: add LoRA on Qwen; per-epoch checkpoint + validation (deberta BERTScore) + epoch selection
-# Fits the 12 GB TITAN V (measured ~7.8 GB peak at batch 2, full 196 tokens).
+# LLaVA-style medical captioner on ROCOv2: BioMedCLIP -> MLP -> Qwen2.5-1.5B.
+
 #   smoke: STAGE1_EPOCHS=1 STAGE2_EPOCHS=1 ROCO_TRAIN_N=32 VAL_LOSS_N=8 VAL_GEN_N=8 python train_roco_llava.py
 #   full : python train_roco_llava.py
 #   RUN_TAG (default vL<VISION_LAYER>, e.g. "vL-2") tags every output path so reruns never collide.
+
 import os
 os.chdir("/home/matei")
 os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN"] = "1"   # ignore the stale HF token -> anonymous downloads

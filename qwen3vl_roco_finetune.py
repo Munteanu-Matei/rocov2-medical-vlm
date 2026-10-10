@@ -1,26 +1,11 @@
 #!/usr/bin/env python
 # LoRA fine-tuning of Qwen3-VL-4B-Instruct on ROCOv2 captioning.
-#
-# Design follows the literature closest to this task -- the ROCOv2 LoRA study
-# (PMC12730038) and Swin-Qwen3 (Front. Radiol. 2026) -- both of which use a SINGLE
-# training stage, a FROZEN vision encoder, and LoRA on the LLM plus the multimodal
-# projector ("mm_proj" there = `visual.merger` here), in bf16 with NO quantization.
-# Qwen3-VL's own report (Table 1) trains the merger alone only to BOOTSTRAP a fresh
-# ViT-LLM pairing; our model is already aligned, so that stage does not transfer.
-#
-# What is trainable:
-#   * LoRA adapters (r=16, a=32) on the LLM q/k/v/o_proj + gate/up/down_proj   lr 1e-4
-#   * visual.merger + visual.deepstack_merger_list.{0,1,2}  (the projectors)   lr 2e-5
-# Everything else -- all ViT blocks, patch_embed, embeddings, lm_head -- is frozen, so
-# no ViT activations are stored and memory stays inside 12 GB.
-#
-# Precision: base in bf16, trainable params in fp32 master weights, forward under
-# bf16 autocast (standard mixed precision -- keeps AdamW updates from underflowing).
-#
+
 #   probe : PROBE=1 python qwen3vl_roco_finetune.py          # ~20 steps, VRAM + s/step
 #   probe@512 : PROBE=1 MAX_VIS_TOKENS=512 python qwen3vl_roco_finetune.py
 #   train : python qwen3vl_roco_finetune.py 2>&1 | tee ft_run.log
 #   resume: RESUME=1 python qwen3vl_roco_finetune.py
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")

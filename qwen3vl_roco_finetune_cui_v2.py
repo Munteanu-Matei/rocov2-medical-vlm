@@ -1,93 +1,13 @@
 #!/usr/bin/env python
 # LoRA fine-tuning of Qwen3-VL-4B-Instruct on ROCOv2 WITH UMLS CONCEPT GUIDANCE.
-#
-# ============================================================================
-# WHAT CHANGED vs qwen3vl_roco_finetune_cui.py  (Model B, first run)
-# ============================================================================
-# The first Model B run used a FIXED lambda:
-#
-#       L_total = L_caption + lambda * L_aux        with lambda = 0.1, constant
-#
-# lambda is constant, but the QUANTITY THAT MATTERS -- how much the auxiliary
-# objective actually influences the shared visual representation -- is not
-# lambda.  It is the ratio
-#
-#       influence = lambda * L_aux / L_caption
-#
-# and both losses move during training, at very different rates:
-#
-#       step    L_caption    L_aux    lambda   influence
-#        750      2.380      0.826     0.1       3.5%
-#       1500      2.240      0.455     0.1       2.0%
-#       2250      2.215      0.406     0.1       1.8%
-#       3000      2.176      0.361     0.1       1.7%
-#       change     -9%        -56%      0%
-#
-# Predicting ~3 concepts from an image is easy, so the auxiliary head converged
-# fast and L_aux collapsed by 56%.  Generating radiology prose is hard, so
-# L_caption barely moved (-9%).  With lambda fixed, the auxiliary term therefore
-# SHRANK relative to the caption term throughout training.  Since the gradient
-# reaching the merger scales with lambda * dL_aux/dtheta, the concept signal was
-# strongest while the model was still random and weakest once it mattered --
-# and never entered the 5-20% band this script itself recommends.
-#
-# Model A and Model B came out statistically identical (val 2.2015 vs 2.1987,
-# 0.13%).  That is NOT evidence that concept guidance fails: at a 1.7% influence
-# the intervention was too weak to test the hypothesis at all.
-#
-# FIX: normalise lambda per step so the influence stays at a target fraction:
-#
-#       lambda_t = clamp(AUX_FRAC * L_caption.detach() / L_aux.detach(),
-#                        LAMBDA_MIN, LAMBDA_MAX)
-#
-#   - .detach() is essential.  The scale factor must not be differentiated, or
-#     the optimiser minimises the RATIO instead of the two losses.  Detached, it
-#     acts as a per-step gradient rescale, which is what we want.
-#   - the clamp guards the degenerate case L_aux -> 0  =>  lambda -> infinity.
-#   - AUX_FRAC = 0.10 sits mid-range of the recommended 5-20%.  Higher values
-#     trade caption quality for concept accuracy, and BERTScore is the metric
-#     we report, so 0.20 is the ceiling worth trying.
-#
-# Set LAMBDA_MODE=fixed to recover the original constant-lambda behaviour
-# (reproduces the first Model B run exactly when LAMBDA_CUI=0.1).
-#
-# ROCO_DIR is now read from the environment so the model can be trained on the
-# caption-enriched labels:
-#       ROCO_DIR=/home/matei/rocov2_enriched python qwen3vl_roco_finetune_cui_v2.py
-# ============================================================================
-#
-# Model B = Model A (qwen3vl_roco_finetune.py) + an auxiliary multi-label concept head on
-# the MERGER output. Everything else -- data subset, seed, resolution, LoRA config, LRs,
-# schedule, prompt, decoding -- is identical, so the ONLY difference is the CUI guidance.
-#
-# Precedent: AI Stat Lab (ImageCLEFmedical Caption 2025, 3rd place, CEUR Vol-4038 paper_196).
-# They mean-pool the Q-Former output and attach two linear classifiers (2,478 CUIs + 21
-# semantic types), training with L_total = L_caption + lambda * L_cls at lambda = 0.1.
-# Their Table 2 ablation (dual encoder, #1673 -> #1695) is the only clean isolation of this
-# variable in the literature: ROUGE-1 +0.0062, UMLS F1 +0.0048, AlignScore -0.0053.
-#
-# Two documented deviations from them:
-#   1. BCE-with-pos_weight instead of multi-label margin loss. BCE is what every top
-#      ImageCLEF-2025 concept-detection team used (AUEB, DeepLens, UIT-Oggy); pos_weight
-#      handles the 3-of-1571 imbalance explicitly, and we never need calibrated
-#      probabilities since the head is discarded at inference. Set CUI_LOSS=margin to
-#      reproduce their exact choice.
-#   2. Coarse head = ROCOv2's 18 MANUALLY CURATED concepts (modality / body region /
-#      directionality) instead of 21 UMLS semantic types, which ROCOv2 does not ship.
-#      Same role (small, dense, low-tail), hand-curated rather than auto-extracted.
-#
-# The head sits BEFORE the LLM and the ViT is frozen, so the auxiliary gradient reaches
-# ONLY the merger -- i.e. this tests connector *content*, orthogonal to the earlier
-# connector *bandwidth* result. Nothing is consumed at inference: the heads are dropped,
-# so evaluation uses qwen3vl_roco_zeroshot_v1.py unchanged (no CUI detector, hence none of
-# the error-propagation that sank the concept-injection methods at ImageCLEF).
-#
+
 #   probe : PROBE=1 python qwen3vl_roco_finetune_cui_v2.py
 #   train : ROCO_DIR=/home/matei/rocov2_enriched python qwen3vl_roco_finetune_cui_v2.py \
 #             2>&1 | tee ft_cui_v2_run.log
 #   ablate: AUX_FRAC=0 python qwen3vl_roco_finetune_cui_v2.py   # == Model A, same code path
 #   fixed : LAMBDA_MODE=fixed LAMBDA_CUI=0.1 python qwen3vl_roco_finetune_cui_v2.py
 #   resume: RESUME=1 python qwen3vl_roco_finetune_cui_v2.py
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")

@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 # Fine-tune the VQA-RAD (LoRA-ViT) BLIP-2 model on a ROCOv2 train subset for CAPTIONING.
-# Resumes from vqa_lora_final.pt (Sarah: "further train it on a subset").
-# Per epoch: checkpoint + validation loss + validation generation/metrics.
-# Test is NEVER touched here -- score the selected epoch with caption_roco.py.
-#
+
 #   smoke : ROCO_TRAIN_N=40 EPOCHS=1 VAL_GEN_N=16 VAL_LOSS_N=16 python train_roco_caption.py
 #   full  : python train_roco_caption.py
+
 import os
 os.chdir("/home/matei")
 import json, time, random

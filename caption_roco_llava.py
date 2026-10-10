@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # Score the LLaVA-style BioMedCLIP->MLP->Qwen model on the ROCOv2 TEST set.
-# Same "a photo of" prompt, same beam decoding, and same deberta-xlarge-mnli
-# BERTScore as the other ROCO runs, so results are directly comparable.
+
 #   CKPT_PATH=<roco_llava_...pt> RUN_TAG=llava_finetuned python caption_roco_llava.py
 #   smoke: ROCO_N=40 CKPT_PATH=<...> python caption_roco_llava.py
+
 import os
 os.chdir("/home/matei")
 os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN"] = "1"

@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-# Zero-shot ROCOv2 captioning with the BioMedVQA model (BioMedCLIP vision encoder
-# + linear translator + GPT-2) fine-tuned on VQA-RAD. Uses the SAME "a photo of"
-# prompt and the SAME beam-search decoding as the BLIP-2 run (caption_roco.py)
-# for a fair comparison.
+# Zero-shot ROCOv2 captioning with the BioMedVQA model (BioMedCLIP + GPT-2).
+
 #   full : python caption_roco_biomed.py
 #   smoke: ROCO_N=40 python caption_roco_biomed.py
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")   # models are cached; avoid flaky hub calls

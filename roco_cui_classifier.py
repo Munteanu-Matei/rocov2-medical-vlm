@@ -1,29 +1,10 @@
 #!/usr/bin/env python
 # Stage 1 -- baseline multi-LABEL CUI classifier for ROCOv2.
-#
-# WHY MULTI-LABEL, NOT MULTI-CLASS: ROCOv2 images carry 3.35 concepts on average
-# (max 21), so concepts must be predicted INDEPENDENTLY -- sigmoid per class + BCE,
-# never softmax + cross-entropy (which would force exactly one label per image).
-#
-# ARCHITECTURE (justified by ImageCLEFmedical 2025 concept-detection results, where
-# ImageNet CNNs beat both a medical transformer and an 8B VLM):
-#   DenseNet-121 (ImageNet-pretrained, in BOTH top-2 teams)
-#     -> GeM pooling (learnable p; AUEB credit it -- interpolates avg<->max so both
-#        global properties like modality and small local findings survive)
-#     -> Linear(1024 -> n_concepts)
-#   Loss: BCEWithLogits + pos_weight  (~3 positives among ~1571 classes)
-#   Thresholds: global sweep, then PER-LABEL coordinate ascent (AUEB's winning trick)
-#
-# PRIMARY METRIC: samples-average F1 -- per-image F1 between predicted and gold
-# concept sets, averaged over images. This is ImageCLEF's official metric.
-# Reference: AUEB won 2025 with 0.5888; ImageCLEF baseline range ~0.52-0.59.
-#
-# RUNS ON: cuda | mps (Apple Silicon) | cpu -- auto-detected.
-#   pip install torch torchvision pandas pillow tqdm
-#
+
 #   smoke : N_TRAIN=2000 EPOCHS=1 python roco_cui_classifier.py
 #   full  : python roco_cui_classifier.py 2>&1 | tee cui_clf.log
 #   resume: RESUME=1 python roco_cui_classifier.py
+
 import os, json, math, time, random, collections
 import numpy as np
 import pandas as pd

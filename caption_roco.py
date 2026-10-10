@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # Zero-shot ROCOv2 captioning with the VQA-RAD (LoRA-ViT) model, "a photo of" prompt.
-# Headless version of blip-2_roco_captioning_zeroshot.ipynb for tmux.
+
 #   full run:   python caption_roco.py
 #   smoke test: ROCO_N=40 python caption_roco.py     (first 40 images only)
+
 import os
 os.chdir("/home/matei")
 import json

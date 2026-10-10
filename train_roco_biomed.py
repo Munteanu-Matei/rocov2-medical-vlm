@@ -1,12 +1,9 @@
 #!/usr/bin/env python
-# Fine-tune the VQA-RAD BioMedVQA model (BioMedCLIP vision encoder -> linear
-# translator -> GPT-2) on ROCOv2 CAPTIONING. Resumes from biomed_vqa_final.pt.
-# Per epoch: checkpoint + validation loss + validation generation/metrics
-# (deberta-xlarge-mnli BERTScore, comparable to the ROCOv2 leaderboard).
-# Epoch is selected on VALIDATION; TEST is scored separately with
-# caption_roco_biomed.py (CKPT_PATH=<best>), never here.
+# Fine-tune the VQA-RAD BioMedVQA model (BioMedCLIP + GPT-2) on ROCOv2 captioning.
+
 #   smoke: ROCO_TRAIN_N=40 EPOCHS=1 VAL_LOSS_N=16 VAL_GEN_N=16 python train_roco_biomed.py
 #   full : python train_roco_biomed.py
+
 import os
 os.chdir("/home/matei")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")   # models are cached; avoid flaky hub calls
