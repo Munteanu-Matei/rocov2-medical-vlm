@@ -132,7 +132,7 @@ selection. The test split is never used for model selection.
 
 | System | Architecture | What was trained |
 |---|---|---|
-| BLIP-2 | ViT-g → Q-Former (32 queries) → OPT-2.7B | ViT LoRA, fine-tuned on a 12k ROCOv2 subset |
+| BLIP-2 | ViT-g → Q-Former (32 queries) → OPT-2.7B | Q-Former, projection and ViT LoRA; 12k ROCOv2 subset, 2 epochs |
 | BioMedVQA | BioMedCLIP → 1 visual token → GPT-2 | Translator + GPT-2, fine-tuned on a 12k subset |
 | LLaVA-style | BioMedCLIP → **196 patch tokens** → 2-layer MLP → Qwen2.5-1.5B | Two stages: connector only, then LoRA; full 59,958-image train split |
 | Qwen3-VL-4B | SigLIP-2 ViT → 2×2 MLP merger → Qwen3 LLM | Zero-shot (two prompts), then LoRA + merger on a 12k subset |
@@ -317,7 +317,7 @@ in `blip-2_fine_tuned_VQA-RAD.ipynb` and `blip-2_fine_tuned_VQA-RAD_LoRA-ViT.ipy
 CKPT_PATH=/home/matei/vqa_checkpoints_lora/vqa_lora_final.pt RUN_TAG=zeroshot python caption_roco.py
 
 # fine-tune (2 epochs on a 12k subset), then score the selected epoch
-python train_roco_caption.py                     # -> roco_checkpoints/roco_caption_epoch{1,2}.pt
+ROCO_TRAIN_N=12000 EPOCHS=2 python train_roco_caption.py   # -> roco_checkpoints/roco_caption_epoch{1,2}.pt
 CKPT_PATH=/home/matei/roco_checkpoints/roco_caption_epoch2.pt RUN_TAG=finetuned python caption_roco.py
 
 # add the leaderboard-comparable BERTScore to both
@@ -341,17 +341,21 @@ CKPT_PATH=/home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt RUN_TAG=biom
 ### 4. LLaVA-style captioner
 
 `VISION_LAYER` selects which BioMedCLIP block feeds the connector. **Its default
-is `-2`**, so the last-block model must set `-1` explicitly. `RUN_TAG` (default
+is `-2`**, so the last-block model must set `-1` explicitly. The script also
+defaults to a 12k subset with 2 + 3 epochs; the reported runs used the full
+training split with 1 + 4 epochs, so set these explicitly as below. `RUN_TAG` (default
 `vL<VISION_LAYER>`) sets the checkpoint directory.
 
 ```bash
 # last ViT block: stage 1 (connector, 1 epoch) + stage 2 (LoRA, 4 epochs), ~39 h
-VISION_LAYER=-1 python train_roco_llava.py      # -> roco_llava_checkpoints_vL-1/roco_llava_s2_epoch{1..4}.pt
+ROCO_TRAIN_N=59958 STAGE1_EPOCHS=1 STAGE2_EPOCHS=4 VISION_LAYER=-1 \
+  python train_roco_llava.py                     # -> roco_llava_checkpoints_vL-1/roco_llava_s2_epoch{1..4}.pt
 CKPT_PATH=/home/matei/roco_llava_checkpoints_vL-1/roco_llava_s2_epoch3.pt RUN_TAG=llava_finetuned \
   python caption_roco_llava.py                   # -> roco_llava_finetuned_metrics.json
 
 # penultimate ViT block
-VISION_LAYER=-2 python train_roco_llava.py      # -> roco_llava_checkpoints_vL-2/...
+ROCO_TRAIN_N=59958 STAGE1_EPOCHS=1 STAGE2_EPOCHS=4 VISION_LAYER=-2 \
+  python train_roco_llava.py                     # -> roco_llava_checkpoints_vL-2/...
 CKPT_PATH=/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch2.pt RUN_TAG=llava_vL2_ep2 \
   python caption_roco_llava.py                   # -> roco_llava_vL2_ep2_metrics.json
 ```
@@ -546,9 +550,9 @@ Problems that cost real time during the project. Each one fails silently.
   test set. The CNN-1 vs CNN-2 comparison is tilted in CNN-2's favour by an
   amount related to the matcher's error rate.
 - **The enrichment's precision is established for modality concepts** (against
-  ROCOv2's manually curated labels) **but not yet independently for rare
-  anatomical concepts.** A blind manual audit (`enriched/AUDIT_SHEET.csv`) is in
-  progress.
+  ROCOv2's manually curated labels) **but not independently for rare anatomical
+  concepts.** An LLM-graded stratified sample suggests precision is lower there
+  than on modality concepts; that is not a clinical validation.
 - **Training budgets.** The Qwen3-VL variants use 12,000 of 59,958 training
   images and had not converged at 3,000 steps.
 
