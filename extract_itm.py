@@ -1,4 +1,5 @@
-import torch, warnings, traceback
+import os, torch, warnings, traceback
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
 warnings.filterwarnings("ignore")
 try:
     from transformers import Blip2ForImageTextRetrieval
@@ -26,7 +27,7 @@ try:
             "intermediate": {k: v.detach().float().clone() for k, v in l.intermediate.state_dict().items()},
             "output":       {k: v.detach().float().clone() for k, v in l.output.state_dict().items()},
         })
-    out = "/home/matei/blip2_qformer_text_weights.pt"
+    out = f"{HOME}/blip2_qformer_text_weights.pt"
     torch.save(save, out)
     print(f"SAVED {out}", flush=True)
     print("word:", tuple(save['word_embeddings.weight'].shape),

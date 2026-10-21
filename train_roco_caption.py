@@ -5,7 +5,8 @@
 #   full  : python train_roco_caption.py
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 import json, time, random
 import torch
 import torch.nn as nn
@@ -23,17 +24,17 @@ VAL_GEN_N  = int(os.environ.get("VAL_GEN_N", 500))
 BATCH, ACCUM = 2, 4
 LR, LORA_LR, WD = 1e-5, 1e-4, 0.05
 CAP_PROMPT, LLM_MAXLEN = "a photo of", 96
-RESUME_FROM = os.environ.get("RESUME_FROM", "/home/matei/vqa_checkpoints_lora/vqa_lora_final.pt")
-SAVE_DIR = "/home/matei/roco_checkpoints"
+RESUME_FROM = os.environ.get("RESUME_FROM", f"{HOME}/vqa_checkpoints_lora/vqa_lora_final.pt")
+SAVE_DIR = f"{HOME}/roco_checkpoints"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ── load BLIP-2 + graft Q-Former text weights ────────────────────────────────
 from transformers import Blip2Processor, Blip2ForConditionalGeneration
 
-CKPT = "/home/matei/blip2-opt-2.7b"
+CKPT = f"{HOME}/blip2-opt-2.7b"
 processor = Blip2Processor.from_pretrained(CKPT)
 blip2 = Blip2ForConditionalGeneration.from_pretrained(CKPT, torch_dtype=dtype, low_cpu_mem_usage=True)
-_QF_TEXT = torch.load("/home/matei/blip2_qformer_text_weights.pt", map_location="cpu")
+_QF_TEXT = torch.load(f"{HOME}/blip2_qformer_text_weights.pt", map_location="cpu")
 qformer_word_emb = nn.Embedding.from_pretrained(_QF_TEXT["word_embeddings.weight"], freeze=False)
 qformer_pos_emb  = nn.Embedding.from_pretrained(_QF_TEXT["position_embeddings.weight"], freeze=False)
 qformer_text_ffn = _QF_TEXT["text_ffn"]
@@ -154,7 +155,7 @@ print(f"trainable {_tr/1e6:.1f}M / total {_to/1e6:.1f}M", flush=True)
 import pandas as pd
 from torch.utils.data import Dataset as TorchDataset, DataLoader
 
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 
 def load_roco(split, n=None, seed=0):
     caps = pd.read_csv(os.path.join(ROCO_DIR, f"{split}_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
@@ -350,7 +351,7 @@ for epoch in range(EPOCHS):
         set_mode(False)
         vpreds = caption_records(val_gen_recs)
         # persist raw val predictions so metrics can be recomputed offline if needed
-        with open(f"/home/matei/roco_val_preds_epoch{epoch+1}.json", "w") as f:
+        with open(f"{HOME}/roco_val_preds_epoch{epoch+1}.json", "w") as f:
             json.dump([{"ref": r, "pred": p} for r, p in zip(val_refs, vpreds)], f, indent=1)
         vm = compute_caption_metrics(vpreds, val_refs)
         history.append({"epoch": epoch + 1, "train_loss": train_loss, "val_loss": vloss, "path": path, **vm})
@@ -362,7 +363,7 @@ for epoch in range(EPOCHS):
         import traceback; traceback.print_exc()
         history.append({"epoch": epoch + 1, "train_loss": train_loss, "path": path, "val_error": str(e)})
         print(f"  VALIDATION FAILED (checkpoint is safe, training continues): {e}", flush=True)
-    with open("/home/matei/roco_finetune_history.json", "w") as f:
+    with open(f"{HOME}/roco_finetune_history.json", "w") as f:
         json.dump(history, f, indent=1)
 
 # ── epoch selection on VALIDATION (test untouched) ───────────────────────────
@@ -382,5 +383,5 @@ if best is None:
 print(f"\nBEST epoch by validation BERTScore: {best['epoch']}  ->  {best['path']}")
 print("\nFINAL STEP -- score it ONCE on test, same code path as zero-shot:")
 print(f"  CKPT_PATH={best['path']} RUN_TAG=finetuned \\")
-print(f"    /home/matei/miniconda3/envs/vlm/bin/python /home/matei/caption_roco.py")
+print(f"    python caption_roco.py")
 print("=" * 78, flush=True)

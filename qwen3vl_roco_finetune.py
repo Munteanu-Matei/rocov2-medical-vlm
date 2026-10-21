@@ -7,7 +7,8 @@
 #   resume: RESUME=1 python qwen3vl_roco_finetune.py
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 import json
 import math
@@ -23,9 +24,9 @@ DTYPE  = torch.bfloat16 if device == "cuda" else torch.float32
 print(f"device={device} dtype={DTYPE}", flush=True)
 
 # ── config (env-overridable) ─────────────────────────────────────────────────
-MODEL_ID      = os.environ.get("MODEL_ID", "/home/matei/qwen3-vl-4b-instruct")
+MODEL_ID      = os.environ.get("MODEL_ID", f"{HOME}/qwen3-vl-4b-instruct")
 RUN_TAG       = os.environ.get("RUN_TAG", "qwen3vl_ft")
-OUT_DIR       = f"/home/matei/{RUN_TAG}_ckpt"
+OUT_DIR       = f"{HOME}/{RUN_TAG}_ckpt"
 PROBE         = os.environ.get("PROBE", "0") == "1"
 PROBE_STEPS   = int(os.environ.get("PROBE_STEPS", "20"))
 RESUME        = os.environ.get("RESUME", "0") == "1"
@@ -142,7 +143,7 @@ if device == "cuda":
 
 # ── data ─────────────────────────────────────────────────────────────────────
 import pandas as pd
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 
 def load_split(split, csv):
     img_dir = os.path.join(ROCO_DIR, split)
@@ -329,7 +330,7 @@ for epoch in range(math.ceil(EPOCHS)):
             save_ckpt("last")
             json.dump({"step": gstep, "best_val": best_val, "bad_evals": bad_evals},
                       open(state_path, "w"))
-            json.dump(history, open(f"/home/matei/{RUN_TAG}_history.json", "w"), indent=1)
+            json.dump(history, open(f"{HOME}/{RUN_TAG}_history.json", "w"), indent=1)
             if bad_evals >= PATIENCE:
                 print("[early stop] validation loss stopped improving", flush=True)
                 stop = True

@@ -5,7 +5,8 @@
 #   smoke: ROCO_N=40 python caption_roco_biomed.py
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 os.environ.setdefault("HF_HUB_OFFLINE", "1")   # models are cached; avoid flaky hub calls
 import json
 import torch
@@ -49,7 +50,7 @@ class BioMedVQA(nn.Module):
         return self.llm.generate(inputs_embeds=combined, attention_mask=combined_att, **gen_kwargs)
 
 model = BioMedVQA(vision_encoder).to(device)
-CKPT_PATH = os.environ.get("CKPT_PATH", "/home/matei/biomed_vqa_checkpoints/biomed_vqa_final.pt")
+CKPT_PATH = os.environ.get("CKPT_PATH", f"{HOME}/biomed_vqa_checkpoints/biomed_vqa_final.pt")
 ckpt = torch.load(CKPT_PATH, map_location=device)
 model.translator.load_state_dict(ckpt["translator"])
 model.llm.load_state_dict(ckpt["llm"])
@@ -58,7 +59,7 @@ print(f"loaded BioMedVQA weights (translator + GPT-2) from {CKPT_PATH}", flush=T
 
 # ── ROCOv2 test split ────────────────────────────────────────────────────────
 import pandas as pd
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 IMG_DIR  = os.path.join(ROCO_DIR, "test")
 caps = pd.read_csv(os.path.join(ROCO_DIR, "test_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
 records = [{"id": r.ID, "path": os.path.join(IMG_DIR, f"{r.ID}.jpg"), "caption": str(r.Caption)}
@@ -99,7 +100,7 @@ print(f"captioning {len(records)} images (prompt={CAPTION_PROMPT!r}) ...", flush
 preds = caption_records(records)
 refs  = [r["caption"] for r in records]
 
-OUT_PRED = f"/home/matei/roco_{RUN_TAG}_a_photo_of.json"
+OUT_PRED = f"{HOME}/roco_{RUN_TAG}_a_photo_of.json"
 with open(OUT_PRED, "w") as f:
     json.dump([{"id": r["id"], "ref": r["caption"], "pred": p} for r, p in zip(records, preds)], f, indent=1)
 print(f"saved predictions -> {OUT_PRED}", flush=True)
@@ -153,6 +154,6 @@ metrics = {"n": len(preds), "prompt": CAPTION_PROMPT, "model": "BioMedVQA (BioMe
 print("\n==== BioMedVQA ZERO-SHOT CAPTIONING (a photo of) -- ROCOv2 test ====", flush=True)
 for k, v in metrics.items():
     print(f"  {k:14s}: {v:.4f}" if isinstance(v, float) else f"  {k:14s}: {v}", flush=True)
-with open(f"/home/matei/roco_{RUN_TAG}_metrics.json", "w") as f:
+with open(f"{HOME}/roco_{RUN_TAG}_metrics.json", "w") as f:
     json.dump(metrics, f, indent=1)
-print(f"saved metrics -> /home/matei/roco_{RUN_TAG}_metrics.json", flush=True)
+print(f"saved metrics -> {HOME}/roco_{RUN_TAG}_metrics.json", flush=True)

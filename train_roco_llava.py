@@ -6,7 +6,8 @@
 #   RUN_TAG (default vL<VISION_LAYER>, e.g. "vL-2") tags every output path so reruns never collide.
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 os.environ["HF_HUB_DISABLE_IMPLICIT_TOKEN"] = "1"   # ignore the stale HF token -> anonymous downloads
 import json, time, random
 import torch
@@ -34,7 +35,7 @@ VISION_LAYER = int(os.environ.get("VISION_LAYER", -2))
 # Tags every output path for this run so a rerun (e.g. a different VISION_LAYER) never
 # overwrites a previous run's checkpoints/history/val-preds. Override to set it by hand.
 RUN_TAG = os.environ.get("RUN_TAG", f"vL{VISION_LAYER}")
-SAVE_DIR = f"/home/matei/roco_llava_checkpoints_{RUN_TAG}"
+SAVE_DIR = f"{HOME}/roco_llava_checkpoints_{RUN_TAG}"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ── BioMedCLIP vision encoder (frozen) + deterministic transform ────────────
@@ -107,7 +108,7 @@ def set_mode(train):
 # ── ROCOv2 captioning data ───────────────────────────────────────────────────
 import pandas as pd
 from torch.utils.data import Dataset, DataLoader
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 
 def load_roco(split, n=None, seed=0):
     caps = pd.read_csv(os.path.join(ROCO_DIR, f"{split}_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
@@ -225,7 +226,7 @@ def train_epochs(optimizer, n_epochs, tag_prefix, do_val, history):
             vloss = validation_loss(val_loader)
             set_mode(False)
             vpreds = caption_records(val_gen_recs)
-            with open(f"/home/matei/roco_llava_val_preds_{tag_prefix}_epoch{epoch+1}_{RUN_TAG}.json", "w") as f:
+            with open(f"{HOME}/roco_llava_val_preds_{tag_prefix}_epoch{epoch+1}_{RUN_TAG}.json", "w") as f:
                 json.dump([{"ref": r, "pred": p} for r, p in zip(val_refs, vpreds)], f, indent=1)
             vm = compute_metrics(vpreds, val_refs)
             history.append({"epoch": epoch + 1, "stage": tag_prefix, "train_loss": train_loss,
@@ -239,7 +240,7 @@ def train_epochs(optimizer, n_epochs, tag_prefix, do_val, history):
             history.append({"epoch": epoch + 1, "stage": tag_prefix, "train_loss": train_loss,
                             "path": path, "val_error": str(e)})
             print(f"  VALIDATION FAILED (checkpoint is safe): {e}", flush=True)
-        with open(f"/home/matei/roco_llava_finetune_history_{RUN_TAG}.json", "w") as f:
+        with open(f"{HOME}/roco_llava_finetune_history_{RUN_TAG}.json", "w") as f:
             json.dump(history, f, indent=1)
 
 def save_ckpt(tag):
@@ -298,5 +299,5 @@ if best is None:
 print(f"\nBEST epoch by validation BERTScore: {best['stage']} epoch {best['epoch']}  ->  {best['path']}")
 print("\nFINAL STEP -- score it ONCE on test (same decoding + deberta BERTScore):")
 print(f"  CKPT_PATH={best['path']} RUN_TAG={RUN_TAG}_finetuned \\")
-print(f"    /home/matei/miniconda3/envs/vlm/bin/python /home/matei/caption_roco_llava.py")
+print(f"    python caption_roco_llava.py")
 print("=" * 78, flush=True)

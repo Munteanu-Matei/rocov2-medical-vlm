@@ -32,7 +32,8 @@
 #   one file   : python roco_full_metrics.py roco_qwen3vl_ft_test_captions.json
 #   skip slow  : SKIP_ALIGN=1 python roco_full_metrics.py
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 import json
 import sys
 import re
@@ -56,7 +57,7 @@ RUNS = [
 
 SKIP_ALIGN = os.environ.get("SKIP_ALIGN", "0") == "1"
 SKIP_UMLS  = os.environ.get("SKIP_UMLS", "0") == "1"
-ALIGN_CKPT = os.environ.get("ALIGN_CKPT", "/home/matei/alignscore_ckpt/AlignScore-base.ckpt")
+ALIGN_CKPT = os.environ.get("ALIGN_CKPT", f"{HOME}/alignscore_ckpt/AlignScore-base.ckpt")
 
 # MEDCON-style semantic-type filter: UMLS semantic GROUPS relevant to clinical accuracy
 # (ANAT, CHEM, DEVI, DISO, PHYS, PROC). Expressed as TUIs since scispaCy exposes types.
@@ -191,7 +192,7 @@ def align_score(preds, refs):
 # --------------------------------------------------------------------------- #
 def load_gold_cuis():
     import pandas as pd
-    f = "/home/matei/rocov2/test_concepts.csv"
+    f = f"{HOME}/rocov2/test_concepts.csv"
     if not os.path.isfile(f):
         return None
     df = pd.read_csv(f)

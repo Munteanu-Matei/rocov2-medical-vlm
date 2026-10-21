@@ -5,7 +5,8 @@
 #   smoke test: ROCO_N=40 python caption_roco.py     (first 40 images only)
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 import json
 import torch
 import torch.nn as nn
@@ -19,11 +20,11 @@ print(f"device={device} dtype={dtype}", flush=True)
 from typing import Any
 from transformers import Blip2Processor, Blip2ForConditionalGeneration, BertTokenizer
 
-CKPT = "/home/matei/blip2-opt-2.7b"
+CKPT = f"{HOME}/blip2-opt-2.7b"
 processor = Blip2Processor.from_pretrained(CKPT)
 blip2 = Blip2ForConditionalGeneration.from_pretrained(CKPT, torch_dtype=dtype, low_cpu_mem_usage=True)
 qformer_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-_QF_TEXT = torch.load("/home/matei/blip2_qformer_text_weights.pt", map_location="cpu")
+_QF_TEXT = torch.load(f"{HOME}/blip2_qformer_text_weights.pt", map_location="cpu")
 qformer_word_emb = nn.Embedding.from_pretrained(_QF_TEXT["word_embeddings.weight"], freeze=False)
 qformer_pos_emb  = nn.Embedding.from_pretrained(_QF_TEXT["position_embeddings.weight"], freeze=False)
 qformer_text_ffn = _QF_TEXT["text_ffn"]
@@ -97,7 +98,7 @@ model = model.to(device)
 model.qformer_word_emb = model.qformer_word_emb.to(device, model.query_tokens.dtype)
 model.qformer_pos_emb  = model.qformer_pos_emb.to(device, model.query_tokens.dtype)
 
-LOAD_PATH = os.environ.get("CKPT_PATH", "/home/matei/vqa_checkpoints_lora/vqa_lora_final.pt")
+LOAD_PATH = os.environ.get("CKPT_PATH", f"{HOME}/vqa_checkpoints_lora/vqa_lora_final.pt")
 RUN_TAG   = os.environ.get("RUN_TAG", "zeroshot")
 ckpt = torch.load(LOAD_PATH, map_location=device)
 model.qformer.load_state_dict(ckpt["qformer"])
@@ -112,7 +113,7 @@ print(f"loaded VQA-RAD (LoRA-ViT) weights from {LOAD_PATH}", flush=True)
 
 # ── ROCOv2 test split ────────────────────────────────────────────────────────
 import pandas as pd
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 IMG_DIR  = os.path.join(ROCO_DIR, "test")
 caps = pd.read_csv(os.path.join(ROCO_DIR, "test_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
 def roco_image_path(_id):
@@ -157,7 +158,7 @@ print(f"captioning {len(records)} images (prompt={CAPTION_PROMPT!r}) ...", flush
 preds = caption_records(records)
 refs  = [r["caption"] for r in records]
 
-OUT_PRED = f"/home/matei/roco_{RUN_TAG}_a_photo_of.json"
+OUT_PRED = f"{HOME}/roco_{RUN_TAG}_a_photo_of.json"
 with open(OUT_PRED, "w") as f:
     json.dump([{"id": r["id"], "ref": r["caption"], "pred": p} for r, p in zip(records, preds)], f, indent=1)
 print(f"saved predictions -> {OUT_PRED}", flush=True)
@@ -191,6 +192,6 @@ metrics = {"n": len(preds), "prompt": CAPTION_PROMPT,
 print("\n==== ZERO-SHOT CAPTIONING (a photo of) -- ROCOv2 test ====", flush=True)
 for k, v in metrics.items():
     print(f"  {k:14s}: {v:.4f}" if isinstance(v, float) else f"  {k:14s}: {v}", flush=True)
-with open(f"/home/matei/roco_{RUN_TAG}_metrics.json", "w") as f:
+with open(f"{HOME}/roco_{RUN_TAG}_metrics.json", "w") as f:
     json.dump(metrics, f, indent=1)
-print(f"saved metrics -> /home/matei/roco_{RUN_TAG}_metrics.json", flush=True)
+print(f"saved metrics -> {HOME}/roco_{RUN_TAG}_metrics.json", flush=True)

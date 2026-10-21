@@ -5,7 +5,8 @@
 # with a "BERTScore-F1-imageclef" field.
 #   python rescore_bertscore.py
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 import json
 from imageclef_bertscore import imageclef_bertscore_f1, IMAGECLEF_MODEL
 

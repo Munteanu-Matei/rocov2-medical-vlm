@@ -266,16 +266,18 @@ with GPU training.
 
 ## Reproducing the results
 
-**Paths.** The scripts assume the project root is `/home/matei` (several call
-`os.chdir("/home/matei")`). To run elsewhere, replace that path throughout, or
-run from a user account with the same home directory.
+**Paths.** Run every command from the repository folder. The scripts look for
+datasets, base models and checkpoints inside the repository folder (the layout
+in step 0). To keep them somewhere else, set `ROCO_HOME=/path/to/folder`; that
+folder must then hold all of them. Notebooks use the folder Jupyter was started
+from, or `ROCO_HOME` if set.
 
 **Long runs.** Most steps take many hours. Run them inside `tmux` so they
 survive disconnects, and log to a file:
 
 ```bash
 tmux new -d -s job
-tmux send-keys -t job 'cd /home/matei && conda activate vlm && <command> 2>&1 | tee job.log' C-m
+tmux send-keys -t job 'cd /path/to/rocov2-medical-vlm && conda activate vlm && <command> 2>&1 | tee job.log' C-m
 ```
 
 Each step lists the result file it produces, so the output can be checked
@@ -294,6 +296,40 @@ against the tables above.
 Qwen3-VL and BLIP-2 are loaded from local directories, so long runs have no
 network dependency. If a download fails with HTTP 401, a stale token in
 `~/.cache/huggingface/token` is the usual cause.
+
+**Trained checkpoints.** The weights of the trained models are not stored in
+this repository; they are available from the author on request, as
+`rocov2-medical-vlm-weights.tar` (4.5 GB). Unpack it inside the repository
+folder and verify it:
+
+```bash
+cd rocov2-medical-vlm
+tar -xf rocov2-medical-vlm-weights.tar
+md5sum -c checkpoint_manifest.md5     # every line must end in OK
+```
+
+The checkpoints then sit where the scripts expect them, so every evaluation
+command below runs without retraining (skip the training commands).
+
+| Checkpoint | Model | Step |
+|---|---|---|
+| `blip2_qformer_text_weights.pt` | Q-Former text weights (output of `extract_itm.py`) | 1, 2 |
+| `vqa_checkpoints/vqa_finetuned_final.pt` | BLIP-2 on VQA-RAD, frozen ViT | 1 |
+| `vqa_checkpoints_lora/vqa_lora_final.pt` | BLIP-2 on VQA-RAD, LoRA on ViT; BLIP-2 zero-shot captioning | 1, 2 |
+| `biomed_vqa_checkpoints/biomed_vqa_final.pt` | BioMedVQA on VQA-RAD; BioMedVQA zero-shot captioning | 1, 3 |
+| `roco_checkpoints/roco_caption_epoch2.pt` | BLIP-2 captioner, fine-tuned | 2 |
+| `roco_biomed_checkpoints/roco_biomed_epoch3.pt` | BioMedVQA captioner, fine-tuned | 3 |
+| `roco_llava_checkpoints/roco_llava_s2_epoch3.pt` | LLaVA-style captioner, last ViT block | 4 |
+| `roco_llava_checkpoints_vL-2/roco_llava_s2_epoch2.pt` | LLaVA-style captioner, penultimate ViT block | 4 |
+| `qwen3vl_ft_ckpt/best/` | Qwen3-VL, LoRA + connector trained | 6 |
+| `qwen3vl_ft_cui_ckpt/best/` | Qwen3-VL, concept heads, fixed λ | 6 |
+| `qwen3vl_ft_cui_v2_ckpt/best/` | Qwen3-VL, concept heads, normalised λ, enriched labels | 6 |
+| `cui_clf_ckpt/best.pt` | CNN-1 | 8, 10, 11 |
+| `cui_clf_ckpt_enriched/best.pt` | CNN-2 | 10 |
+
+The LLaVA folders also hold the stage-1 connector (`roco_llava_s1_final.pt`).
+The connector-frozen Qwen3-VL control (step 6b) is not in the bundle; retrain
+it with the step 6(b) command.
 
 ### 1. VQA-RAD models (starting checkpoints)
 
@@ -314,11 +350,11 @@ in `blip-2_fine_tuned_VQA-RAD.ipynb` and `blip-2_fine_tuned_VQA-RAD_LoRA-ViT.ipy
 
 ```bash
 # zero-shot
-CKPT_PATH=/home/matei/vqa_checkpoints_lora/vqa_lora_final.pt RUN_TAG=zeroshot python caption_roco.py
+CKPT_PATH=vqa_checkpoints_lora/vqa_lora_final.pt RUN_TAG=zeroshot python caption_roco.py
 
 # fine-tune (2 epochs on a 12k subset), then score the selected epoch
 ROCO_TRAIN_N=12000 EPOCHS=2 python train_roco_caption.py   # -> roco_checkpoints/roco_caption_epoch{1,2}.pt
-CKPT_PATH=/home/matei/roco_checkpoints/roco_caption_epoch2.pt RUN_TAG=finetuned python caption_roco.py
+CKPT_PATH=roco_checkpoints/roco_caption_epoch2.pt RUN_TAG=finetuned python caption_roco.py
 
 # add the leaderboard-comparable BERTScore to both
 python rescore_bertscore.py
@@ -334,7 +370,7 @@ other rows.
 ```bash
 python caption_roco_biomed.py                    # zero-shot -> roco_biomed_zeroshot_metrics.json
 python train_roco_biomed.py                      # -> roco_biomed_checkpoints/roco_biomed_epoch{1,2,3}.pt
-CKPT_PATH=/home/matei/roco_biomed_checkpoints/roco_biomed_epoch3.pt RUN_TAG=biomed_finetuned \
+CKPT_PATH=roco_biomed_checkpoints/roco_biomed_epoch3.pt RUN_TAG=biomed_finetuned \
   python caption_roco_biomed.py                  # -> roco_biomed_finetuned_metrics.json
 ```
 
@@ -350,20 +386,21 @@ training split with 1 + 4 epochs, so set these explicitly as below. `RUN_TAG` (d
 # last ViT block: stage 1 (connector, 1 epoch) + stage 2 (LoRA, 4 epochs), ~39 h
 ROCO_TRAIN_N=59958 STAGE1_EPOCHS=1 STAGE2_EPOCHS=4 VISION_LAYER=-1 \
   python train_roco_llava.py                     # -> roco_llava_checkpoints_vL-1/roco_llava_s2_epoch{1..4}.pt
-CKPT_PATH=/home/matei/roco_llava_checkpoints_vL-1/roco_llava_s2_epoch3.pt RUN_TAG=llava_finetuned \
+CKPT_PATH=roco_llava_checkpoints/roco_llava_s2_epoch3.pt RUN_TAG=llava_finetuned \
   python caption_roco_llava.py                   # -> roco_llava_finetuned_metrics.json
 
 # penultimate ViT block
 ROCO_TRAIN_N=59958 STAGE1_EPOCHS=1 STAGE2_EPOCHS=4 VISION_LAYER=-2 \
   python train_roco_llava.py                     # -> roco_llava_checkpoints_vL-2/...
-CKPT_PATH=/home/matei/roco_llava_checkpoints_vL-2/roco_llava_s2_epoch2.pt RUN_TAG=llava_vL2_ep2 \
+CKPT_PATH=roco_llava_checkpoints_vL-2/roco_llava_s2_epoch2.pt RUN_TAG=llava_vL2_ep2 \
   python caption_roco_llava.py                   # -> roco_llava_vL2_ep2_metrics.json
 ```
 
 Epochs 3 (last block) and 2 (penultimate block) were chosen on **validation**
 BERTScore, with CIDEr breaking a tie, from `roco_llava_finetune_history*.json`.
-The original last-block run predates `RUN_TAG`, so its checkpoints on the server
-are in `roco_llava_checkpoints/` without a suffix. `caption_roco_llava.py` reads
+The original last-block run predates `RUN_TAG`, so its checkpoints (the ones in
+the shared bundle) are in `roco_llava_checkpoints/` without a suffix; a retrained
+last-block model goes to `roco_llava_checkpoints_vL-1/`. `caption_roco_llava.py` reads
 the ViT layer back from the checkpoint, so evaluation always uses the same
 feature path as training.
 
@@ -398,7 +435,7 @@ env $COMMON TRAIN_MERGER=0 RUN_TAG=qwen3vl_ft_frozen python qwen3vl_roco_finetun
 env $COMMON python qwen3vl_roco_finetune_cui.py                    # -> qwen3vl_ft_cui_ckpt/best
 
 # (d) + normalised lambda, supervised with the ENRICHED labels (run step 9 first)
-env $COMMON RUN_TAG=qwen3vl_ft_cui_v2 ROCO_DIR=/home/matei/rocov2_enriched \
+env $COMMON RUN_TAG=qwen3vl_ft_cui_v2 ROCO_DIR=rocov2_enriched \
   python qwen3vl_roco_finetune_cui_v2.py                           # -> qwen3vl_ft_cui_v2_ckpt/best
 ```
 
@@ -409,7 +446,7 @@ parameters, gradient checks, peak VRAM, and the auxiliary-loss fraction).
 loads the trained connector. The concept heads are dropped at inference.
 
 ```bash
-LORA_PATH=/home/matei/qwen3vl_ft_ckpt/best RUN_TAG=qwen3vl_ft_test python qwen3vl_roco_zeroshot_v1.py
+LORA_PATH=qwen3vl_ft_ckpt/best RUN_TAG=qwen3vl_ft_test python qwen3vl_roco_zeroshot_v1.py
 SKIP_UMLS=1 SKIP_ALIGN=1 python roco_full_metrics.py roco_qwen3vl_ft_test_captions.json
 # -> roco_qwen3vl_ft_test_captions_fullmetrics.json
 ```
@@ -476,11 +513,11 @@ replaced; everything else is a symbolic link to the original data:
 mkdir -p rocov2_enriched
 for f in rocov2/*; do
   case "$(basename "$f")" in train_concepts.csv|valid_concepts.csv|test_concepts.csv) ;;
-    *) ln -s "/home/matei/$f" "rocov2_enriched/$(basename "$f")" ;; esac
+    *) ln -s "$PWD/$f" "rocov2_enriched/$(basename "$f")" ;; esac
 done
-ln -s /home/matei/enriched/train_concepts_enriched_noveto.csv rocov2_enriched/train_concepts.csv
-ln -s /home/matei/enriched/valid_concepts_enriched.csv        rocov2_enriched/valid_concepts.csv
-ln -s /home/matei/enriched/test_concepts_enriched.csv         rocov2_enriched/test_concepts.csv
+ln -s "$PWD/enriched/train_concepts_enriched_noveto.csv" rocov2_enriched/train_concepts.csv
+ln -s "$PWD/enriched/valid_concepts_enriched.csv"        rocov2_enriched/valid_concepts.csv
+ln -s "$PWD/enriched/test_concepts_enriched.csv"         rocov2_enriched/test_concepts.csv
 ```
 
 ### 10. CNN-2 and the comparison on enriched labels
@@ -490,17 +527,17 @@ conda activate roco_env
 export CUDA_VISIBLE_DEVICES="" OMP_NUM_THREADS=4   # CPU training; 4 threads was faster than 6 here
 
 # CNN-2: same script and hyperparameters, enriched labels, separate output dir (~2 h/epoch on CPU)
-ROCO_DIR=/home/matei/rocov2_enriched OUT_DIR=/home/matei/cui_clf_ckpt_enriched \
+ROCO_DIR=rocov2_enriched OUT_DIR=cui_clf_ckpt_enriched \
   WORKERS=2 python roco_cui_classifier.py
-ROCO_DIR=/home/matei/rocov2_enriched OUT_DIR=/home/matei/cui_clf_ckpt_enriched \
+ROCO_DIR=rocov2_enriched OUT_DIR=cui_clf_ckpt_enriched \
   SPLIT=test python eval_test.py                   # -> cui_clf_ckpt_enriched/test_results.json (0.4876)
 
 # CNN-1 on the enriched test set. eval_test.py writes into OUT_DIR, so point it at a
 # directory of symlinks to CNN-1's files; otherwise CNN-1's original result is overwritten.
 mkdir -p cnn1_on_enriched
-ln -sf /home/matei/cui_clf_ckpt/best.pt         cnn1_on_enriched/best.pt
-ln -sf /home/matei/cui_clf_ckpt/thresholds.json cnn1_on_enriched/thresholds.json
-ROCO_DIR=/home/matei/rocov2_enriched OUT_DIR=/home/matei/cnn1_on_enriched \
+ln -sf "$PWD/cui_clf_ckpt/best.pt"         cnn1_on_enriched/best.pt
+ln -sf "$PWD/cui_clf_ckpt/thresholds.json" cnn1_on_enriched/thresholds.json
+ROCO_DIR=rocov2_enriched OUT_DIR=cnn1_on_enriched \
   SPLIT=test python eval_test.py                   # -> cnn1_on_enriched/test_results.json (0.4571)
 ```
 

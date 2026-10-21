@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 """Standalone BLIP-2 VQA-RAD fine-tuning — generated from blip-2_fine_tuned_VQA-RAD.ipynb.
-Run inside tmux on the server:  python /home/matei/train.py"""
+Run inside tmux on the server:  python train.py"""
 import os
-os.chdir("/home/matei")            # dataset paths in the notebook are relative to here
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)            # dataset paths in the notebook are relative to here
 
 
 # ======================================================================
@@ -82,7 +83,7 @@ from transformers import (
     Blip2Processor, Blip2ForConditionalGeneration, BertTokenizer
 )
 
-CKPT = "/home/matei/blip2-opt-2.7b"         
+CKPT = f"{HOME}/blip2-opt-2.7b"         
 processor = Blip2Processor.from_pretrained(CKPT)
 blip2 = Blip2ForConditionalGeneration.from_pretrained(
     CKPT, torch_dtype=dtype, low_cpu_mem_usage=True
@@ -96,7 +97,7 @@ blip2 = Blip2ForConditionalGeneration.from_pretrained(
 # real vocab (ids 0..30521, verified), so we keep it and only swap the weights.
 qformer_tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 
-_QF_TEXT = torch.load("/home/matei/blip2_qformer_text_weights.pt", map_location="cpu")
+_QF_TEXT = torch.load(f"{HOME}/blip2_qformer_text_weights.pt", map_location="cpu")
 qformer_word_emb = nn.Embedding.from_pretrained(_QF_TEXT["word_embeddings.weight"], freeze=False)      # [30523, 768]
 qformer_pos_emb  = nn.Embedding.from_pretrained(_QF_TEXT["position_embeddings.weight"], freeze=False)  # [512,   768]
 qformer_text_ffn = _QF_TEXT["text_ffn"]   # 12 layers of pretrained text feed-forward, grafted in cell 5
@@ -303,7 +304,7 @@ EPOCHS       = 5      # paper (Table 8) uses 5
 ACCUM_STEPS  = 4      # effective batch = 2 * 4 = 8 (fits 12 GB)
 LR           = 1e-5   # paper's VQA fine-tuning LR
 WEIGHT_DECAY = 0.05   # paper's value
-SAVE_DIR     = "/home/matei/vqa_checkpoints"   # checkpoints written here (survive kernel death)
+SAVE_DIR     = f"{HOME}/vqa_checkpoints"   # checkpoints written here (survive kernel death)
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 def save_ckpt(tag):

@@ -5,7 +5,8 @@
 #   full : python train_roco_biomed.py
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 os.environ.setdefault("HF_HUB_OFFLINE", "1")   # models are cached; avoid flaky hub calls
 import json, time, random
 import torch
@@ -23,8 +24,8 @@ VAL_GEN_N  = int(os.environ.get("VAL_GEN_N", 500))
 BATCH      = int(os.environ.get("BATCH", 8))
 LR, WD     = 2e-5, 0.01                      # same as the VQA-RAD fine-tuning
 CAP_PROMPT, LLM_MAXLEN = "a photo of", 96    # 96 keeps 97% of captions untruncated
-RESUME_FROM = os.environ.get("CKPT_PATH", "/home/matei/biomed_vqa_checkpoints/biomed_vqa_final.pt")
-SAVE_DIR = "/home/matei/roco_biomed_checkpoints"
+RESUME_FROM = os.environ.get("CKPT_PATH", f"{HOME}/biomed_vqa_checkpoints/biomed_vqa_final.pt")
+SAVE_DIR = f"{HOME}/roco_biomed_checkpoints"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
 # ── BioMedCLIP vision encoder + deterministic transform ─────────────────────
@@ -89,7 +90,7 @@ print(f"trainable {_tr/1e6:.1f}M params", flush=True)
 import pandas as pd
 from torch.utils.data import Dataset, DataLoader
 
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 
 def load_roco(split, n=None, seed=0):
     caps = pd.read_csv(os.path.join(ROCO_DIR, f"{split}_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
@@ -222,7 +223,7 @@ for epoch in range(EPOCHS):
         vloss = validation_loss(val_loader)
         model.eval()
         vpreds = caption_records(val_gen_recs)
-        with open(f"/home/matei/roco_biomed_val_preds_epoch{epoch+1}.json", "w") as f:
+        with open(f"{HOME}/roco_biomed_val_preds_epoch{epoch+1}.json", "w") as f:
             json.dump([{"ref": r, "pred": p} for r, p in zip(val_refs, vpreds)], f, indent=1)
         vm = compute_metrics(vpreds, val_refs)
         history.append({"epoch": epoch + 1, "train_loss": train_loss, "val_loss": vloss, "path": path, **vm})
@@ -234,7 +235,7 @@ for epoch in range(EPOCHS):
         import traceback; traceback.print_exc()
         history.append({"epoch": epoch + 1, "train_loss": train_loss, "path": path, "val_error": str(e)})
         print(f"  VALIDATION FAILED (checkpoint is safe): {e}", flush=True)
-    with open("/home/matei/roco_biomed_finetune_history.json", "w") as f:
+    with open(f"{HOME}/roco_biomed_finetune_history.json", "w") as f:
         json.dump(history, f, indent=1)
 
 # ── epoch selection on VALIDATION (test untouched) ───────────────────────────
@@ -254,5 +255,5 @@ if best is None:
 print(f"\nBEST epoch by validation BERTScore: {best['epoch']}  ->  {best['path']}")
 print("\nFINAL STEP -- score it ONCE on test (same script/decoding as the zero-shot run):")
 print(f"  CKPT_PATH={best['path']} RUN_TAG=biomed_finetuned \\")
-print(f"    /home/matei/miniconda3/envs/vlm/bin/python /home/matei/caption_roco_biomed.py")
+print(f"    python caption_roco_biomed.py")
 print("=" * 78, flush=True)

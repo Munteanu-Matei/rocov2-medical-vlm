@@ -10,12 +10,14 @@ enriched labels helped" from "simply predicting more concepts helped", which is
 the control CNN-2 must be measured against.
 """
 import os, json, numpy as np, pandas as pd, torch
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 from PIL import Image
 from torchvision import transforms as T
 from roco_cui_classifier import CUINet, samples_f1, tune_global_threshold, tune_per_label
 
 torch.set_num_threads(int(os.environ.get("NT", "2")))
-ENR = "/home/matei/rocov2_enriched"
+ENR = f"{HOME}/rocov2_enriched"
 th  = json.load(open("cui_clf_ckpt/thresholds.json"))
 vocab = th["vocab"]; C = len(vocab); S_IMG = int(th.get("img_size", 224))
 vidx = {c: i for i, c in enumerate(vocab)}

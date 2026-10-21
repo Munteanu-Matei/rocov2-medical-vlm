@@ -8,10 +8,11 @@
 #   if you OOM: CAPTION_BATCH=2 python ...   (lower batch, or MAX_VIS_TOKENS for resolution)
 
 import os
-os.chdir("/home/matei")
+HOME = os.environ.get("ROCO_HOME", os.path.dirname(os.path.abspath(__file__)))   # repo folder unless overridden
+os.chdir(HOME)
 # Model is downloaded locally (see MODEL_ID below) -- like blip2-opt-2.7b -- so the run
 # makes no live hub call. Download once with:
-#   hf download Qwen/Qwen3-VL-4B-Instruct --local-dir /home/matei/qwen3-vl-4b-instruct
+#   hf download Qwen/Qwen3-VL-4B-Instruct --local-dir qwen3-vl-4b-instruct
 os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")  # reduce fragmentation
 import json
 import torch
@@ -22,7 +23,7 @@ DTYPE  = torch.bfloat16 if device == "cuda" else torch.float32   # bf16: matches
 print(f"device={device} dtype={DTYPE}", flush=True)
 
 # ── config (env-overridable, like the other roco scripts) ────────────────────
-MODEL_ID     = os.environ.get("MODEL_ID", "/home/matei/qwen3-vl-4b-instruct")  # local copy of 4B bf16
+MODEL_ID     = os.environ.get("MODEL_ID", f"{HOME}/qwen3-vl-4b-instruct")  # local copy of 4B bf16
 LOAD_IN_4BIT = os.environ.get("LOAD_IN_4BIT", "0") == "1"                # 8B on ~6 GB (quantised)
 RUN_TAG      = os.environ.get("RUN_TAG", "qwen3vl_zeroshot")
 # Resolution cap (merge unit 32 px -> #tokens ~= area/1024). DEFAULT 768: at 1024 the LARGEST
@@ -56,7 +57,7 @@ if device == "cuda":
 
 # ── ROCOv2 test split (identical loader to caption_roco.py) ──────────────────
 import pandas as pd
-ROCO_DIR = "/home/matei/rocov2"
+ROCO_DIR = f"{HOME}/rocov2"
 IMG_DIR  = os.path.join(ROCO_DIR, "test")
 caps = pd.read_csv(os.path.join(ROCO_DIR, "test_captions.csv")).dropna(subset=["Caption"]).reset_index(drop=True)
 records = [{"id": r.ID, "path": os.path.join(IMG_DIR, f"{r.ID}.jpg"), "caption": str(r.Caption)}
@@ -89,7 +90,7 @@ PROMPT_TEXT = processor.apply_chat_template(_msgs, tokenize=False,
 # Incremental, resumable checkpoint: one JSON line per finished image. A restart reloads
 # these and skips them, so an interruption costs minutes, not the whole run.
 # (To force a fresh run from scratch, delete this file first.)
-CKPT = f"/home/matei/roco_{RUN_TAG}_preds.jsonl"
+CKPT = f"{HOME}/roco_{RUN_TAG}_preds.jsonl"
 
 def _load_rgb(path):
     try:
@@ -131,7 +132,7 @@ done  = caption_all(records, CAPTION_BATCH, CKPT)
 preds = [done.get(r["id"], "") for r in records]          # align to record order for scoring
 refs  = [r["caption"] for r in records]
 
-OUT_PRED = f"/home/matei/roco_{RUN_TAG}_a_photo_of.json"
+OUT_PRED = f"{HOME}/roco_{RUN_TAG}_a_photo_of.json"
 with open(OUT_PRED, "w") as f:
     json.dump([{"id": r["id"], "ref": r["caption"], "pred": p} for r, p in zip(records, preds)], f, indent=1)
 print(f"saved predictions -> {OUT_PRED}", flush=True)
@@ -184,6 +185,6 @@ metrics = {"n": len(preds), "prompt": CAPTION_PROMPT, "model": f"{MODEL_ID} (zer
 print("\n==== Qwen3-VL ZERO-SHOT CAPTIONING (a photo of) -- ROCOv2 test ====", flush=True)
 for k, v in metrics.items():
     print(f"  {k:16s}: {v:.4f}" if isinstance(v, float) else f"  {k:16s}: {v}", flush=True)
-with open(f"/home/matei/roco_{RUN_TAG}_metrics.json", "w") as f:
+with open(f"{HOME}/roco_{RUN_TAG}_metrics.json", "w") as f:
     json.dump(metrics, f, indent=1)
-print(f"saved metrics -> /home/matei/roco_{RUN_TAG}_metrics.json", flush=True)
+print(f"saved metrics -> {HOME}/roco_{RUN_TAG}_metrics.json", flush=True)
